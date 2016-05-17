@@ -1,0 +1,740 @@
+/*
+* Title: Great Wharton stylesheet v1.0
+* Created: November 2015
+* Author: The National Archives Web Team
+*/
+
+/* CSS Reset */
+
+* {
+    margin:0;
+    padding:0;
+}
+article,footer,header,nav {
+    display:block;
+}
+
+body {
+    font-family: 'Rokkitt', serif, Georgia, Arial, Verdana, sans-serif;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size:100%;
+
+}
+
+a {
+    outline:0;
+}
+
+img {
+    border: 0;
+}
+
+.js .overlay,
+.js .intro{
+    display:none;
+}
+
+.overlay,
+.intro{
+    display:block;
+}
+
+
+.f-grid {
+    background: url(../images/tna-wharton-iso-grid.jpg);
+    background-attachment: fixed;
+    background-color: #fff;
+    overflow: hidden;
+}
+.s-grid {
+    background: url(../images/gw-town.jpg);
+    background-attachment: fixed;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+/* link styles
+===================================*/
+
+a:link, a:active, a:focus, a:visited {
+    color: #5b1c1c;
+    text-decoration: none;
+    border-bottom: 1px dotted #5b1c1c;
+}
+
+a:hover {
+    color: #5b1c1c;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+/* palette styles
+===================================*/
+
+.base {
+    color: #f1edea;
+}
+
+.base-bg {
+    background-color: #f1edea;
+}
+
+.black {
+    color: #000;
+}
+
+/* heading styles
+===================================*/
+
+h1, .h1 {
+    font-size: 2em;
+    font-weight: normal;
+}
+
+h2, .h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+h3, .h3 {
+    font-size: 1.4em;
+    font-weight: normal;
+}
+
+/* button styles
+===================================*/
+
+a.button {
+    background-color: #5b1c1c;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition: background-color 300ms ease-out 300ms;
+    -moz-transition: background-color 300ms ease-out 300ms;
+    -o-transition: background-color 300ms ease-out 300ms;
+    transition: background-color 300ms ease-out 300ms;
+    border-bottom: none;
+
+}
+
+a.button:hover {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: background-color 300ms ease-out 300ms;
+    -moz-transition: background-color 300ms ease-out 300ms;
+    -o-transition: background-color 300ms ease-out 300ms;
+    transition: background-color 300ms ease-out 300ms;
+    border-bottom: none;
+}
+
+/* custom responsive grid selectors
+===================================*/
+
+.wrapper {
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.info {
+    margin:40px 0 0 0;
+}
+.info .button {
+    font-size:18px;
+}
+.content-columns {
+    font-size:20px;
+}
+.half {
+    width: 100%;
+    float: left;
+}
+
+.full {
+
+    width: 100%;
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+}
+
+.full img {
+    max-width: 400px;
+    width: auto;
+}
+
+/* intro and info styles
+===================================*/
+
+.overlay {
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    z-index: 3000;
+}
+
+.intro, .info {
+
+    width: 100%;
+    min-width: 190px;
+    background-color: #faf8d6;
+    padding: 10px;
+
+}
+
+.intro img {
+    width: 90%;
+    max-width: 100%;
+}
+
+.intro span img{
+    width:250px;
+    margin:25px 0 0 0;
+}
+
+.intro p {
+    text-align:center;
+    padding:10px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+
+.close {
+
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border-radius: 2em;
+    color: #5a6434;
+    text-align: center;
+    cursor: pointer;
+    float:right;
+    margin:10px 10px 0 0;
+
+}
+
+.close i, .about i {
+    color: #5a6434;
+    margin-top: 8px;
+}
+
+.about, .tna_brand {
+    display: none;
+    position: fixed;
+    z-index: 7000;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tna_brand {
+    top: 10px;
+    left: 10px;
+    max-width: 285px;
+}
+
+.info .info_select select {
+    background: transparent;
+    width: 300px;
+    padding: 5px;
+    font-size: 22px;
+    border: 0;
+    border-radius: 0;
+    height: 40px;
+    -webkit-appearance: none;
+}
+
+.info .info_select {
+    width: 300px;
+    height: 40px;
+    overflow: hidden;
+    background: url("../images/drop_arrow.jpg") no-repeat right;
+    border: 1px solid #e9e7c8;
+}
+
+.info .fa.fa-share-alt-square {
+    font-size: 30px;
+    color: #666f41
+}
+
+.info .title {
+    max-width: 200px;
+    padding: 10px;
+    background-color: #faf8d6;
+    margin:0 auto;
+    display:block;
+    position:relative;
+    z-index:2;
+    top:-70px;
+
+}
+
+.info-toolbar-right {
+    float: right;
+    display: inline-block;
+}
+
+.info-toolbar-left {
+    floaT: left;
+    display: inline-block;
+    margin-top: -61px;
+}
+
+.info-toolbar-right h2 {
+    display: inline-block;
+}
+
+.info-toolbar-right .fa.fa-book {
+    font-size: 30px;
+    margin-lefT: 10px;
+    color: #666f41
+}
+
+.info .share_this {
+    display: inline-block;
+}
+
+.fa.fa-times {
+    font-weight: 100;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+.fa.fa-times:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+.inner {
+
+    border: 2px solid #5a6434;
+    padding: 30px;
+    margin-top: 29px;
+
+}
+
+.about img{
+    width: 100%;
+    max-width: 120px;
+}
+
+/* More info box
+===================================*/
+.more-info {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.more-info .col1 {
+    width: 70%;
+}
+
+.more-info .col2 {
+    width: 28%;
+}
+
+.stButton {
+    float:left;
+
+}
+.st_sharethis_large {
+    font-size: 22px;
+    margin-left:5px;
+    float:right;
+}
+.stButton:hover,
+.st_sharethis_large:hover {
+    cursor:pointer;
+}
+
+.st_sharethis_large {
+    display:none;
+}
+/* images
+===================================*/
+
+.inline-img {
+    width: 100%;
+    max-width: 270px;
+}
+
+.tna_brand img {
+    width: 100%;
+    max-width: 285px !important;
+}
+.tna_brand a {
+    border:0;
+}
+
+.placeholder {
+    background-color: #ddd;
+    width: 100%;
+    height: 250px;
+    min-height: 200px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+/* hr
+===================================*/
+
+hr, .hr {
+    width: 100%;
+    background: #5a6434;
+    height: 2px;
+    border: 0px;
+    margin-bottom: 5px;
+    margin-top:0;
+}
+
+.info hr {
+    color:#5a6434;
+
+}
+
+.gr__hfront .intro,
+.gr__hfront .overlay {
+    display:none;
+}
+/* columns
+===================================*/
+
+.content-columns {
+    /*    -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 98%;
+        -moz-column-width: 98%;
+        column-width: 98%;*/
+}
+
+/* borders
+===================================*/
+
+.border-none {
+    border: none !important;
+}
+
+/* clear fixes
+===================================*/
+
+.clear-both {
+
+    clear: both;
+}
+
+.clear-space {
+    clear: both;
+    height: 10px;
+}
+
+/* floats & alignments
+===================================*/
+
+.float-left {
+    float: left !important;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.alignright {
+    float: right !important;
+    margin-left: 10px;
+}
+
+.alignleft {
+    float: left !important;
+    margin-right: 10px;
+}
+
+.text-left {
+
+    text-align: left;
+}
+
+.text-right {
+
+    text-align: right;
+}
+
+.text-center {
+
+    text-align: center;
+}
+
+/* padding and margins
+===================================*/
+
+.padding {
+    padding: 10px !important;
+}
+
+.padding-left-extra {
+    padding-left: 15px !important;
+}
+
+.padding-left-small {
+    padding-left: 5px !important;
+}
+
+.padding-right-small {
+    padding-right: 5px !important;
+}
+
+.padding-extra-big {
+    padding: 15px !important;
+}
+
+.padding-top-extra {
+    padding-top: 15px !important;
+}
+
+.padding-top-small {
+    padding-top: 5px !important;
+}
+
+.padding-bottom-small {
+    padding-bottom: 5px !important;
+}
+
+/* zoom viewer (for documents)
+===================================*/
+
+.canvas-viewer {
+    position: relative;
+    width: 4000px;
+    height: 2232px;
+    overflow: hidden;
+    cursor: move;
+    z-index: 1000;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Learn more */
+
+.learn_more_wrap {
+    position:fixed;
+    bottom:10px;
+    z-index:9999;
+    right:0;
+    display:block;
+    text-align:center;
+    height: 101px;
+    display:none;
+
+
+}
+.learn_more {
+    background:#faf8d6;
+    display:inline-block;
+    float:left;
+    padding:10px 20px;
+    box-sizing:border-box;
+    height:inherit;
+    font-size:1.1em;
+    position:relative;
+    z-index:23;
+}
+.learn_more_close {
+    background:#e9e7c8;
+    display:inline-block;
+    position:relative;
+    z-index:24;
+    float:right;
+    height:inherit;
+    padding:5px;
+    box-sizing:border-box;
+    -webkit-box-shadow: inset 3px 0px 5px -2px rgba(199,196,155,1);
+    -moz-box-shadow: inset 3px 0px 5px -2px rgba(199,196,155,1);
+    box-shadow: inset 3px 0px 5px -2px rgba(199,196,155,1);
+}
+.learn_more_close .fa-angle-left,
+.learn_more_close .fa-times {
+    margin:28px 3px 3px 3px;
+    color:#5a6434;
+}
+.learn_more_close .fa-angle-left:hover,
+.learn_more_close .fa-times:hover {
+    cursor:pointer;
+}
+
+.learn_more .button {
+    display:block;
+    text-align:center;
+    margin:5px 0 0 0;
+}
+.slideRight {
+
+}
+/* markers
+===================================*/
+.marker, .marker-secret {
+    width: 36px;
+    height: 58px;
+    background: url("../images/tna-wharton-marker.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    -webkit-animation: pulse 1s linear infinite;
+    animation: pulse 1s linear infinite;
+    cursor: pointer;
+}
+
+.marker-secret {
+
+    background-image: none !important;
+}
+
+#children {
+    top: 40%;
+    left: 29%;
+}
+
+#industry {
+    top: 41%;
+    right: 36%;
+}
+
+#strike {
+    top: 52%;
+    right: 43.2%;
+}
+
+#enemy-action {
+    top: 67%;
+    right: 52.1%;
+}
+
+#land {
+    top: 27%;
+    right: 71%;
+}
+
+#food {
+    top: 35.2%;
+    left: 42%;
+}
+
+#eggtrain {
+    top: 73.3%;
+    left: 20%;
+}
+
+#propaganda {
+    top: 40%;
+    left: 46.2%;
+    width: 120px;
+    height: 70px;
+}
+
+.characters {
+
+    text-align: center;
+}
+
+.characters img {
+    width: 100%;
+    max-width: 390px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@media (min-width: 768px) {
+    .full img {
+        max-width: 840px;
+        width: auto;
+    }
+
+    .zoom-viewer {
+        height: 100%;
+
+    }
+
+    .info {
+
+        width: 100%;
+        min-width: 290px;
+        background-color: #faf8d6;
+        padding: 30px;
+    }
+
+    .intro {
+        width: 40%;
+        padding: 50px 50px 30px 50px;
+        margin-right: auto;
+        margin-left: auto;
+        top: 8.5%;
+        position:relative;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    .info .title {
+        max-width: 200px;
+        background-color: #faf8d6;
+        padding: 10px;
+    }
+
+    .inner {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 767px) {
+    .close {
+        margin:20px 10px 0 0;
+    }
+    .info .info_select select {
+        width:100%;
+    }
+    .info {
+        margin: 40px 0 40px 0;
+    }
+}
