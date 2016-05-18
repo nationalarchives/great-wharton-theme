@@ -100,7 +100,7 @@ echo ('selected');
                             <hr>
                         </div>
 
-                        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Back to Great Wharton" role="button" class="button" id="enter-click">&middot; Back to Great Wharton &middot;</a>
+                        <a href="<?php echo esc_url( home_url( '/','http') ); ?>" title="Back to Great Wharton" role="button" class="button">&middot; Back to Great Wharton &middot;</a>
                         <span class='st_sharethis_large'>Share this</span>
 
                     </div>
