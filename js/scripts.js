@@ -17,7 +17,7 @@
      * */
 
     // Show overlay and intro when page loads for the first time
-    $('.overlay').show()
+    $('.overlay').show();
     $('.intro').fadeIn(600);
 
     // Check if cookie was created

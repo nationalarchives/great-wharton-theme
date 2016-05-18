@@ -69,5 +69,8 @@ function get_top_category_post($cat, $id, $tab){
 
 }
 
+// remove wordpress toolbar
+
+show_admin_bar(false);
 
 ?>
