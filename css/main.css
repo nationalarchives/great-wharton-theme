@@ -6,6 +6,23 @@
 
 /* CSS Reset */
 
+
+
+/* 18/05/2016 additions */
+
+.container {
+
+    background-color: #faf8d6;
+
+}
+.container{
+    padding-bottom: 20px;
+    margin-bottom:20px;
+}
+.caption{
+    font-size: 1.2em;
+}
+
 * {
     margin:0;
     padding:0;
@@ -14,13 +31,14 @@ article,footer,header,nav {
     display:block;
 }
 
+
 body {
     font-family: 'Rokkitt', serif, Georgia, Arial, Verdana, sans-serif;
     color: #000;
     width: 100%;
     height: 100%;
     margin: 0;
-    font-size:100%;
+    font-size:1.2em;
 
 }
 
@@ -37,10 +55,7 @@ img {
     display:none;
 }
 
-.overlay,
-.intro{
-    display:block;
-}
+
 
 
 .f-grid {
@@ -94,7 +109,7 @@ a:hover {
 ===================================*/
 
 h1, .h1 {
-    font-size: 2em;
+    font-size: 4em;
     font-weight: normal;
 }
 
@@ -148,6 +163,9 @@ a.button:hover {
 
 }
 
+
+
+
 .info {
     margin:40px 0 0 0;
 }
@@ -189,15 +207,24 @@ a.button:hover {
     z-index: 3000;
 }
 
-.intro, .info {
-
-    width: 100%;
-    min-width: 190px;
+.intro{
+    display:block;
+    padding: 50px 50px 30px 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    text-align: center;
+    font-size: 1.2em;
     background-color: #faf8d6;
-    padding: 10px;
-
 }
 
+.intro, .info{
+
+    background-color: #faf8d6;
+
+}
 .intro img {
     width: 90%;
     max-width: 100%;
@@ -407,7 +434,6 @@ a.button:hover {
     min-height: 200px;
     text-align: center;
     margin-top: 10px;
-
 }
 
 /* hr
@@ -687,6 +713,18 @@ hr, .hr {
     }
 }
 
+
+@media (min-width: 1281px) {
+    .intro {
+        width:40%;
+    }
+}
+@media (max-width: 767px) {
+
+    .overlay {
+        padding-left:0;
+    }
+}
 @media (min-width: 768px) {
     .full img {
         max-width: 840px;
@@ -698,24 +736,6 @@ hr, .hr {
 
     }
 
-    .info {
-
-        width: 100%;
-        min-width: 290px;
-        background-color: #faf8d6;
-        padding: 30px;
-    }
-
-    .intro {
-        width: 40%;
-        padding: 50px 50px 30px 50px;
-        margin-right: auto;
-        margin-left: auto;
-        top: 8.5%;
-        position:relative;
-        text-align: center;
-        font-size: 1.2em;
-    }
 
     .info .title {
         max-width: 200px;
@@ -731,10 +751,63 @@ hr, .hr {
     .close {
         margin:20px 10px 0 0;
     }
-    .info .info_select select {
-        width:100%;
+}
+
+/* iPhone 6 landscape */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : landscape) {
+    .intro{
+        left: 48%;
+        top: 48%;
+        width: 72%;
+        overflow-x:visible;
+        padding: 23px 50px 5px 50px;
     }
-    .info {
-        margin: 40px 0 40px 0;
+    .intro img {
+        width:30%;
+    }
+    .intro span img {
+        width:20%;
+        margin:2px 0 0 0;
+    }
+}
+
+/* iPhone 6 plus landscape */
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : landscape) {
+    .intro{
+        left:2%;
+        top: 7%;
+        width: 82%;
+    }
+}
+
+
+/* iPhone 6 portrait */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+    .intro{
+        left: 27%;
+        top: 27.5%;
+        width: 36%;
+    }
+}
+
+/* iPhone 6 plus portrait */
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : portrait) {
+
+    .intro{
+        left: 3%;
+        top: 7%;
+        width: 40%;
     }
 }

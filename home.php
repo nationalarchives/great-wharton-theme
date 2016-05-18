@@ -8,7 +8,19 @@
 
 get_header(); ?>
 <?php if (have_posts()): while (have_posts()) : the_post();?>
+    <div class="overlay">
+        <div class="intro">
+            <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-title.png" alt="Welcome to Great Wharton">
+            <?php the_content();?>
 
+            <p><a href="wharton-sub.htm" role="button" class="button" id="enter-click">&middot; Enter &middot;</a>
+            </p>
+            <div class="clear-space"></div>
+                        <span>
+                            <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-logo.png" alt="The  National Archives">
+                        </span>
+        </div>
+    </div>
     <main role="main">
         <div class="about">
             <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-title-colour.png" alt="About Great Wharton">
@@ -22,45 +34,39 @@ get_header(); ?>
         <!-- Main wrapper start here -->
         <section class="wrapper">
             <h1 class="sr-only"><?php the_title();?></h1>
-            <div class="overlay">
-                <div class="intro">
-                    <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-title.png" alt="Welcome to Great Wharton">
-                  <?php the_content();?>
 
-                    <p><a href="wharton-sub.htm" role="button" class="button" id="enter-click">&middot; Enter &middot;</a>
-                    </p>
-                    <div class="clear-space"></div>
-                        <span>
-                            <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-logo.png" alt="The  National Archives">
-                        </span>
-                </div>
-            </div>
             <!-- Canvas viewer start here-->
             <div class="canvas-viewer" id="wrapper">
-                <a href="wharton-sub.htm" tabindex="1">
-                    <div class="marker" id="children"></div>
-                </a>
-                <a href="wharton-sub.htm" tabindex="2">
-                    <div class="marker" id="industry"></div>
-                </a>
-                <a href="wharton-sub.htm" tabindex="3">
-                    <div class="marker" id="strike"></div>
-                </a>
-                <a href="wharton-sub.htm" tabindex="4">
-                    <div class="marker" id="enemy-action"></div>
-                </a>
-                <a href="wharton-sub.htm" tabindex="5">
-                    <div class="marker" id="land"></div>
-                </a>
-                <a href="wharton-sub.htm" tabindex="6">
-                    <div class="marker" id="food"></div>
-                </a>
-                <a href="wharton-sub.htm" tabindex="7">
-                    <div class="marker" id="eggtrain"></div>
-                </a>
-                <a href="wharton-sub.htm" tabindex="8">
-                    <div class="marker marker-secret" id="propaganda"></div>
-                </a>
+
+
+                <?php get_top_category_post('schools', 'children', '1');?>
+                <?php get_top_category_post('food-shortages', 'eggtrain', '7');?>
+                <?php get_top_category_post('zeppellin-raids', 'enemy-action', '4');?>
+
+                <!--                <a href="wharton-sub.htm" tabindex="1">-->
+                <!--                    <div class="marker" id="children"></div>-->
+                <!--                </a>-->
+                <!--                <a href="wharton-sub.htm" tabindex="2">-->
+                <!--                    <div class="marker" id="industry"></div>-->
+                <!--                </a>-->
+                <!--                <a href="wharton-sub.htm" tabindex="3">-->
+                <!--                    <div class="marker" id="strike"></div>-->
+                <!--                </a>-->
+                <!--                <a href="wharton-sub.htm" tabindex="4">-->
+                <!--                    <div class="marker" id="enemy-action"></div>-->
+                <!--                </a>-->
+                <!--                <a href="wharton-sub.htm" tabindex="5">-->
+                <!--                    <div class="marker" id="land"></div>-->
+                <!--                </a>-->
+                <!--                <a href="wharton-sub.htm" tabindex="6">-->
+                <!--                    <div class="marker" id="food"></div>-->
+                <!--                </a>-->
+                <!--                <a href="wharton-sub.htm" tabindex="7">-->
+                <!--                    <div class="marker" id="eggtrain"></div>-->
+                <!--                </a>-->
+                <!--                <a href="wharton-sub.htm" tabindex="8">-->
+                <!--                    <div class="marker marker-secret" id="propaganda"></div>-->
+                <!--                </a>-->
                 <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-background-v3.jpg" alt="Welcome to Great Wharton">
             </div>
             <!-- Canvas viewer end here -->

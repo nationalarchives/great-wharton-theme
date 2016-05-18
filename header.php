@@ -17,6 +17,7 @@
         <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<?php bloginfo("stylesheet_directory");?>/favicon.ico.png">
         <!-- Styling -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
         <link href="<?php bloginfo("stylesheet_directory");?>/css/main.css?v=1.1" rel="stylesheet">
         <!-- Main font -->
         <link href='https://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
@@ -39,5 +40,5 @@
 
 }else{?>
 
-	<body>
+	<body class="s-grid">
 <?php }?>
