@@ -10,25 +10,25 @@ get_header(); ?>
 <?php if (have_posts()): while (have_posts()) : the_post();?>
     <div class="overlay">
         <div class="intro">
-            <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-title.png" alt="Welcome to Great Wharton" tabindex="0">
+            <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-title.png" alt="Great Wharton title" title="Welcome to Great Wharton" tabindex="0">
             <?php the_content();?>
 
             <p><a href="wharton-sub.htm" role="button" class="button" id="enter-click" tabindex="0">&middot; Enter &middot;</a>
             </p>
             <div class="clear-space"></div>
                         <span>
-                            <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-logo.png" alt="The  National Archives" tabindex="0">
+                            <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-logo.png" alt="The  National Archives logo" title="The National Archives" tabindex="0">
                         </span>
         </div>
     </div>
     <main role="main">
         <div class="about">
-            <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-title-colour.png" alt="About Great Wharton" tabindex="0">
+            <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-title-colour.png" alt=" Great Wharton title" title="Great Wharton" tabindex="0">
         </div>
 
         <div class="tna_brand">
-            <a href="http://nationalarchives.gov.uk" title="Go to The National Archives">
-                <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-logo-white.png" alt="The National Archives">
+            <a href="http://nationalarchives.gov.uk" title="Visit The National Archives webiste">
+                <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-logo-white.png" alt="The National Archives logo">
             </a>
         </div>
         <!-- Main wrapper start here -->
@@ -67,7 +67,7 @@ get_header(); ?>
                 <!--                <a href="wharton-sub.htm" tabindex="8">-->
                 <!--                    <div class="marker marker-secret" id="propaganda"></div>-->
                 <!--                </a>-->
-                <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-background-v3.jpg" alt="Welcome to Great Wharton">
+                <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-background-v3.jpg" alt="Map of Great Wharton">
             </div>
             <!-- Canvas viewer end here -->
 
