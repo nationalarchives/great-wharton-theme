@@ -145,5 +145,3 @@
 
     $(".st_sharethis_large").show("slow");
 
-
-

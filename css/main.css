@@ -22,6 +22,9 @@
 .caption{
     font-size: 1.2em;
 }
+*:focus{
+    border:1px solid #e67e22;
+}
 
 * {
     margin:0;
@@ -42,9 +45,9 @@ body {
 
 }
 
-a {
-    outline:0;
-}
+/*a {*/
+    /*outline:0;*/
+/*}*/
 
 img {
     border: 0;
@@ -653,11 +656,15 @@ hr, .hr {
     animation: pulse 1s linear infinite;
     cursor: pointer;
 }
+.canvas-viewer a:focus{
+    border:2px solid #e67e22 !important;
+}
 
 .marker-secret {
 
     background-image: none !important;
 }
+
 
 #children {
     top: 40%;

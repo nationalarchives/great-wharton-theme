@@ -56,7 +56,7 @@ function get_top_category_post($cat, $id, $tab){
 
 
 
-            echo('<a href="' .get_the_permalink(). '" tabindex="' .$tabindex. '" title="' .get_the_title(). '"><div class="marker" id="' .$divid. '"></div></a>');
+            echo('<a href="' .get_the_permalink(). '" class="marker-link" title="' .get_the_title(). '"><div class="marker" id="' .$divid. '" tabindex="' .$tabindex. '" ></div></a>');
 
 
         }
