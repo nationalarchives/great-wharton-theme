@@ -59,17 +59,14 @@ img {
 }
 
 
-
-
 .f-grid {
     background: url(../images/tna-wharton-iso-grid.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     overflow: hidden;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*background-size: cover;*/
 }
 .s-grid {
     background: url(../images/gw-town.jpg);

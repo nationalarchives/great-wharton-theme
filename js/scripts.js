@@ -111,6 +111,10 @@
      * */
 
     // Draggable JS start here
+
+
+TweenLite.set("#wrapper",{x:-750,y:-750});
+
     var gridWidth = 100;
     var gridHeight = 100;
     Draggable.create("#wrapper", {
@@ -127,6 +131,9 @@
             }
         }
     });
+
+
+
     // Draggable js end here
 
     /* ---------------------------------------------------------------
