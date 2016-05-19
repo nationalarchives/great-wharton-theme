@@ -10,24 +10,24 @@ get_header(); ?>
 <?php if (have_posts()): while (have_posts()) : the_post();?>
     <div class="overlay">
         <div class="intro">
-            <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-title.png" alt="Great Wharton title" title="Welcome to Great Wharton" tabindex="0">
-            <?php the_content();?>
+            <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-title.png" alt="Great Wharton title" title="Welcome to Great Wharton" tabindex="1">
+            <div tabindex="2"><?php the_content();?></div>
 
-            <p><a href="wharton-sub.htm" role="button" class="button" id="enter-click" tabindex="0">&middot; Enter &middot;</a>
+            <p><a href="wharton-sub.htm" role="button" class="button" id="enter-click" tabindex="3">&middot; Enter &middot;</a>
             </p>
             <div class="clear-space"></div>
                         <span>
-                            <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-logo.png" alt="The  National Archives logo" title="The National Archives" tabindex="0">
+                            <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-logo.png" alt="The  National Archives logo" title="The National Archives">
                         </span>
         </div>
     </div>
     <main role="main">
         <div class="about">
-            <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-title-colour.png" alt=" Great Wharton title" title="Great Wharton" tabindex="0">
+            <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-title-colour.png" alt=" Great Wharton title" title="Great Wharton" tabindex="5">
         </div>
 
         <div class="tna_brand">
-            <a href="http://nationalarchives.gov.uk" title="Visit The National Archives webiste">
+            <a href="http://nationalarchives.gov.uk" title="Visit The National Archives webiste" tabindex="4">
                 <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-logo-white.png" alt="The National Archives logo">
             </a>
         </div>
@@ -39,9 +39,9 @@ get_header(); ?>
             <div class="canvas-viewer" id="wrapper">
 
 
-                <?php get_top_category_post('schools', 'children', '0');?>
-                <?php get_top_category_post('food-shortages', 'eggtrain', '0');?>
-                <?php get_top_category_post('zeppellin-raids', 'enemy-action', '0');?>
+                <?php get_top_category_post('schools', 'children', '6');?>
+                <?php get_top_category_post('food-shortages', 'eggtrain', '7');?>
+                <?php get_top_category_post('zeppellin-raids', 'enemy-action', '8');?>
 
                 <!--                <a href="wharton-sub.htm" tabindex="1">-->
                 <!--                    <div class="marker" id="children"></div>-->
@@ -82,7 +82,7 @@ get_header(); ?>
                 <div class="learn_more_wrap">
                     <div class="learn_more">
                         <?php echo get_post_meta($post->ID, "more_text", true);?>
-                        <a href="<?php   echo get_post_meta($post->ID, $key, true);?>" role="button" class="button">&middot; <?php echo get_post_meta($post->ID, "more_button", true);?> &middot;</a>
+                        <a href="<?php   echo get_post_meta($post->ID, $key, true);?>" role="button" class="button" tabindex="20">&middot; <?php echo get_post_meta($post->ID, "more_button", true);?> &middot;</a>
                     </div>
                     <div class="learn_more_close">
                         <i class="fa fa-times fa-2x"></i>
