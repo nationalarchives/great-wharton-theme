@@ -78,7 +78,7 @@ get_header(); ?>
                                 $image_caption = get_post(get_post_thumbnail_id())->post_excerpt;
 
                                 ?>
-                                <img src="<?php echo($image_src); ?>" width="100%">
+                                <img src="<?php echo($image_src); ?>" width="100%"  alt="Image of <?php echo($image_caption); ?>" title="<?php echo($image_caption); ?>">
                                 <p class="caption alignright"><?php echo($image_caption); ?></p>
                                 <?php
                             }

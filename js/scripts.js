@@ -38,6 +38,7 @@
         $('.about').fadeIn(600);
         $('.tna_brand').fadeIn(600);
         $('.learn_more_wrap').fadeIn(600);
+        TweenLite.to("#wrapper", 3, {x:-750, y:-750});
         createCookie('gw-hide-intro', true, 1)
     });
 
@@ -111,6 +112,11 @@
      * */
 
     // Draggable JS start here
+
+
+//TweenLite.set("#wrapper",{x:-750,y:-750});
+
+
     var gridWidth = 100;
     var gridHeight = 100;
     Draggable.create("#wrapper", {
@@ -127,6 +133,9 @@
             }
         }
     });
+
+
+
     // Draggable js end here
 
     /* ---------------------------------------------------------------
