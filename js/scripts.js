@@ -115,7 +115,7 @@
 
 
 //TweenLite.set("#wrapper",{x:-750,y:-750});
-
+TweenLite.to("#wrapper", 3, {x:-750, y:-750});
 
     var gridWidth = 100;
     var gridHeight = 100;

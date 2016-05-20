@@ -24,7 +24,10 @@ get_header(); ?>
                         <div class="inner">
                             <img src="<?php bloginfo("stylesheet_directory"); ?>/images/tna-wharton-title.png"
                                  alt="Welcome to Great Wharton" class="title">
+                            <?php
+                            // show dropdown only if the page has a category i.e. story content
 
+                            if (has_category()) {?>
                             <div class="info-toolbar-left">
                                 <div class="info_select">
                                     <select onchange="if (this.value) window.location.href=this.value">
@@ -47,18 +50,24 @@ get_header(); ?>
 
                                                 $page_id = $page_query->post->ID;
 
-                                                ?>
+                                                //show only pages with category i.e. hide all non-story content
 
+                                                if (has_category()) {
 
-                                                <option value="<?php the_permalink(); ?>"
-                                                    <?php
-                                                    /* if ($current_page == $page_id) {
-             echo ('selected');
-                                                     }*/
                                                     ?>
 
-                                                ><?php the_title(); ?></option>
+
+                                                    <option value="<?php the_permalink(); ?>"
+
+
+                                                        ><?php the_title(); ?>    <?php
+
+                                                        if ($current_page == $page_id) {
+                                                            echo ('*');
+                                                        }
+                                                        ?></option>
                                                 <?php
+                                                }
                                             }
 
                                         }
@@ -68,7 +77,9 @@ get_header(); ?>
                                     </select>
                                 </div>
                             </div>
-                            <hr>
+                                <hr>
+                            <?php }?>
+
                             <!-- featured image -->
                             <?php if (has_post_thumbnail()) {
 
