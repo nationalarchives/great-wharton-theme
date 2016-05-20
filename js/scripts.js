@@ -51,6 +51,7 @@
         $('.info').fadeOut(600);
         $('.tna_brand').fadeIn(600);
         $('.learn_more_wrap').fadeIn(600);
+        TweenLite.to("#wrapper", 3, {x:-600, y:-600, ease: Circ.easeOut});
         createCookie('gw-hide-intro', true, 1)
     });
 
