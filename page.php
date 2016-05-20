@@ -60,12 +60,7 @@ get_header(); ?>
                                                     <option value="<?php the_permalink(); ?>"
 
 
-                                                        ><?php the_title(); ?>    <?php
-
-                                                        if ($current_page == $page_id) {
-                                                            echo ('*');
-                                                        }
-                                                        ?></option>
+                                                        ><?php the_title(); ?></option>
                                                 <?php
                                                 }
                                             }
