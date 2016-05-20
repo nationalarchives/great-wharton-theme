@@ -583,6 +583,9 @@ hr, .hr {
     z-index: 1000;
     margin-right: auto;
     margin-left: auto;
+    background-image: url("../images/tna-wharton-background-placeholder.jpg");
+    background-repeat:no-repeat;
+    background-size: 100% auto;
 }
 
 /* Learn more */
@@ -652,7 +655,9 @@ hr, .hr {
     -webkit-animation: pulse 1s linear infinite;
     animation: pulse 1s linear infinite;
     cursor: pointer;
+    border-bottom:none !important;
 }
+
 .canvas-viewer a:focus{
     border:2px solid #e67e22 !important;
 }

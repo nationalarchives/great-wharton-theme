@@ -56,7 +56,7 @@ function get_top_category_post($cat, $id, $tab){
 
 
 
-            echo('<a href="' .get_the_permalink(). '" class="marker-link" title="' .get_the_title(). '"><div class="marker" id="' .$divid. '" tabindex="' .$tabindex. '" ></div></a>');
+            echo('<a href="' .get_the_permalink(). '" title="' .get_the_title(). '"  class="marker" id="' .$divid. '" tabindex="' .$tabindex. '" ></a>');
 
 
         }
@@ -68,6 +68,8 @@ function get_top_category_post($cat, $id, $tab){
 
 
 }
+
+
 
 // remove wordpress toolbar
 

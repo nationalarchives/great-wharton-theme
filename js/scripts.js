@@ -11,6 +11,33 @@
  */
 
 
+
+
+/* ---------------------------------------------------------------
+ * 0. Reposition background based on last user story
+ * ---------------------------------------------------------------
+ * */
+
+var hashTag = window.location.hash;
+
+if (hashTag == "#schools" || hashTag == ""){
+
+    TweenLite.to("#wrapper", 2, {x:-600, y:-600, ease: Circ.easeOut});
+}
+
+if (hashTag == "#food-shortages"){
+
+    TweenLite.to("#wrapper", 2, {x:-300, y:-1400, ease: Circ.easeOut});
+}
+if (hashTag == "#zeppellin-raids"){
+
+    TweenLite.to("#wrapper", 2, {x:-1300, y:-1200, ease: Circ.easeOut});
+}
+
+
+
+
+
     /* ---------------------------------------------------------------
      * 1. Show/hide assets
      * ---------------------------------------------------------------

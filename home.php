@@ -115,5 +115,7 @@ get_header(); ?>
 <script src="<?php bloginfo("stylesheet_directory");?>/js/scripts.js"></script>
 
 
+
+
 <?php get_footer(); ?>
 

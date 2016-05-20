@@ -106,7 +106,12 @@ get_header(); ?>
                                 <hr>
                             </div>
 
-                            <a href="<?php echo esc_url(home_url('/', 'http')); ?>" title="Back to Great Wharton"
+                            <a href="<?php echo esc_url(home_url('/', 'http')); ?><?php
+
+                            // use category slug for hashtag
+
+                            $category = get_the_category();
+                            echo "#".$category[0]->slug;?>" title="Back to Great Wharton"
                                role="button" class="button">&middot; Back to Great Wharton &middot;</a>
                             <span class='st_sharethis_large'>Share this</span>
 
