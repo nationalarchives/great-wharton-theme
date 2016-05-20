@@ -25,8 +25,15 @@
         <link href="<?php bloginfo("stylesheet_directory");?>/css/main.css?v=1.1" rel="stylesheet">
 
         <!--[if gte IE 8]>
-        <link href="<?php bloginfo("stylesheet_directory");?>/css/ie8-and-up.css" rel="stylesheet" type="text/css" />
+        <link href="<?php bloginfo("stylesheet_directory");?>/css/ie8.css" rel="stylesheet" type="text/css" />
         <![endif]-->
+        <!--[if gte IE 9]>
+        <link href="<?php bloginfo("stylesheet_directory");?>/css/ie9.css" rel="stylesheet" type="text/css" />
+        <![endif]-->
+        <!--[if IE ]>
+        <link href="<?php bloginfo("stylesheet_directory");?>/css/ie10.css" rel="stylesheet" type="text/css" />
+        <![endif]-->
+
         <!-- Main font -->
         <link href='https://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
         <script>
