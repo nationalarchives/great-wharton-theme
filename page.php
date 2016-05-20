@@ -77,9 +77,9 @@ get_header(); ?>
                                     </select>
                                 </div>
                             </div>
-                                <hr>
-                            <?php }?>
 
+                            <?php }?>
+                            <hr>
                             <!-- featured image -->
                             <?php if (has_post_thumbnail()) {
 
