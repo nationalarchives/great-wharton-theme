@@ -82,6 +82,16 @@ if (hashTag == "#zeppellin-raids"){
         createCookie('gw-hide-intro', true, 1)
     });
 
+
+    $(".about").click(function () {
+        $('.overlay').fadeIn(600);
+        $('.intro').fadeIn(600);
+        $('.about').fadeOut(600);
+        $('.tna_brand').fadeOut(600);
+        $('.learn_more_wrap').fadeOut(600);
+    });
+
+
     /* ---------------------------------------------------------------
      * 2. Create cookie
      * ---------------------------------------------------------------

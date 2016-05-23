@@ -23,7 +23,7 @@ get_header(); ?>
     </div>
     <main role="main">
         <div class="about">
-            <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-title-colour.png" alt=" Great Wharton title" title="Great Wharton" tabindex="5">
+            <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-title-colour.png" alt=" Great Wharton title" title="View the introduction to Great Wharton" tabindex="5">
         </div>
 
         <div class="tna_brand">
