@@ -42,6 +42,7 @@ body {
     height: 100%;
     margin: 0;
     font-size:1.2em;
+    line-height: 2em;
 
 }
 
@@ -307,6 +308,7 @@ a.button:hover {
     border-radius: 0;
     height: 40px;
     -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .info .info_select {
@@ -612,6 +614,7 @@ hr, .hr {
     font-size:1.3em;
     position:relative;
     z-index:23;
+    line-height:1.2em;
 }
 .learn_more_close {
     background:#e9e7c8;

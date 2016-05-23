@@ -72,9 +72,10 @@ get_header(); ?>
                                     </select>
                                 </div>
                             </div>
-
+                                <hr>
                             <?php }?>
-                            <hr>
+                            <h1><?php the_title(); ?></h1>
+
                             <!-- featured image -->
                             <?php if (has_post_thumbnail()) {
 
@@ -93,8 +94,8 @@ get_header(); ?>
 
                             <!-- featured image -->
 
+<div class="clear-both"></div>
 
-                            <h1><?php the_title(); ?></h1>
                             <div class="content-columns">
 
                                 <?php the_content(); ?>
