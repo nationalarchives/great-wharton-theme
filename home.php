@@ -13,7 +13,7 @@ get_header(); ?>
             <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-title.png" alt="Great Wharton title" title="Welcome to Great Wharton" tabindex="1">
             <div tabindex="2"><?php the_content();?></div>
 
-            <p><a href="wharton-sub.htm" role="button" class="button" id="enter-click" tabindex="3">&middot; Enter &middot;</a>
+            <p><a href="#" role="button" class="button" id="enter-click" tabindex="3">&middot; Enter &middot;</a>
             </p>
             <div class="clear-space"></div>
                         <span>
@@ -27,7 +27,7 @@ get_header(); ?>
         </div>
 
         <div class="tna_brand">
-            <a href="http://nationalarchives.gov.uk" title="Visit The National Archives webiste" tabindex="4">
+            <a href="http://nationalarchives.gov.uk" title="Visit The National Archives website" tabindex="4">
                 <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-logo-white.png" alt="The National Archives logo">
             </a>
         </div>

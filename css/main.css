@@ -383,7 +383,7 @@ a.button:hover {
 
 .about img{
     width: 100%;
-    max-width: 120px;
+    max-width: 160px;
 }
 
 /* More info box
@@ -432,7 +432,7 @@ a.button:hover {
 
 .tna_brand img {
     width: 100%;
-    max-width: 285px !important;
+    max-width: 288px !important;
 }
 .tna_brand a {
     border:0;
