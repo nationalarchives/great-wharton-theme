@@ -160,7 +160,7 @@ if (hashTag == "#zeppellin-raids"){
     Draggable.create("#wrapper", {
         type: "x,y",
         edgeResistance: 0.99,
-        bounds: "html",
+        bounds: ".f-grid",
         throwProps: true,
         snap: {
             x: function (endValue) {
