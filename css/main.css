@@ -309,6 +309,7 @@ a.button:hover {
     height: 40px;
     -webkit-appearance: none;
     -moz-appearance: none;
+    appearance:none;
 }
 
 .info .info_select {
