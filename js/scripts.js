@@ -2,39 +2,38 @@
  *
  *  Great Wharton global scripts
  *  --------------------------------
+ *  0. Reposition background based on last user story
  *  1. Show/hide assets
  *  2. Create cookie
  *  3. Display Learn more
  *  4. Replace ENTER button URL with #
  *  5. Add draggable effect to the town
- *
+ *  6. ImageMagic
+ *  7. ShareThis button
  */
 
 
 
-/* ---------------------------------------------------------------
- * 0. Reposition background based on last user story
- * ---------------------------------------------------------------
- * */
+    /* ---------------------------------------------------------------
+     * 0. Reposition background based on last user story
+     * ---------------------------------------------------------------
+     * */
 
-var hashTag = window.location.hash;
+    var hashTag = window.location.hash;
 
-if (hashTag == "#schools" || hashTag == ""){
+    if (hashTag == "#schools" || hashTag == "") {
 
-    TweenLite.to("#wrapper", 2, {x:-600, y:-600, ease: Circ.easeOut});
-}
+        TweenLite.to("#wrapper", 2, {x: -600, y: -600, ease: Circ.easeOut});
+    }
 
-if (hashTag == "#food-shortages"){
+    if (hashTag == "#food-shortages") {
 
-    TweenLite.to("#wrapper", 2, {x:-300, y:-1400, ease: Circ.easeOut});
-}
-if (hashTag == "#zeppellin-raids"){
+        TweenLite.to("#wrapper", 2, {x: -300, y: -1400, ease: Circ.easeOut});
+    }
+    if (hashTag == "#zeppellin-raids") {
 
-    TweenLite.to("#wrapper", 2, {x:-1300, y:-1200, ease: Circ.easeOut});
-}
-
-
-
+        TweenLite.to("#wrapper", 2, {x: -1300, y: -1200, ease: Circ.easeOut});
+    }
 
 
     /* ---------------------------------------------------------------
@@ -64,7 +63,7 @@ if (hashTag == "#zeppellin-raids"){
         $('.about').fadeIn(600);
         $('.tna_brand').fadeIn(600);
         $('.learn_more_wrap').fadeIn(600);
-        TweenLite.to("#wrapper", 3, {x:-600, y:-600, ease: Circ.easeOut});
+        TweenLite.to("#wrapper", 3, {x: -600, y: -600, ease: Circ.easeOut});
         createCookie('gw-hide-intro', true, 1)
     });
 
@@ -77,7 +76,7 @@ if (hashTag == "#zeppellin-raids"){
         $('.info').fadeOut(600);
         $('.tna_brand').fadeIn(600);
         $('.learn_more_wrap').fadeIn(600);
-        TweenLite.to("#wrapper", 3, {x:-600, y:-600, ease: Circ.easeOut});
+        TweenLite.to("#wrapper", 3, {x: -600, y: -600, ease: Circ.easeOut});
         createCookie('gw-hide-intro', true, 1)
     });
 
@@ -97,29 +96,29 @@ if (hashTag == "#zeppellin-raids"){
      * */
 
     // Generic cookie logic
-    function createCookie(name,value,days) {
+    function createCookie(name, value, days) {
         if (days) {
             var date = new Date();
-            date.setTime(date.getTime()+(days*24*60*60*1000));
-            var expires = "; expires="+date.toGMTString();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            var expires = "; expires=" + date.toGMTString();
         }
         else var expires = "";
-        document.cookie = name+"="+value+expires+"; path=/";
+        document.cookie = name + "=" + value + expires + "; path=/";
     }
     // Read cookie
     function readCookie(name) {
         var nameEQ = name + "=";
         var ca = document.cookie.split(';');
-        for(var i=0;i < ca.length;i++) {
+        for (var i = 0; i < ca.length; i++) {
             var c = ca[i];
-            while (c.charAt(0)==' ') c = c.substring(1,c.length);
-            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
         }
         return null;
     }
     // Erase cookie
     function eraseCookie(name) {
-        createCookie(name,"",-1);
+        createCookie(name, "", -1);
     }
     // Cookie end here
 
@@ -141,7 +140,7 @@ if (hashTag == "#zeppellin-raids"){
      * */
 
     // This is a JS fallback
-         $("#enter-click").attr("href", "#");
+    $("#enter-click").attr("href", "#");
 
     /* ---------------------------------------------------------------
      * 5. Add draggable effect to the town
@@ -151,8 +150,8 @@ if (hashTag == "#zeppellin-raids"){
     // Draggable JS start here
 
 
-//TweenLite.set("#wrapper",{x:-750,y:-750});
-//TweenLite.set("#wrapper", {x:-600, y:-600});
+    //TweenLite.set("#wrapper",{x:-750,y:-750});
+    //TweenLite.set("#wrapper", {x:-600, y:-600});
 
     var gridWidth = 100;
     var gridHeight = 100;
@@ -172,14 +171,27 @@ if (hashTag == "#zeppellin-raids"){
     });
 
 
-
     // Draggable js end here
 
     /* ---------------------------------------------------------------
-     * 6. Share this button
+     * 6. ImageMagic
      * ---------------------------------------------------------------
      * */
-/*
+
+    $('.main_background').tiles({
+        original: {
+            width: 4000,
+            height: 2232
+        },
+        basePath: "/wp-content/themes/gwharton/",
+        zoom: 1
+    });
+
+    /* ---------------------------------------------------------------
+     * 7. Share this button
+     * ---------------------------------------------------------------
+     * */
+
     // Share this
     stLight.options({
         publisher: "e1514b1f-8114-4751-a7dc-7af051944bf6",
@@ -189,17 +201,9 @@ if (hashTag == "#zeppellin-raids"){
         onhover: false
     });
 
-    $(".st_sharethis_large").show("slow");*/
+    $(".st_sharethis_large").show("slow");
 
 
 
-//
-$('.main_background').tiles({
-    original: {
-        width: 4000,
-        height: 2232
-    },
-    basePath: "/wp-content/themes/gwharton/",
-    zoom: 1
-});
+
 
