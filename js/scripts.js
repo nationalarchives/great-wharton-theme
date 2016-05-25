@@ -12,7 +12,6 @@
 
 
 
-
 /* ---------------------------------------------------------------
  * 0. Reposition background based on last user story
  * ---------------------------------------------------------------
@@ -180,7 +179,7 @@ if (hashTag == "#zeppellin-raids"){
      * 6. Share this button
      * ---------------------------------------------------------------
      * */
-
+/*
     // Share this
     stLight.options({
         publisher: "e1514b1f-8114-4751-a7dc-7af051944bf6",
@@ -190,5 +189,17 @@ if (hashTag == "#zeppellin-raids"){
         onhover: false
     });
 
-    $(".st_sharethis_large").show("slow");
+    $(".st_sharethis_large").show("slow");*/
+
+
+
+//
+$('.main_background').tiles({
+    original: {
+        width: 4000,
+        height: 2232
+    },
+    basePath: "/wp-content/themes/gwharton/",
+    zoom: 1
+});
 

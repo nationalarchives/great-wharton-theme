@@ -67,7 +67,7 @@ get_header(); ?>
                 <!--                <a href="wharton-sub.htm" tabindex="8">-->
                 <!--                    <div class="marker marker-secret" id="propaganda"></div>-->
                 <!--                </a>-->
-                <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-background-v3.jpg" alt="Map of Great Wharton">
+                <div class="main_background"></div>
             </div>
             <!-- Canvas viewer end here -->
 
@@ -107,12 +107,17 @@ get_header(); ?>
 
 <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/utils/Draggable.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
 <script src="<?php bloginfo("stylesheet_directory");?>/js/tpp.min.js"></script>
+<script src="<?php bloginfo("stylesheet_directory");?>/js/tiles.js"></script>
 <script src="<?php bloginfo("stylesheet_directory");?>/js/scripts.js"></script>
+
+
+
 
 
 

@@ -591,6 +591,18 @@ hr, .hr {
     background-size: 100% auto;
 }
 
+.main_background {
+    position: relative;
+    width: 4000px;
+    height: 2232px;
+    overflow: hidden;
+    cursor: move;
+    z-index: 999;
+}
+
+.main_background div img {
+    height:100%;
+}
 /* Learn more */
 
 .learn_more_wrap {
@@ -660,6 +672,7 @@ hr, .hr {
     animation: pulse 1s linear infinite;
     cursor: pointer;
     border-bottom:none !important;
+    z-index:1001
 }
 
 .canvas-viewer a:focus{

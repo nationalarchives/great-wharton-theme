@@ -44,7 +44,7 @@
 
 
 		<?php wp_head(); ?>
-// GA Tag Manager code
+        <!-- GA Tag Manager code -->
 
         <script type="text/javascript">
             var _gaq = _gaq || [];
