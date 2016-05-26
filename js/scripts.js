@@ -183,7 +183,7 @@
             width: 4000,
             height: 2232
         },
-        basePath: "/wp-content/themes/gwharton/",
+        basePath: "/wp-content/themes/great-wharton-theme/",
         zoom: 1
     });
 
