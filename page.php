@@ -102,10 +102,8 @@ get_header(); ?>
                                 <hr>
                             </div>
 
-                            <a href="<?php echo esc_url(home_url('/', 'http')); ?><?php
-
+                            <a href="<?php echo make_path_relative( esc_url(home_url('/', 'http')) );
                             // use category slug for hashtag
-
                             $category = get_the_category();
                             echo "#".$category[0]->slug;?>" title="Back to Great Wharton"
                                role="button" class="button">&middot; Back to Great Wharton &middot;</a>
