@@ -2,7 +2,22 @@
 
 
 get_header(); ?>
+<div class="page-branding">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 tna-brand-page">
+                <a href="http://nationalarchives.gov.uk" title="Visit The National Archives website" tabindex="4">
+                    <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-logo-white.png" alt="The National Archives logo">
+                </a>
+            </div>
+            <div class="col-xs-6 about-page text-right">
+                <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-title-colour.png" alt=" Great Wharton title" title="View the introduction to Great Wharton" tabindex="5">
+            </div>
+        </div>
+    </div>
+</div>
 <main role="main">
+
     <?php if (have_posts()): while (have_posts()) : the_post();
 
         $current_page = get_the_ID();
@@ -11,8 +26,8 @@ get_header(); ?>
         ?>
 
         <!-- main loop goes here -->
+        <div class="container">
         <div class="row">
-            <div class="container">
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <!-- school -->
                     <div class="info">

@@ -10,12 +10,12 @@
 
 /* 18/05/2016 additions */
 
-.container {
+main .container {
 
     background-color: #faf8d6;
 
 }
-.container{
+main .container{
     padding-bottom: 20px;
     margin-bottom:20px;
 }
@@ -299,6 +299,10 @@ a.button:hover {
     max-width: 285px;
 }
 
+.page-branding {
+    margin-bottom: 1em;
+}
+
 .info .info_select select {
     background: transparent;
     width: 99%;
@@ -384,7 +388,7 @@ a.button:hover {
 
 }
 
-.about img{
+.about img, .about-page img{
     width: 100%;
     max-width: 160px;
 }
