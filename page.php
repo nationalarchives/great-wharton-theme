@@ -22,7 +22,7 @@ get_header(); ?>
                         <!--                    </a>-->
 
                         <div class="inner">
-                            <img src="<?php bloginfo("stylesheet_directory"); ?>/images/tna-wharton-title.png"
+                            <img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-title.png"
                                  alt="Welcome to Great Wharton" class="title">
                             <?php
                             // show dropdown only if the page has a category i.e. story content
@@ -57,7 +57,7 @@ get_header(); ?>
                                                     ?>
 
 
-                                                    <option value="<?php the_permalink(); ?>"
+                                                    <option value="<?php echo make_path_relative( get_permalink() ); ?>"
 
 
                                                         ><?php the_title(); ?></option>
@@ -85,7 +85,7 @@ get_header(); ?>
                                 $image_caption = get_post(get_post_thumbnail_id())->post_excerpt;
 
                                 ?>
-                                <img src="<?php echo($image_src); ?>" width="100%"  alt="Image of <?php echo($image_caption); ?>" title="<?php echo($image_caption); ?>">
+                                <img src="<?php echo make_path_relative( $image_src ); ?>" width="100%"  alt="Image of <?php echo($image_caption); ?>" title="<?php echo($image_caption); ?>">
                                 <p class="caption alignright"><?php echo($image_caption); ?></p>
                                 <?php
                             }
@@ -135,7 +135,7 @@ get_header(); ?>
 
 <script type="text/javascript">var switchTo5x = true;</script>
 <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script src="<?php bloginfo("stylesheet_directory"); ?>/js/scripts.js"></script>
+<script src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/js/scripts.js"></script>
 <script type="text/javascript">
     stLight.options({
         publisher: "e1514b1f-8114-4751-a7dc-7af051944bf6",

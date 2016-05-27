@@ -10,25 +10,25 @@ get_header(); ?>
 <?php if (have_posts()): while (have_posts()) : the_post();?>
     <div class="overlay">
         <div class="intro">
-            <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-title.png" alt="Great Wharton title" title="Welcome to Great Wharton" tabindex="1">
+            <img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-title.png" alt="Great Wharton title" title="Welcome to Great Wharton" tabindex="1">
             <div tabindex="2"><?php the_content();?></div>
 
             <p><a href="#" role="button" class="button" id="enter-click" tabindex="3">&middot; Enter &middot;</a>
             </p>
             <div class="clear-space"></div>
                         <span>
-                            <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-logo.png" alt="The  National Archives logo" title="The National Archives">
+                            <img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-logo.png" alt="The  National Archives logo" title="The National Archives">
                         </span>
         </div>
     </div>
     <main role="main">
         <div class="about">
-            <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-title-colour.png" alt=" Great Wharton title" title="View the introduction to Great Wharton" tabindex="5">
+            <img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-title-colour.png" alt=" Great Wharton title" title="View the introduction to Great Wharton" tabindex="5">
         </div>
 
         <div class="tna_brand">
             <a href="http://nationalarchives.gov.uk" title="Visit The National Archives website" tabindex="4">
-                <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-logo-white.png" alt="The National Archives logo">
+                <img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-logo-white.png" alt="The National Archives logo">
             </a>
         </div>
         <!-- Main wrapper start here -->
@@ -112,9 +112,9 @@ get_header(); ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/utils/Draggable.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
-<script src="<?php bloginfo("stylesheet_directory");?>/js/tpp.min.js"></script>
-<script src="<?php bloginfo("stylesheet_directory");?>/js/tiles.js"></script>
-<script src="<?php bloginfo("stylesheet_directory");?>/js/scripts.js"></script>
+<script src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/js/tpp.min.js"></script>
+<script src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/js/tiles.js"></script>
+<script src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/js/scripts.js"></script>
 
 
 

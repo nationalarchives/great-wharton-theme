@@ -18,20 +18,20 @@
         <!-- View port -->
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
         <!-- Add fav icon -->
-        <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<?php bloginfo("stylesheet_directory");?>/favicon.ico.png">
+        <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<?php echo make_path_relative( get_template_directory_uri() ); ?>/favicon.ico.png">
         <!-- Styling -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-        <link href="<?php bloginfo("stylesheet_directory");?>/css/main.css?v=1.1" rel="stylesheet">
+        <link href="<?php echo make_path_relative( get_template_directory_uri() ); ?>/css/main.css?v=1.1" rel="stylesheet">
 
         <!--[if gte IE 8]>
-        <link href="<?php bloginfo("stylesheet_directory");?>/css/ie8.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo make_path_relative( get_template_directory_uri() ); ?>/css/ie8.css" rel="stylesheet" type="text/css" />
         <![endif]-->
         <!--[if gte IE 9]>
-        <link href="<?php bloginfo("stylesheet_directory");?>/css/ie9.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo make_path_relative( get_template_directory_uri() );?>/css/ie9.css" rel="stylesheet" type="text/css" />
         <![endif]-->
         <!--[if IE ]>
-        <link href="<?php bloginfo("stylesheet_directory");?>/css/ie10.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo make_path_relative( get_template_directory_uri() );?>/css/ie10.css" rel="stylesheet" type="text/css" />
         <![endif]-->
 
         <!-- Main font -->
@@ -43,7 +43,7 @@
 
 
 
-		<?php wp_head(); ?>
+		<?php tna_wp_head(); ?>
         <!-- GA Tag Manager code -->
 
         <script type="text/javascript">

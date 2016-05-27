@@ -56,7 +56,7 @@ function get_top_category_post($cat, $id, $tab){
 
 
 
-            echo('<a href="' .get_the_permalink(). '" title="' .get_the_title(). '"  class="marker" id="' .$divid. '" tabindex="' .$tabindex. '" ></a>');
+            echo('<a href="' . make_path_relative( get_the_permalink() ) . '" title="' . get_the_title() . '"  class="marker" id="' . $divid . '" tabindex="' . $tabindex . '" ></a>');
 
 
         }
@@ -122,4 +122,3 @@ function tna_wp_head() {
     echo $wp_head;
 }
 
-?>
