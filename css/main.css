@@ -20,9 +20,6 @@ main .container{
 .caption{
     font-size: 1.2em;
 }
-*:focus{
-    border:1px solid #e67e22;
-}
 
 * {
     margin:0;
