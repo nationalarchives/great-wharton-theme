@@ -11,7 +11,12 @@ get_header(); ?>
                 </a>
             </div>
             <div class="col-xs-6 about-page">
+                <a href="<?php echo make_path_relative( esc_url(home_url('/', 'http')) );
+                // use category slug for hashtag
+                $category = get_the_category();
+                echo "#".$category[0]->slug;?>" title="Back to Great Wharton">
                 <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-title-colour.png" alt=" Great Wharton title" title="View the introduction to Great Wharton" tabindex="5">
+                </a>
             </div>
         </div>
     </div>
@@ -68,7 +73,7 @@ get_header(); ?>
                                                 if (has_category()) {
                                                     ?>
 
-                                                    <option value="<?php make_path_relative( get_permalink() ); ?>"><?php the_title(); ?></option>
+                                                    <option value="<?php echo make_path_relative( get_permalink() ); ?>"><?php the_title(); ?></option>
 
                                                 <?php
                                                 }

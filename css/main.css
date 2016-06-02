@@ -72,7 +72,7 @@ img {
     background-attachment: fixed;
     background-repeat: no-repeat;
     overflow-x: hidden;
-    padding-top: 1em;
+    padding-top: 15px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -289,8 +289,8 @@ a.button:hover {
     display: none;
     position: fixed;
     z-index: 7000;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 15px;
     background-color: transparent;
     color: #fff;
     text-align: center;
@@ -298,8 +298,8 @@ a.button:hover {
 }
 
 .tna_brand {
-    top: 10px;
-    left: 10px;
+    top: 15px;
+    left: 15px;
     max-width: 285px;
 }
 
