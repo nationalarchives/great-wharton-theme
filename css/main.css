@@ -10,12 +10,10 @@
 
 /* 18/05/2016 additions */
 
-.container {
-
+main .container {
     background-color: #faf8d6;
-
 }
-.container{
+main .container{
     padding-bottom: 20px;
     margin-bottom:20px;
 }
@@ -74,7 +72,7 @@ img {
     background-attachment: fixed;
     background-repeat: no-repeat;
     overflow-x: hidden;
-    padding-top:50px;
+    padding-top: 1em;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -132,6 +130,11 @@ h3, .h3 {
     font-size: 1.4em;
     font-weight: normal;
 }
+
+/* page
+===================================*/
+
+
 
 /* button styles
 ===================================*/
@@ -300,6 +303,10 @@ a.button:hover {
     max-width: 285px;
 }
 
+.page-branding {
+    margin-bottom: 1em;
+}
+
 .info .info_select select {
     background: transparent;
     width: 99%;
@@ -341,8 +348,9 @@ a.button:hover {
 }
 
 .info-toolbar-right {
-    float: right;
+    floaT: right;
     display: inline-block;
+    margin-bottom: 1em;
 }
 
 .info-toolbar-left {
@@ -385,7 +393,7 @@ a.button:hover {
 
 }
 
-.about img{
+.about img, .about-page img{
     width: 100%;
     max-width: 160px;
 }
@@ -440,6 +448,10 @@ a.button:hover {
 }
 .tna_brand a {
     border:0;
+}
+
+.about-page {
+    text-align: right;
 }
 
 .placeholder {
@@ -757,13 +769,23 @@ hr, .hr {
     }
 }
 
+@media (min-width: 1200px) {
+    .page-branding .container {
+        width: 100%;
+    }
+}
+
 @media (max-width: 767px) {
     .container {
         width:90%;
-        padding:0 0 20px 0;
+        padding: 0;
     }
     .inner {
         padding: 10px 10px 50px 10px;
+        border-top: 2px solid #5a6434;
+        border-bottom: 2px solid #5a6434;
+        border-left: 0;
+        border-right: 0;
     }
     .s-grid {
         padding-top:10px;
@@ -811,6 +833,15 @@ hr, .hr {
     }
 }
 
+@media (max-width: 696px) {
+    .info-toolbar-right {
+        width: 100%;
+    }
+    .info .button {
+        margin-bottom: 0.5em;
+    }
+}
+
 /* ALL devices at vipoert 450 */
 @media (max-width:450px){
     .about{
@@ -821,6 +852,21 @@ hr, .hr {
     .tna_brand {
         width:100%;
         margin:0 auto;
+    }
+    .tna-brand-page, .about-page {
+        width: 100%;
+        text-align: center;
+    }
+    .tna-brand-page img, .about-page img {
+        margin: 0 auto;
+    }
+    .info-toolbar-right {
+        width: 100%;
+    }
+    .info .button {
+        margin-bottom: 0.5em;
+        width: 100%;
+        text-align: center;
     }
 }
 /* CSS print*/
