@@ -37,16 +37,13 @@ get_header(); ?>
                         <!--                    </a>-->
 
                         <div class="inner">
-<<<<<<< HEAD
-                            <img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-title.png"
-                                 alt="Welcome to Great Wharton" class="title">
-=======
-                            <a href="<?php echo esc_url(home_url('/', 'http')); ?><?php
+
+                            <a href="<?php echo make_path_relative( esc_url(home_url('/', 'http')) );
                             // use category slug for hashtag
                             $category = get_the_category();
                             echo "#".$category[0]->slug;?>" title="Back to Great Wharton"
                                role="button" class="button">&middot; Back to Great Wharton &middot;</a>
->>>>>>> feature/page-logos
+
                             <?php
                             // show dropdown only if the page has a category i.e. story content
                             if (has_category()) {?>
@@ -70,16 +67,9 @@ get_header(); ?>
                                                 //show only pages with category i.e. hide all non-story content
                                                 if (has_category()) {
                                                     ?>
-<<<<<<< HEAD
 
+                                                    <option value="<?php make_path_relative( get_permalink() ); ?>"><?php the_title(); ?></option>
 
-                                                    <option value="<?php echo make_path_relative( get_permalink() ); ?>"
-
-
-                                                        ><?php the_title(); ?></option>
-=======
-                                                    <option value="<?php the_permalink(); ?>"><?php the_title(); ?></option>
->>>>>>> feature/page-logos
                                                 <?php
                                                 }
                                             }
@@ -120,11 +110,7 @@ get_header(); ?>
                                 <hr>
                             </div>
 
-<<<<<<< HEAD
                             <a href="<?php echo make_path_relative( esc_url(home_url('/', 'http')) );
-=======
-                            <a href="<?php echo esc_url(home_url('/', 'http')); ?><?php
->>>>>>> feature/page-logos
                             // use category slug for hashtag
                             $category = get_the_category();
                             echo "#".$category[0]->slug;?>" title="Back to Great Wharton"
