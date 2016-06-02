@@ -6,12 +6,15 @@ get_header(); ?>
     <div class="container">
         <div class="row">
             <div class="col-xs-6 tna-brand-page">
-                <a href="http://nationalarchives.gov.uk" title="Visit The National Archives website" tabindex="4">
-                    <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-logo-white.png" alt="The National Archives logo" class="img-responsive">
-                </a>
+                <a href="http://nationalarchives.gov.uk" title="Visit The National Archives website" tabindex="4"><img src="<?php bloginfo("stylesheet_directory");?>/images/tna-logo-white.png" alt="The National Archives logo" class="img-responsive"></a>
             </div>
             <div class="col-xs-6 about-page">
+                <a href="<?php echo make_path_relative( esc_url(home_url('/', 'http')) );
+                // use category slug for hashtag
+                $category = get_the_category();
+                echo "#".$category[0]->slug;?>" title="Back to Great Wharton">
                 <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-title-colour.png" alt=" Great Wharton title" title="View the introduction to Great Wharton" tabindex="5">
+                </a>
             </div>
         </div>
     </div>
@@ -68,7 +71,7 @@ get_header(); ?>
                                                 if (has_category()) {
                                                     ?>
 
-                                                    <option value="<?php make_path_relative( get_permalink() ); ?>"><?php the_title(); ?></option>
+                                                    <option value="<?php echo make_path_relative( get_permalink() ); ?>"><?php the_title(); ?></option>
 
                                                 <?php
                                                 }

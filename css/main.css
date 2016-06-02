@@ -72,7 +72,7 @@ img {
     background-attachment: fixed;
     background-repeat: no-repeat;
     overflow-x: hidden;
-    padding-top: 1em;
+    padding-top: 15px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -86,13 +86,22 @@ html {
 /* link styles
 ===================================*/
 
-a:link, a:active, a:focus, a:visited {
+a:link, a:active, a:focus, a:visited, a:hover {
+    text-decoration: none;
+}
+
+.content-columns a:link, .content-columns a:active, .content-columns a:visited {
     color: #5b1c1c;
     text-decoration: none;
     border-bottom: 1px dotted #5b1c1c;
 }
 
-a:hover {
+.content-columns a:focus {
+    background-color: #FCE45C !important;
+    color: #000 !important;
+}
+
+.content-columns a:hover {
     color: #5b1c1c;
     text-decoration: none;
     border-bottom: none;
@@ -289,8 +298,8 @@ a.button:hover {
     display: none;
     position: fixed;
     z-index: 7000;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 15px;
     background-color: transparent;
     color: #fff;
     text-align: center;
@@ -298,8 +307,8 @@ a.button:hover {
 }
 
 .tna_brand {
-    top: 10px;
-    left: 10px;
+    top: 15px;
+    left: 15px;
     max-width: 285px;
 }
 
