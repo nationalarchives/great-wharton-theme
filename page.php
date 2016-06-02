@@ -7,10 +7,10 @@ get_header(); ?>
         <div class="row">
             <div class="col-xs-6 tna-brand-page">
                 <a href="http://nationalarchives.gov.uk" title="Visit The National Archives website" tabindex="4">
-                    <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-logo-white.png" alt="The National Archives logo">
+                    <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-logo-white.png" alt="The National Archives logo" class="img-responsive">
                 </a>
             </div>
-            <div class="col-xs-6 about-page text-right">
+            <div class="col-xs-6 about-page">
                 <img src="<?php bloginfo("stylesheet_directory");?>/images/tna-wharton-title-colour.png" alt=" Great Wharton title" title="View the introduction to Great Wharton" tabindex="5">
             </div>
         </div>
@@ -37,13 +37,15 @@ get_header(); ?>
                         <!--                    </a>-->
 
                         <div class="inner">
-                            <img src="<?php bloginfo("stylesheet_directory"); ?>/images/tna-wharton-title.png"
-                                 alt="Welcome to Great Wharton" class="title">
+                            <a href="<?php echo esc_url(home_url('/', 'http')); ?><?php
+                            // use category slug for hashtag
+                            $category = get_the_category();
+                            echo "#".$category[0]->slug;?>" title="Back to Great Wharton"
+                               role="button" class="button">&middot; Back to Great Wharton &middot;</a>
                             <?php
                             // show dropdown only if the page has a category i.e. story content
-
                             if (has_category()) {?>
-                            <div class="info-toolbar-left">
+                            <div class="info-toolbar-right">
                                 <div class="info_select">
                                     <select onchange="if (this.value) window.location.href=this.value">
                                         <option value="">Select a story</option>
@@ -55,31 +57,18 @@ get_header(); ?>
                                             'post__not_in' => array(get_option('page_on_front')),
 
                                         );
-
                                         $page_query = new WP_Query($pageargs);
-
                                         if ($page_query->have_posts()) {
-
                                             while ($page_query->have_posts()) {
                                                 $page_query->the_post();
-
                                                 $page_id = $page_query->post->ID;
-
                                                 //show only pages with category i.e. hide all non-story content
-
                                                 if (has_category()) {
-
                                                     ?>
-
-
-                                                    <option value="<?php the_permalink(); ?>"
-
-
-                                                        ><?php the_title(); ?></option>
+                                                    <option value="<?php the_permalink(); ?>"><?php the_title(); ?></option>
                                                 <?php
                                                 }
                                             }
-
                                         }
 
                                         wp_reset_postdata();
@@ -118,12 +107,11 @@ get_header(); ?>
                             </div>
 
                             <a href="<?php echo esc_url(home_url('/', 'http')); ?><?php
-
                             // use category slug for hashtag
-
                             $category = get_the_category();
                             echo "#".$category[0]->slug;?>" title="Back to Great Wharton"
                                role="button" class="button">&middot; Back to Great Wharton &middot;</a>
+
                             <span class='st_sharethis_large'>Share this</span>
 
                         </div>
