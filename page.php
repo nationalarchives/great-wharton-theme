@@ -7,7 +7,7 @@ get_header(); ?>
 		<div class="row">
 			<div class="col-xs-6 tna-brand-page">
 				<a href="http://nationalarchives.gov.uk" title="Visit The National Archives website"><img
-						src="<?php bloginfo( "stylesheet_directory" ); ?>/images/tna-logo-white.png"
+						src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-logo-white.png"
 						alt="The National Archives logo" class="img-responsive"></a>
 			</div>
 			<div class="col-xs-6 about-page">
@@ -15,7 +15,7 @@ get_header(); ?>
 				// use category slug for hashtag
 				$category = get_the_category();
 				echo "#" . $category[0]->slug; ?>" title="Back to Great Wharton">
-					<img src="<?php bloginfo( "stylesheet_directory" ); ?>/images/tna-wharton-title-colour.png"
+					<img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-title-colour.png"
 					     alt=" Great Wharton title" title="Back to Great Wharton">
 				</a>
 			</div>
