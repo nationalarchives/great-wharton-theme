@@ -86,13 +86,22 @@ html {
 /* link styles
 ===================================*/
 
-a:link, a:active, a:focus, a:visited {
+a:link, a:active, a:focus, a:visited, a:hover {
+    text-decoration: none;
+}
+
+.content-columns a:link, .content-columns a:active, .content-columns a:visited {
     color: #5b1c1c;
     text-decoration: none;
     border-bottom: 1px dotted #5b1c1c;
 }
 
-a:hover {
+.content-columns a:focus {
+    background-color: #FCE45C !important;
+    color: #000 !important;
+}
+
+.content-columns a:hover {
     color: #5b1c1c;
     text-decoration: none;
     border-bottom: none;
