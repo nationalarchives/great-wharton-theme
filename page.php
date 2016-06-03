@@ -84,7 +84,7 @@ get_header(); ?>
 									<img src="<?php echo make_path_relative( $image_src ); ?>" width="100%"
 									     alt="Image of <?php echo( $image_caption ); ?>"
 									     title="<?php echo( $image_caption ); ?>">
-									<p class="caption alignright"><?php echo( $image_caption ); ?></p>
+									<p class="caption text-right"><?php echo( $image_caption ); ?></p>
 								</div>
 								<?php
 							}
