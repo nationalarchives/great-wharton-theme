@@ -87,6 +87,10 @@ a:link, a:active, a:focus, a:visited, a:hover {
     text-decoration: none;
 }
 
+a:focus, input:focus {
+    outline: #ebab00 solid 3px;
+}
+
 .content-columns a:link, .content-columns a:active, .content-columns a:visited {
     color: #5b1c1c;
     text-decoration: none;
@@ -140,6 +144,10 @@ h3, .h3 {
 /* page
 ===================================*/
 
+.tna-brand-page img {
+    max-width: 100%;
+    height: auto;
+}
 
 
 /* button styles

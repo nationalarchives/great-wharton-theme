@@ -8,7 +8,7 @@ get_header(); ?>
 			<div class="col-xs-6 tna-brand-page">
 				<a href="http://nationalarchives.gov.uk" title="Visit The National Archives website"><img
 						src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-logo-white.png"
-						alt="The National Archives logo" class="img-responsive"></a>
+						alt="The National Archives logo"></a>
 			</div>
 			<div class="col-xs-6 about-page">
 				<a href="<?php echo make_path_relative( esc_url( home_url( '/', 'http' ) ) );
