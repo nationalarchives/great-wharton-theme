@@ -38,6 +38,7 @@ body {
     margin: 0;
     font-size:1.2em;
     line-height: 2em;
+    background-color: #000;
 
 }
 
@@ -56,9 +57,9 @@ img {
 
 
 .f-grid {
-    background: url(../images/tna-wharton-iso-grid.jpg);
-    background-repeat: repeat;
-    overflow: hidden;
+    /*background: url(../images/tna-wharton-iso-grid.jpg);*/
+    /*background-repeat: repeat;*/
+    /*overflow: hidden;*/
     /*-webkit-background-size: cover;*/
     /*-moz-background-size: cover;*/
     /*-o-background-size: cover;*/
@@ -316,7 +317,6 @@ a.button:hover {
     left: 15px;
     max-width: 285px;
 }
-
 .page-branding {
     margin-bottom: 1em;
 }
@@ -634,7 +634,25 @@ hr, .hr {
 .main_background div img {
     height:100%;
 }
-/* Learn more */
+
+/* Zoom */
+.map-zoom{
+    position: fixed;
+    bottom:10px;
+    left: 10px;
+    padding:10px;
+    z-index: 99999;
+    color: #fff;
+    cursor: pointer;font-size: 2em;
+    background-color: rgba(0, 0,0, 0.52);
+    display: none;
+}
+.map-zoom .fa-plus, .map-zoom .fa-minus{
+
+    background-color: #000;
+    padding: 5px;
+}
+    /* Learn more */
 
 .learn_more_wrap {
     position:fixed;
@@ -760,6 +778,13 @@ hr, .hr {
     top: 51.6%;
     left: 42.3%;
 }
+
+
+#houses {
+    top: 46.6%;
+    left: 24.7%;
+}
+
 
 #eggtrain {
     top: 80.3%;

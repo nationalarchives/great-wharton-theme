@@ -23,6 +23,7 @@
 
     if (hashTag == "#schools" || hashTag == "") {
 
+
         TweenLite.to("#wrapper", 2, {x: -820, y: -1600, ease: Circ.easeOut});
     }
 
@@ -63,7 +64,10 @@ if (hashTag == "#hunt") {
 
     TweenLite.to("#wrapper", 2, {x: -720, y: +920, ease: Circ.easeOut});
 }
+if (hashTag == "#houses") {
 
+    TweenLite.to("#wrapper", 2, {x: -500, y: +330, ease: Circ.easeOut});
+}
 
     /* ---------------------------------------------------------------
      * 1. Show/hide assets
@@ -82,6 +86,8 @@ if (hashTag == "#hunt") {
         $('.tna_brand').fadeIn(600);
         $('.learn_more_wrap').fadeIn(600);
         $('.about').fadeIn(600);
+        //$('.map-zoom').fadeIn(600);
+
     }
 
     // If Enter button is clicked then fade-in/fade-out assets
@@ -92,7 +98,7 @@ if (hashTag == "#hunt") {
         $('.about').fadeIn(600);
         $('.tna_brand').fadeIn(600);
         $('.learn_more_wrap').fadeIn(600);
-        TweenLite.to("#wrapper", 3, {x: -600, y: -600, ease: Circ.easeOut});
+        //$('.map-zoom').fadeIn(600);
         createCookie('gw-hide-intro', true, 1)
     });
 
@@ -104,8 +110,8 @@ if (hashTag == "#hunt") {
         $('.about').fadeIn(600);
         $('.info').fadeOut(600);
         $('.tna_brand').fadeIn(600);
+        //$('.map-zoom').fadeIn(600);
         $('.learn_more_wrap').fadeIn(600);
-        TweenLite.to("#wrapper", 3, {x: -600, y: -600, ease: Circ.easeOut});
         createCookie('gw-hide-intro', true, 1)
     });
 
@@ -115,6 +121,8 @@ if (hashTag == "#hunt") {
         $('.intro').fadeIn(600);
         $('.about').fadeOut(600);
         $('.tna_brand').fadeOut(600);
+
+        //$('.map-zoom').fadeOut(600);
         $('.learn_more_wrap').fadeOut(600);
     });
 
@@ -187,6 +195,7 @@ if (hashTag == "#hunt") {
     Draggable.create("#wrapper", {
         type: "x,y",
         edgeResistance: 0.99,
+        bounds: ".f-grid",
         throwProps: true,
         snap: {
             x: function (endValue) {
@@ -199,6 +208,7 @@ if (hashTag == "#hunt") {
     });
 
 
+
     // Draggable js end here
 
     /* ---------------------------------------------------------------
@@ -209,28 +219,50 @@ if (hashTag == "#hunt") {
     $('.main_background').tiles({
         original: {
             width: 4000,
-            height: 2232
+            height: 3000
         },
         basePath: "/wp-content/themes/great-wharton-theme/",
         zoom: 1
     });
 
-    /* ---------------------------------------------------------------
-     * 7. Share this button
-     * ---------------------------------------------------------------
-     * */
 
-    // Share this
-var stlight = "";
-    stLight.options({
-        publisher: "e1514b1f-8114-4751-a7dc-7af051944bf6",
-        doNotHash: false,
-        doNotCopy: false,
-        hashAddressBar: false,
-        onhover: false
-    });
 
-    $(".st_sharethis_large").show("slow");
+/*
+
+Zoom
+ */
+
+
+//
+//$(".map-zoom .fa-minus").click(function () {
+//    TweenMax.to("#wrapper", 2, {
+//        scale:0.6, transformOrigin:"50% 50%"
+//    });
+//});
+//
+//$(".map-zoom .fa-plus").click(function() {
+//    TweenMax.to("#wrapper", 2, {
+//        scale:1, transformOrigin:"50% 50%"
+//    });
+//});
+
+/* ---------------------------------------------------------------
+ * 7. Share this button
+ * ---------------------------------------------------------------
+ * */
+
+// Share this
+var stLight = "";
+stLight.options({
+    publisher: "e1514b1f-8114-4751-a7dc-7af051944bf6",
+    doNotHash: false,
+    doNotCopy: false,
+    hashAddressBar: false,
+    onhover: false
+});
+
+$(".st_sharethis_large").show("slow");
+
 
 
 
