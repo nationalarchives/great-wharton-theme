@@ -37,11 +37,21 @@ get_header(); ?>
 
             <!-- Canvas viewer start here-->
             <div class="canvas-viewer" id="wrapper">
+<!--
+Pass Category, CSS ID and Tab
 
+-->
 
                 <?php get_top_category_post('schools', 'children', '6');?>
                 <?php get_top_category_post('food-shortages', 'eggtrain', '7');?>
                 <?php get_top_category_post('zeppellin-raids', 'enemy-action', '8');?>
+                <?php get_top_category_post('railway-gates', 'railway-gates', '9');?>
+                <?php get_top_category_post('shop', 'shop', '10');?>
+                <?php get_top_category_post('strike', 'strike', '11');?>
+                <?php get_top_category_post('road', 'road', '12');?>
+                <?php get_top_category_post('factory', 'factory', '12');?>
+                <?php get_top_category_post('field', 'field', '12');?>
+                <?php get_top_category_post('hunt', 'hunt', '13');?>
 
                 <!--                <a href="wharton-sub.htm" tabindex="1">-->
                 <!--                    <div class="marker" id="children"></div>-->

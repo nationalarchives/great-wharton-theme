@@ -23,17 +23,46 @@
 
     if (hashTag == "#schools" || hashTag == "") {
 
-        TweenLite.to("#wrapper", 2, {x: -600, y: -600, ease: Circ.easeOut});
+        TweenLite.to("#wrapper", 2, {x: -820, y: -1600, ease: Circ.easeOut});
     }
 
     if (hashTag == "#food-shortages") {
 
-        TweenLite.to("#wrapper", 2, {x: -300, y: -1400, ease: Circ.easeOut});
+        TweenLite.to("#wrapper", 2, {x: -300, y: -2200, ease: Circ.easeOut});
     }
     if (hashTag == "#zeppellin-raids") {
 
-        TweenLite.to("#wrapper", 2, {x: -1300, y: -1200, ease: Circ.easeOut});
+        TweenLite.to("#wrapper", 2, {x: -2000, y: -900, ease: Circ.easeOut});
     }
+    if (hashTag == "#railway-gates") {
+
+        TweenLite.to("#wrapper", 2, {x: -100, y: -1000, ease: Circ.easeOut});
+    }
+    if (hashTag == "#shop") {
+
+        TweenLite.to("#wrapper", 2, {x: -600, y: +200, ease: Circ.easeOut});
+    }
+    if (hashTag == "#strike") {
+
+        TweenLite.to("#wrapper", 2, {x: -600, y: 400, ease: Circ.easeOut});
+}
+
+if (hashTag == "#road") {
+
+    TweenLite.to("#wrapper", 2, {x: -600, y: 720, ease: Circ.easeOut});
+}
+if (hashTag == "#factory") {
+
+    TweenLite.to("#wrapper", 2, {x: -600, y: 250, ease: Circ.easeOut});
+}
+if (hashTag == "#field") {
+
+    TweenLite.to("#wrapper", 2, {x: -520, y: 620, ease: Circ.easeOut});
+}
+if (hashTag == "#hunt") {
+
+    TweenLite.to("#wrapper", 2, {x: -720, y: +920, ease: Circ.easeOut});
+}
 
 
     /* ---------------------------------------------------------------
@@ -158,7 +187,6 @@
     Draggable.create("#wrapper", {
         type: "x,y",
         edgeResistance: 0.99,
-        bounds: ".f-grid",
         throwProps: true,
         snap: {
             x: function (endValue) {
@@ -193,6 +221,7 @@
      * */
 
     // Share this
+var stlight = "";
     stLight.options({
         publisher: "e1514b1f-8114-4751-a7dc-7af051944bf6",
         doNotHash: false,

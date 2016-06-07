@@ -96,7 +96,7 @@
                 var $tile = $('<div/>');
                 $tile.css({
                     'width': tileSize,
-                    'height': 558,
+                    'height': 750,
                     'float': 'left',
                     'text-align': 'left',
                     'vertical-align': 'top'
