@@ -234,11 +234,13 @@ Zoom
 
 $(".map-zoom .fa-minus").click(function () {
     $("#wrapper").animate({ 'zoom':.5 }, 400);
+    draggable[0].update();
 
 });
 
 $(".map-zoom .fa-plus").click(function() {
     $("#wrapper").animate({ 'zoom':1 }, 400);
+    draggable[0].update();
 
 });
 

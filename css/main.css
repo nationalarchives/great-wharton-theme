@@ -710,7 +710,7 @@ hr, .hr {
 }
 /* markers
 ===================================*/
-.marker, .marker-secret {
+a.marker, .marker-secret {
     width: 36px;
     height: 58px;
     background: url("../images/tna-wharton-marker.png");
@@ -722,6 +722,9 @@ hr, .hr {
     cursor: pointer;
     border-bottom:none !important;
     z-index:1001
+}
+a.marker:visited{
+
 }
 
 .canvas-viewer a:focus{
