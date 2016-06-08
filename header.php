@@ -5,7 +5,9 @@
 		<title>
             <?php
             if (is_front_page()){
-                echo("Great Wharton -");
+              bloginfo("name");
+echo(" -");
+
             }else{
 
             wp_title('-',true,'right'); }?> The National Archives
