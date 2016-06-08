@@ -27,7 +27,7 @@
         TweenLite.to("#wrapper", 2, {x: -820, y: -1600, ease: Circ.easeOut});
     }
 
-    if (hashTag == "#food-shortages") {
+    if (hashTag == "#food-shortages" || hashTag == "#railway-gates") {
 
         TweenLite.to("#wrapper", 2, {x: -300, y: -2200, ease: Circ.easeOut});
     }
@@ -35,10 +35,7 @@
 
         TweenLite.to("#wrapper", 2, {x: -2000, y: -900, ease: Circ.easeOut});
     }
-    if (hashTag == "#railway-gates") {
 
-        TweenLite.to("#wrapper", 2, {x: -100, y: -1000, ease: Circ.easeOut});
-    }
     if (hashTag == "#shop") {
 
         TweenLite.to("#wrapper", 2, {x: -600, y: +200, ease: Circ.easeOut});
@@ -86,7 +83,7 @@ if (hashTag == "#houses") {
         $('.tna_brand').fadeIn(600);
         $('.learn_more_wrap').fadeIn(600);
         $('.about').fadeIn(600);
-        //$('.map-zoom').fadeIn(600);
+        $('.map-zoom').fadeIn(600);
 
     }
 
@@ -98,7 +95,7 @@ if (hashTag == "#houses") {
         $('.about').fadeIn(600);
         $('.tna_brand').fadeIn(600);
         $('.learn_more_wrap').fadeIn(600);
-        //$('.map-zoom').fadeIn(600);
+        $('.map-zoom').fadeIn(600);
         createCookie('gw-hide-intro', true, 1)
     });
 
@@ -110,7 +107,7 @@ if (hashTag == "#houses") {
         $('.about').fadeIn(600);
         $('.info').fadeOut(600);
         $('.tna_brand').fadeIn(600);
-        //$('.map-zoom').fadeIn(600);
+        $('.map-zoom').fadeIn(600);
         $('.learn_more_wrap').fadeIn(600);
         createCookie('gw-hide-intro', true, 1)
     });
@@ -122,7 +119,7 @@ if (hashTag == "#houses") {
         $('.about').fadeOut(600);
         $('.tna_brand').fadeOut(600);
 
-        //$('.map-zoom').fadeOut(600);
+        $('.map-zoom').fadeOut(600);
         $('.learn_more_wrap').fadeOut(600);
     });
 
@@ -233,18 +230,17 @@ Zoom
  */
 
 
-//
-//$(".map-zoom .fa-minus").click(function () {
-//    TweenMax.to("#wrapper", 2, {
-//        scale:0.6, transformOrigin:"50% 50%"
-//    });
-//});
-//
-//$(".map-zoom .fa-plus").click(function() {
-//    TweenMax.to("#wrapper", 2, {
-//        scale:1, transformOrigin:"50% 50%"
-//    });
-//});
+
+
+$(".map-zoom .fa-minus").click(function () {
+    $("#wrapper").animate({ 'zoom':.5 }, 400);
+
+});
+
+$(".map-zoom .fa-plus").click(function() {
+    $("#wrapper").animate({ 'zoom':1 }, 400);
+
+});
 
 /* ---------------------------------------------------------------
  * 7. Share this button

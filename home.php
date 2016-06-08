@@ -31,7 +31,7 @@ get_header(); ?>
                 <img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-logo-white.png" alt="The National Archives logo">
             </a>
         </div>
-        <div class="map-zoom">Zoom <i class="fa fa-plus" aria-hidden="true"></i> <i class="fa fa-minus" aria-hidden="true"></i></div>
+        <div class="map-zoom">Zoom <i class="fa fa-plus" aria-hidden="true" title="Zoom in"></i> <i class="fa fa-minus" aria-hidden="true" title="Zoom out"></i></div>
         <!-- Main wrapper start here -->
         <section class="wrapper">
             <h1 class="sr-only"><?php the_title();?></h1>
