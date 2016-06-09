@@ -711,22 +711,40 @@ hr, .hr {
 /* markers
 ===================================*/
 a.marker, .marker-secret {
-    width: 36px;
-    height: 58px;
-    background: url("../images/tna-wharton-marker.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    width: auto;
+    height: auto;
+    padding:6px 6px 3px 6px;
+    /*background: url("../images/tna-wharton-marker.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: 100%;*/
     position: absolute;
-    -webkit-animation: pulse 1s linear infinite;
-    animation: pulse 1s linear infinite;
+    /*-webkit-animation: pulse 1s linear infinite;*/
+    /*animation: pulse 1s linear infinite;*/
     cursor: pointer;
     border-bottom:none !important;
-    z-index:1001
+    z-index:1001;
+    background-color: #fff;
+    color:#000;
+    font-size:2em;
+    /*box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);*/
+}
+a.marker:hover{
+    -webkit-animation: pulse 1s linear infinite;
+    animation: pulse 1s linear infinite;
 }
 a.marker:visited{
+  color: #95A5A6;
+}
+a.marker::after{
+    content: "\f0d7";
+font-family: FontAwesome;
+    color:#fff;
+    position: absolute;
+    bottom:-15px;
+    right:50%;
+    font-size: 2em;
 
 }
-
 .canvas-viewer a:focus{
     border:2px solid #e67e22 !important;
 }
@@ -738,13 +756,13 @@ a.marker:visited{
 
 
 #children {
-    top:63%;
-    left: 35%;
+    top:62%;
+    left: 33%;
 }
 
 #munitions-factory {
-    top:51.5%;
-    right: 36.6%;
+    top:49.5%;
+    right: 33.6%;
 }
 
 
@@ -763,7 +781,7 @@ a.marker:visited{
 }
 #munitions-workers {
     top: 53%;
-    right: 45%;
+    right: 40%;
 }
 
 
@@ -790,8 +808,8 @@ a.marker:visited{
 
 
 #eggtrain {
-    top: 80.3%;
-    left: 20%;
+    top: 80%;
+    left: 11%;
 }
 
 #propaganda {
@@ -803,7 +821,7 @@ a.marker:visited{
 
 #scouts{
     top: 83.3%;
-    left: 13%;
+    left: 5.7%;
 }
 .characters {
 

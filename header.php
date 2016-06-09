@@ -44,7 +44,6 @@ echo(" -");
         </script>
 
 
-
 		<?php tna_wp_head(); ?>
         <!-- GA Tag Manager code -->
 
