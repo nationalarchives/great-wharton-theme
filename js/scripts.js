@@ -22,12 +22,17 @@
     var hashTag = window.location.hash;
 
     if (hashTag == "#schools" || hashTag == "") {
+     TweenLite.to("#wrapper", 2, {x: -820, y: -1600, ease: Circ.easeOut});
 
 
-        TweenLite.to("#wrapper", 2, {x: -820, y: -1600, ease: Circ.easeOut});
     }
 
-    if (hashTag == "#food-shortages" || hashTag == "#railway-gates") {
+    if (hashTag == "#food-shortages") {
+
+        TweenLite.to("#wrapper", 2, {x: -300, y: -2200, ease: Circ.easeOut});
+    }
+
+    if (hashTag == "#railway-gates") {
 
         TweenLite.to("#wrapper", 2, {x: -300, y: -2200, ease: Circ.easeOut});
     }
@@ -36,35 +41,35 @@
         TweenLite.to("#wrapper", 2, {x: -2000, y: -900, ease: Circ.easeOut});
     }
 
-    if (hashTag == "#shop") {
+    if (hashTag == "#grocery-shop") {
 
-        TweenLite.to("#wrapper", 2, {x: -600, y: +200, ease: Circ.easeOut});
+        TweenLite.to("#wrapper", 2, {x: -1170, y: -1400, ease: Circ.easeOut});
     }
     if (hashTag == "#strike") {
 
-        TweenLite.to("#wrapper", 2, {x: -600, y: 400, ease: Circ.easeOut});
-}
+        TweenLite.to("#wrapper", 2, {x: -1800, y: -1660, ease: Circ.easeOut});
+    }
 
-if (hashTag == "#road") {
+    if (hashTag == "#road") {
 
-    TweenLite.to("#wrapper", 2, {x: -600, y: 720, ease: Circ.easeOut});
-}
-if (hashTag == "#factory") {
+        TweenLite.to("#wrapper", 2, {x: -1600, y: -1320, ease: Circ.easeOut});
+    }
+    if (hashTag == "#factory") {
 
-    TweenLite.to("#wrapper", 2, {x: -600, y: 250, ease: Circ.easeOut});
-}
-if (hashTag == "#field") {
+        TweenLite.to("#wrapper", 2, {x: -1900, y: -1350, ease: Circ.easeOut});
+    }
+    if (hashTag == "#field") {
 
-    TweenLite.to("#wrapper", 2, {x: -520, y: 620, ease: Circ.easeOut});
-}
-if (hashTag == "#hunt") {
+        TweenLite.to("#wrapper", 2, {x: -1700, y: -650, ease: Circ.easeOut});
+    }
+    if (hashTag == "#hunt") {
 
-    TweenLite.to("#wrapper", 2, {x: -720, y: +920, ease: Circ.easeOut});
-}
-if (hashTag == "#houses") {
+        TweenLite.to("#wrapper", 2, {x: -1920, y: -60, ease: Circ.easeOut});
+    }
+    if (hashTag == "#rationing") {
 
-    TweenLite.to("#wrapper", 2, {x: -500, y: +330, ease: Circ.easeOut});
-}
+        TweenLite.to("#wrapper", 2, {x: -480, y: -1150, ease: Circ.easeOut});
+    }
 
     /* ---------------------------------------------------------------
      * 1. Show/hide assets
@@ -189,7 +194,7 @@ if (hashTag == "#houses") {
 
     var gridWidth = 100;
     var gridHeight = 100;
-    Draggable.create("#wrapper", {
+Draggable.create("#wrapper", {
         type: "x,y",
         edgeResistance: 0.99,
         bounds: ".f-grid",
@@ -233,14 +238,14 @@ Zoom
 
 
 $(".map-zoom .fa-minus").click(function () {
-    $("#wrapper").animate({ 'zoom':.5 }, 400);
-    draggable[0].update();
+    //$("#wrapper").animate({ 'zoom':.5 }, 400);
+    TweenLite.to("#wrapper", 1, {scale:.5});
 
 });
 
 $(".map-zoom .fa-plus").click(function() {
-    $("#wrapper").animate({ 'zoom':1 }, 400);
-    draggable[0].update();
+    //$("#wrapper").animate({ 'zoom':1 }, 400);
+    TweenLite.to("#wrapper", 1, {scale:1});
 
 });
 
@@ -260,8 +265,6 @@ stLight.options({
 });
 
 $(".st_sharethis_large").show("slow");
-
-
 
 
 

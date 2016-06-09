@@ -742,26 +742,26 @@ a.marker:visited{
     left: 35%;
 }
 
-#factory {
+#munitions-factory {
     top:51.5%;
     right: 36.6%;
 }
 
 
-#field {
+#child-labour {
     top:28.5%;
     right: 42.6%;
 }
 
-#hunt {
+#forest {
     top:8.5%;
     right: 35.6%;
 }
-#strike {
+#industrial-action {
     top: 64%;
     right: 42%;
 }
-#road {
+#munitions-workers {
     top: 53%;
     right: 45%;
 }
@@ -801,7 +801,7 @@ a.marker:visited{
     height: 70px;
 }
 
-#railway-gates{
+#scouts{
     top: 83.3%;
     left: 13%;
 }

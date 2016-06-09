@@ -41,19 +41,21 @@ get_header(); ?>
 <!--
 Pass Category, CSS ID and Tab
 
+CSS ID must NOT be same as hashtag, otherwise it will interfere with the repositioning.
+
 -->
 
                 <?php get_top_category_post('schools', 'children', '6');?>
                 <?php get_top_category_post('food-shortages', 'eggtrain', '7');?>
                 <?php get_top_category_post('zeppellin-raids', 'enemy-action', '8');?>
-                <?php get_top_category_post('railway-gates', 'railway-gates', '9');?>
-                <?php get_top_category_post('shop', 'shop', '10');?>
-                <?php get_top_category_post('strike', 'strike', '11');?>
-                <?php get_top_category_post('road', 'road', '12');?>
-                <?php get_top_category_post('factory', 'factory', '12');?>
-                <?php get_top_category_post('field', 'field', '12');?>
-                <?php get_top_category_post('hunt', 'hunt', '13');?>
-                <?php get_top_category_post('houses', 'houses', '13');?>
+                <?php get_top_category_post('railway-gates', 'scouts', '9');?>
+                <?php get_top_category_post('grocery-shop', 'shop', '10');?>
+                <?php get_top_category_post('strike', 'industrial-action', '11');?>
+                <?php get_top_category_post('road', 'munitions-workers', '12');?>
+                <?php get_top_category_post('factory', 'munitions-factory', '13');?>
+                <?php get_top_category_post('field', 'child-labour', '14');?>
+                <?php get_top_category_post('hunt', 'forest', '15');?>
+                <?php get_top_category_post('rationing', 'houses', '16');?>
 
                 <!--                <a href="wharton-sub.htm" tabindex="1">-->
                 <!--                    <div class="marker" id="children"></div>-->
