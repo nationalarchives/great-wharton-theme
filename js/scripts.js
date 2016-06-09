@@ -197,7 +197,7 @@
 Draggable.create("#wrapper", {
         type: "x,y",
         edgeResistance: 0.99,
-        bounds: ".f-grid",
+    bounds:window,
         throwProps: true,
         snap: {
             x: function (endValue) {
@@ -239,7 +239,18 @@ Zoom
 
 $(".map-zoom .fa-minus").click(function () {
     //$("#wrapper").animate({ 'zoom':.5 }, 400);
-    TweenLite.to("#wrapper", 1, {scale:.5});
+    //TweenLite.to("#wrapper", 1, {scale:.5});
+
+    TweenLite.to("#wrapper", 0.5 ,
+        {
+            scale:.5,
+            onUpdate:function()
+            {
+                Draggable.get("#wrapper").applyBounds();
+            }
+        });
+
+
 
 });
 
