@@ -39,7 +39,7 @@ body {
     font-size:1.2em;
     line-height: 2em;
     background-color: #000;
-overflow: hidden;
+
 }
 
 /*a {*/
@@ -64,6 +64,7 @@ img {
     /*-moz-background-size: cover;*/
     /*-o-background-size: cover;*/
     /*background-size: cover;*/
+    overflow: hidden;
 }
 .s-grid {
     background: url(../images/tna-wharton-background-page.jpg);
@@ -198,10 +199,10 @@ a.button:hover {
     margin:40px 0 0 0;
 }
 .info .button {
-    font-size:18px;
+    font-size:1.6em;
 }
 .content-columns {
-    font-size:20px;
+    font-size:1.6em;
 }
 .half {
     width: 100%;
@@ -325,7 +326,7 @@ a.button:hover {
     background: transparent;
     width: 99%;
     padding: 5px 40px 5px 5px;
-    font-size: 22px;
+    font-size: 1.6em;
     border: 0;
     border-radius: 0;
     height: 40px;
@@ -436,7 +437,7 @@ a.button:hover {
 
 }
 .st_sharethis_large {
-    font-size: 22px;
+    font-size: 1.6em;
     margin-left:5px;
     float:right;
 }
@@ -646,6 +647,7 @@ hr, .hr {
     cursor: pointer;font-size: 2em;
     background-color: rgba(0, 0,0, 0.52);
     display: none;
+    margin-left: 0px;
 }
 .map-zoom .fa-plus, .map-zoom .fa-minus{
 
@@ -673,7 +675,7 @@ hr, .hr {
     padding:10px 20px;
     box-sizing:border-box;
     height:inherit;
-    font-size:1.3em;
+    font-size:1.6em;
     position:relative;
     z-index:23;
     line-height:1.2em;
@@ -724,9 +726,8 @@ a.marker, .marker-secret {
     border-bottom:none !important;
     z-index:1001;
     background-color: #fff;
-    color:#666f41;
+    color: #000;
     font-size:2em;
-    font-weight: bold;
     /*box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);*/
 }
 a.marker:hover{
@@ -734,8 +735,8 @@ a.marker:hover{
     animation: pulse 1s linear infinite;
 }
 a.marker:visited{
-  color: #868686;
-    font-weight: normal;
+    color:#7b7b7b;
+
 }
 a.marker::after{
     content: "\f0d7";
@@ -770,19 +771,19 @@ font-family: FontAwesome;
 
 #child-labour {
     top:28.5%;
-    right: 42.6%;
+    right: 40.2%;
 }
 
 #forest {
     top:8.5%;
-    right: 35.6%;
+    right: 33.6%;
 }
 #industrial-action {
     top: 64%;
     right: 42%;
 }
 #munitions-workers {
-    top: 53%;
+    top: 52.6%;
     right: 40%;
 }
 
@@ -805,13 +806,13 @@ font-family: FontAwesome;
 
 #houses {
     top: 46.6%;
-    left: 24.7%;
+    left: 21.7%;
 }
 
 
 #eggtrain {
     top: 80%;
-    left: 11%;
+    left: 15%;
 }
 
 #propaganda {
@@ -823,7 +824,7 @@ font-family: FontAwesome;
 
 #scouts{
     top: 83.3%;
-    left: 5.7%;
+    left: 9%;
 }
 .characters {
 
@@ -861,6 +862,7 @@ font-family: FontAwesome;
 }
 
 @media (max-width: 767px) {
+
     .container {
         width:90%;
         padding: 0;
@@ -929,6 +931,12 @@ font-family: FontAwesome;
 
 /* ALL devices at vipoert 450 */
 @media (max-width:450px){
+
+
+
+        .map-zoom{
+            margin-left:-100000px;
+        }
     .about{
         top:60px;
         widtH:100%;

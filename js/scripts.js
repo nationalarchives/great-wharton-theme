@@ -258,7 +258,7 @@ if (hashTag == "#food-shortages") {
 
 if (hashTag == "#railway-gates") {
 
-    TweenLite.to("#wrapper", 2, {x: -300, y: -2200, ease: Circ.easeOut, onUpdate:function()
+    TweenLite.to("#wrapper", 2, {x: -10, y: -2200, ease: Circ.easeOut, onUpdate:function()
     {
         Draggable.get("#wrapper").applyBounds();
     }});
@@ -321,4 +321,3 @@ if (hashTag == "#rationing") {
         Draggable.get("#wrapper").applyBounds();
     }});
 }
-
