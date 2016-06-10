@@ -648,6 +648,7 @@ hr, .hr {
     background-color: rgba(0, 0,0, 0.52);
     display: none;
     margin-left: 0px;
+    width:auto;
 }
 .map-zoom .fa-plus, .map-zoom .fa-minus{
 
@@ -663,7 +664,7 @@ hr, .hr {
     right:0;
     display:block;
     text-align:center;
-    height: 101px;
+    height: 110px;
     display:none;
 
 
@@ -695,7 +696,7 @@ hr, .hr {
 }
 .learn_more_close .fa-angle-left,
 .learn_more_close .fa-times {
-    margin:28px 3px 3px 3px;
+    margin:36px 3px 3px 3px;
     color:#5a6434;
 }
 .learn_more_close .fa-angle-left:hover,
@@ -933,9 +934,10 @@ font-family: FontAwesome;
 @media (max-width:450px){
 
 
-
-        .map-zoom{
-            margin-left:-100000px;
+    .map-zoom{
+        width:80px;
+        padding:2px;
+        text-align: center;
         }
     .about{
         top:60px;
