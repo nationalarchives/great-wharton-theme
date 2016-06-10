@@ -263,7 +263,7 @@ if (hashTag == "#railway-gates") {
         Draggable.get("#wrapper").applyBounds();
     }});
 }
-if (hashTag == "#zeppellin-raids") {
+if (hashTag == "#zeppelin-raids") {
 
     TweenLite.to("#wrapper", 2, {x: -2000, y: -900, ease: Circ.easeOut, onUpdate:function()
     {

@@ -52,7 +52,7 @@ CSS ID must NOT be same as hashtag, otherwise it will interfere with the reposit
                 <?php get_top_category_post('strike', 'industrial-action', '11');?>
                 <?php get_top_category_post('women-drinking', 'munitions-workers', '12');?>
                 <?php get_top_category_post('factory', 'munitions-factory', '13');?>
-                <?php get_top_category_post('zeppellin-raids', 'enemy-action', '14');?>
+                <?php get_top_category_post('zeppelin-raids', 'enemy-action', '14');?>
                 <?php get_top_category_post('field', 'child-labour', '15');?>
                 <?php get_top_category_post('hunt', 'forest', '16');?>
 
