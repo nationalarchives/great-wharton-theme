@@ -14,62 +14,7 @@
 
 
 
-    /* ---------------------------------------------------------------
-     * 0. Reposition background based on last user story
-     * ---------------------------------------------------------------
-     * */
 
-    var hashTag = window.location.hash;
-
-    if (hashTag == "#schools" || hashTag == "") {
-     TweenLite.to("#wrapper", 2, {x: -820, y: -1600, ease: Circ.easeOut});
-
-
-    }
-
-    if (hashTag == "#food-shortages") {
-
-        TweenLite.to("#wrapper", 2, {x: -300, y: -2200, ease: Circ.easeOut});
-    }
-
-    if (hashTag == "#railway-gates") {
-
-        TweenLite.to("#wrapper", 2, {x: -300, y: -2200, ease: Circ.easeOut});
-    }
-    if (hashTag == "#zeppellin-raids") {
-
-        TweenLite.to("#wrapper", 2, {x: -2000, y: -900, ease: Circ.easeOut});
-    }
-
-    if (hashTag == "#grocery-shop") {
-
-        TweenLite.to("#wrapper", 2, {x: -1170, y: -1400, ease: Circ.easeOut});
-    }
-    if (hashTag == "#strike") {
-
-        TweenLite.to("#wrapper", 2, {x: -1800, y: -1660, ease: Circ.easeOut});
-    }
-
-    if (hashTag == "#road") {
-
-        TweenLite.to("#wrapper", 2, {x: -1600, y: -1320, ease: Circ.easeOut});
-    }
-    if (hashTag == "#factory") {
-
-        TweenLite.to("#wrapper", 2, {x: -1900, y: -1350, ease: Circ.easeOut});
-    }
-    if (hashTag == "#field") {
-
-        TweenLite.to("#wrapper", 2, {x: -1700, y: -650, ease: Circ.easeOut});
-    }
-    if (hashTag == "#hunt") {
-
-        TweenLite.to("#wrapper", 2, {x: -1920, y: -60, ease: Circ.easeOut});
-    }
-    if (hashTag == "#rationing") {
-
-        TweenLite.to("#wrapper", 2, {x: -480, y: -1150, ease: Circ.easeOut});
-    }
 
     /* ---------------------------------------------------------------
      * 1. Show/hide assets
@@ -256,7 +201,14 @@ $(".map-zoom .fa-minus").click(function () {
 
 $(".map-zoom .fa-plus").click(function() {
     //$("#wrapper").animate({ 'zoom':1 }, 400);
-    TweenLite.to("#wrapper", 1, {scale:1});
+    TweenLite.to("#wrapper", 0.5 ,
+        {
+            scale:1,
+            onUpdate:function()
+            {
+                Draggable.get("#wrapper").applyBounds();
+            }
+        });
 
 });
 
@@ -279,4 +231,64 @@ $(".st_sharethis_large").show("slow");
 
 
 
+/* ---------------------------------------------------------------
+ * 0. Reposition background based on last user story
+ * ---------------------------------------------------------------
+ * */
 
+var hashTag = window.location.hash;
+
+if (hashTag == "#schools" || hashTag == "") {
+    Draggable.get("#wrapper").applyBounds();
+    TweenLite.to("#wrapper", 2, {x: -820, y: -1600, ease: Circ.easeOut});
+
+
+}
+
+if (hashTag == "#food-shortages") {
+
+    TweenLite.to("#wrapper", 2, {x: -300, y: -2200, ease: Circ.easeOut});
+}
+
+if (hashTag == "#railway-gates") {
+
+    TweenLite.to("#wrapper", 2, {x: -300, y: -2200, ease: Circ.easeOut});
+}
+if (hashTag == "#zeppellin-raids") {
+
+    TweenLite.to("#wrapper", 2, {x: -2000, y: -900, ease: Circ.easeOut});
+}
+
+if (hashTag == "#grocery-shop") {
+
+    TweenLite.to("#wrapper", 2, {x: -1170, y: -1400, ease: Circ.easeOut});
+}
+if (hashTag == "#strike") {
+
+    TweenLite.to("#wrapper", 2, {x: -1800, y: -1660, ease: Circ.easeOut});
+}
+
+if (hashTag == "#women-drinking") {
+
+    TweenLite.to("#wrapper", 2, {x: -1600, y: -1320, ease: Circ.easeOut});
+}
+if (hashTag == "#factory") {
+
+    TweenLite.to("#wrapper", 2, {x: -1900, y: -1350, ease: Circ.easeOut});
+}
+if (hashTag == "#field") {
+
+    TweenLite.to("#wrapper", 2, {x: -1700, y: -650, ease: Circ.easeOut});
+}
+if (hashTag == "#hunt") {
+
+    TweenLite.to("#wrapper", 2, {x: -1920, y: -60, ease: Circ.easeOut});
+}
+if (hashTag == "#rationing") {
+
+    TweenLite.to("#wrapper", 2, {x: -480, y: -1150, ease: Circ.easeOut});
+}
+
+$( "#wrapper" ).scroll(function() {
+    Draggable.get("#wrapper").applyBounds();
+});

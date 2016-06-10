@@ -724,8 +724,9 @@ a.marker, .marker-secret {
     border-bottom:none !important;
     z-index:1001;
     background-color: #fff;
-    color:#000;
+    color:#5b1c1c;
     font-size:2em;
+    font-weight: bold;
     /*box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);*/
 }
 a.marker:hover{
@@ -733,7 +734,8 @@ a.marker:hover{
     animation: pulse 1s linear infinite;
 }
 a.marker:visited{
-  color: #95A5A6;
+  color: #868686;
+    font-weight: normal;
 }
 a.marker::after{
     content: "\f0d7";
