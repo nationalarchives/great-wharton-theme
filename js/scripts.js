@@ -239,56 +239,86 @@ $(".st_sharethis_large").show("slow");
 var hashTag = window.location.hash;
 
 if (hashTag == "#schools" || hashTag == "") {
-    Draggable.get("#wrapper").applyBounds();
-    TweenLite.to("#wrapper", 2, {x: -820, y: -1600, ease: Circ.easeOut});
+
+    TweenLite.to("#wrapper", 2, {x: -820, y: -1600, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
 
 
 }
 
 if (hashTag == "#food-shortages") {
 
-    TweenLite.to("#wrapper", 2, {x: -300, y: -2200, ease: Circ.easeOut});
+    TweenLite.to("#wrapper", 2, {x: -300, y: -2200, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
 }
 
 if (hashTag == "#railway-gates") {
 
-    TweenLite.to("#wrapper", 2, {x: -300, y: -2200, ease: Circ.easeOut});
+    TweenLite.to("#wrapper", 2, {x: -300, y: -2200, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
 }
 if (hashTag == "#zeppellin-raids") {
 
-    TweenLite.to("#wrapper", 2, {x: -2000, y: -900, ease: Circ.easeOut});
+    TweenLite.to("#wrapper", 2, {x: -2000, y: -900, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
 }
 
 if (hashTag == "#grocery-shop") {
 
-    TweenLite.to("#wrapper", 2, {x: -1170, y: -1400, ease: Circ.easeOut});
+    TweenLite.to("#wrapper", 2, {x: -1170, y: -1400, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
 }
 if (hashTag == "#strike") {
 
-    TweenLite.to("#wrapper", 2, {x: -1800, y: -1660, ease: Circ.easeOut});
+    TweenLite.to("#wrapper", 2, {x: -1800, y: -1660, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
 }
 
 if (hashTag == "#women-drinking") {
 
-    TweenLite.to("#wrapper", 2, {x: -1600, y: -1320, ease: Circ.easeOut});
+    TweenLite.to("#wrapper", 2, {x: -1600, y: -1320, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
 }
 if (hashTag == "#factory") {
 
-    TweenLite.to("#wrapper", 2, {x: -1900, y: -1350, ease: Circ.easeOut});
+    TweenLite.to("#wrapper", 2, {x: -1900, y: -1350, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
 }
 if (hashTag == "#field") {
 
-    TweenLite.to("#wrapper", 2, {x: -1700, y: -650, ease: Circ.easeOut});
+    TweenLite.to("#wrapper", 2, {x: -1700, y: -650, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
 }
 if (hashTag == "#hunt") {
 
-    TweenLite.to("#wrapper", 2, {x: -1920, y: -60, ease: Circ.easeOut});
+    TweenLite.to("#wrapper", 2, {x: -1920, y: -60, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
 }
 if (hashTag == "#rationing") {
 
-    TweenLite.to("#wrapper", 2, {x: -480, y: -1150, ease: Circ.easeOut});
+    TweenLite.to("#wrapper", 2, {x: -480, y: -1150, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
 }
 
-$( "#wrapper" ).scroll(function() {
-    Draggable.get("#wrapper").applyBounds();
-});

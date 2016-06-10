@@ -39,7 +39,7 @@ body {
     font-size:1.2em;
     line-height: 2em;
     background-color: #000;
-
+overflow: hidden;
 }
 
 /*a {*/
@@ -724,7 +724,7 @@ a.marker, .marker-secret {
     border-bottom:none !important;
     z-index:1001;
     background-color: #fff;
-    color:#5b1c1c;
+    color:#666f41;
     font-size:2em;
     font-weight: bold;
     /*box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);*/
@@ -1015,25 +1015,25 @@ and (-webkit-min-device-pixel-ratio: 2)
     }
 }
 
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)  {
+/*@media only screen*/
+/*and (min-device-width : 768px)*/
+/*and (max-device-width : 1024px)  {*/
 
 
-    .intro {
-        display:block;
-        padding: 50px 50px 30px 50px;
-        position: absolute;
-        left: 18%;
-        top: 10%;
-        transform: translate(-50%, -50%);
-        width: 65%;
-        text-align: center;
-        font-size: 1.6em;
-        background-color: #faf8d6;
-    }
+    /*.intro {*/
+        /*display:block;*/
+        /*padding: 50px 50px 30px 50px;*/
+        /*position: absolute;*/
+        /*left: 18%;*/
+        /*top: 10%;*/
+        /*transform: translate(-50%, -50%);*/
+        /*width: 65%;*/
+        /*text-align: center;*/
+        /*font-size: 1.6em;*/
+        /*background-color: #faf8d6;*/
+    /*}*/
 
-}
+/*}*/
 
 
 
