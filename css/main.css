@@ -269,7 +269,9 @@ a.button:hover {
     text-align:center;
     padding:10px;
 }
-
+.intro .small{
+    font-size: 1em;
+}
 .sr-only {
     position: absolute;
     width: 1px;
@@ -911,9 +913,6 @@ font-family: FontAwesome;
     }
     .intro img {
         width:40%;
-    }
-    .intro p {
-        font-size:.7em;
     }
     .st_sharethis_large {
         width:100%;
