@@ -31,17 +31,31 @@ get_header(); ?>
                 <img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-logo-white.png" alt="The National Archives logo">
             </a>
         </div>
+        <div class="map-zoom">Zoom <i class="fa fa-plus" aria-hidden="true" title="Zoom in"></i> <i class="fa fa-minus" aria-hidden="true" title="Zoom out"></i></div>
         <!-- Main wrapper start here -->
         <section class="wrapper">
             <h1 class="sr-only"><?php the_title();?></h1>
 
             <!-- Canvas viewer start here-->
             <div class="canvas-viewer" id="wrapper">
+<!--
+Pass Category, CSS ID and Tab
 
+CSS ID must NOT be same as hashtag, otherwise it will interfere with the repositioning.
 
-                <?php get_top_category_post('schools', 'children', '6');?>
-                <?php get_top_category_post('food-shortages', 'eggtrain', '7');?>
-                <?php get_top_category_post('zeppellin-raids', 'enemy-action', '8');?>
+-->
+                <?php get_top_category_post('rationing', 'houses', '6');?>
+                <?php get_top_category_post('schools', 'children', '7');?>
+                <?php get_top_category_post('food-shortages', 'eggtrain', '8');?>
+                <?php get_top_category_post('railway-gates', 'scouts', '9');?>
+                <?php get_top_category_post('grocery-shop', 'shop', '10');?>
+                <?php get_top_category_post('strike', 'industrial-action', '11');?>
+                <?php get_top_category_post('women-drinking', 'munitions-workers', '12');?>
+                <?php get_top_category_post('factory', 'munitions-factory', '13');?>
+                <?php get_top_category_post('zeppelin-raids', 'enemy-action', '14');?>
+                <?php get_top_category_post('field', 'child-labour', '15');?>
+                <?php get_top_category_post('hunt', 'forest', '16');?>
+
 
                 <!--                <a href="wharton-sub.htm" tabindex="1">-->
                 <!--                    <div class="marker" id="children"></div>-->

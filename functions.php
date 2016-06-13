@@ -56,7 +56,7 @@ function get_top_category_post($cat, $id, $tab){
 
 
 
-            echo('<a href="' . make_path_relative( get_the_permalink() ) . '" title="' . get_the_title() . '"  class="marker" id="' . $divid . '" tabindex="' . $tabindex . '" ></a>');
+            echo('<a href="' . make_path_relative( get_the_permalink() ) . '" title="' . get_the_title() . '"  class="marker" id="' . $divid . '" tabindex="' . $tabindex . '" >'. get_the_title() .'</a>');
 
 
         }
@@ -82,21 +82,21 @@ function tnatheme_globals() {
     if (substr($_SERVER['REMOTE_ADDR'], 0, 3) === '10.') {
         $pre_path = '';
         $pre_crumbs = array(
-            'Great Wharton' => '/'
+            'Home front stories' => '/'
         );
     } else {
         $pre_crumbs = array(
             'First World War' => '/first-world-war/',
-            'Great Wharton' => '/great-wharton/',
+            'Home front stories' => '/home-front-stories/',
         );
-        $pre_path = '/first-world-war/great-wharton';
+        $pre_path = '/first-world-war/home-front-stories';
     }
 }
 if ( $_SERVER['SERVER_ADDR'] !== $_SERVER['REMOTE_ADDR'] ) {
     tnatheme_globals(); } else {
     $pre_path = '';
     $pre_crumbs = array(
-        'Great Wharton' => '/'
+        'Home front stories' => '/'
     );
 }
 

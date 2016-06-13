@@ -14,26 +14,6 @@
 
 
 
-    /* ---------------------------------------------------------------
-     * 0. Reposition background based on last user story
-     * ---------------------------------------------------------------
-     * */
-
-    var hashTag = window.location.hash;
-
-    if (hashTag == "#schools" || hashTag == "") {
-
-        TweenLite.to("#wrapper", 2, {x: -600, y: -600, ease: Circ.easeOut});
-    }
-
-    if (hashTag == "#food-shortages") {
-
-        TweenLite.to("#wrapper", 2, {x: -300, y: -1400, ease: Circ.easeOut});
-    }
-    if (hashTag == "#zeppellin-raids") {
-
-        TweenLite.to("#wrapper", 2, {x: -1300, y: -1200, ease: Circ.easeOut});
-    }
 
 
     /* ---------------------------------------------------------------
@@ -53,6 +33,8 @@
         $('.tna_brand').fadeIn(600);
         $('.learn_more_wrap').fadeIn(600);
         $('.about').fadeIn(600);
+        $('.map-zoom').fadeIn(600);
+
     }
 
     // If Enter button is clicked then fade-in/fade-out assets
@@ -63,7 +45,7 @@
         $('.about').fadeIn(600);
         $('.tna_brand').fadeIn(600);
         $('.learn_more_wrap').fadeIn(600);
-        TweenLite.to("#wrapper", 3, {x: -600, y: -600, ease: Circ.easeOut});
+        $('.map-zoom').fadeIn(600);
         createCookie('gw-hide-intro', true, 1)
     });
 
@@ -75,8 +57,8 @@
         $('.about').fadeIn(600);
         $('.info').fadeOut(600);
         $('.tna_brand').fadeIn(600);
+        $('.map-zoom').fadeIn(600);
         $('.learn_more_wrap').fadeIn(600);
-        TweenLite.to("#wrapper", 3, {x: -600, y: -600, ease: Circ.easeOut});
         createCookie('gw-hide-intro', true, 1)
     });
 
@@ -86,6 +68,8 @@
         $('.intro').fadeIn(600);
         $('.about').fadeOut(600);
         $('.tna_brand').fadeOut(600);
+
+        $('.map-zoom').fadeOut(600);
         $('.learn_more_wrap').fadeOut(600);
     });
 
@@ -155,10 +139,10 @@
 
     var gridWidth = 100;
     var gridHeight = 100;
-    Draggable.create("#wrapper", {
+Draggable.create("#wrapper", {
         type: "x,y",
         edgeResistance: 0.99,
-        bounds: ".f-grid",
+    bounds:window,
         throwProps: true,
         snap: {
             x: function (endValue) {
@@ -171,6 +155,7 @@
     });
 
 
+
     // Draggable js end here
 
     /* ---------------------------------------------------------------
@@ -181,29 +166,158 @@
     $('.main_background').tiles({
         original: {
             width: 4000,
-            height: 2232
+            height: 3000
         },
         basePath: "/wp-content/themes/great-wharton-theme/",
         zoom: 1
     });
 
-    /* ---------------------------------------------------------------
-     * 7. Share this button
-     * ---------------------------------------------------------------
-     * */
 
-    // Share this
-    stLight.options({
-        publisher: "e1514b1f-8114-4751-a7dc-7af051944bf6",
-        doNotHash: false,
-        doNotCopy: false,
-        hashAddressBar: false,
-        onhover: false
-    });
 
-    $(".st_sharethis_large").show("slow");
+/*
+
+Zoom
+ */
 
 
 
 
+$(".map-zoom .fa-minus").click(function () {
+    //$("#wrapper").animate({ 'zoom':.5 }, 400);
+    //TweenLite.to("#wrapper", 1, {scale:.5});
 
+    TweenLite.to("#wrapper", 0.5 ,
+        {
+            scale:.5,
+            onUpdate:function()
+            {
+                Draggable.get("#wrapper").applyBounds();
+            }
+        });
+
+
+
+});
+
+$(".map-zoom .fa-plus").click(function() {
+    //$("#wrapper").animate({ 'zoom':1 }, 400);
+    TweenLite.to("#wrapper", 0.5 ,
+        {
+            scale:1,
+            onUpdate:function()
+            {
+                Draggable.get("#wrapper").applyBounds();
+            }
+        });
+
+});
+
+/* ---------------------------------------------------------------
+ * 7. Share this button
+ * ---------------------------------------------------------------
+ * */
+
+// Share this
+//var stLight = "";
+//stLight.options({
+//    publisher: "e1514b1f-8114-4751-a7dc-7af051944bf6",
+//    doNotHash: false,
+//    doNotCopy: false,
+//    hashAddressBar: false,
+//    onhover: false
+//});
+
+$(".st_sharethis_large").show("slow");
+
+
+
+/* ---------------------------------------------------------------
+ * 0. Reposition background based on last user story
+ * ---------------------------------------------------------------
+ * */
+
+var hashTag = window.location.hash;
+
+if (hashTag == "#schools" || hashTag == "") {
+
+    TweenLite.to("#wrapper", 2, {x: -820, y: -1600, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
+
+
+}
+
+if (hashTag == "#food-shortages") {
+
+    TweenLite.to("#wrapper", 2, {x: -300, y: -2200, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
+}
+
+if (hashTag == "#railway-gates") {
+
+    TweenLite.to("#wrapper", 2, {x: -10, y: -2200, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
+}
+if (hashTag == "#zeppelin-raids") {
+
+    TweenLite.to("#wrapper", 2, {x: -2000, y: -900, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
+}
+
+if (hashTag == "#grocery-shop") {
+
+    TweenLite.to("#wrapper", 2, {x: -1170, y: -1400, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
+}
+if (hashTag == "#strike") {
+
+    TweenLite.to("#wrapper", 2, {x: -1800, y: -1660, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
+}
+
+if (hashTag == "#women-drinking") {
+
+    TweenLite.to("#wrapper", 2, {x: -1600, y: -1320, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
+}
+if (hashTag == "#factory") {
+
+    TweenLite.to("#wrapper", 2, {x: -1900, y: -1350, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
+}
+if (hashTag == "#field") {
+
+    TweenLite.to("#wrapper", 2, {x: -1700, y: -650, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
+}
+if (hashTag == "#hunt") {
+
+    TweenLite.to("#wrapper", 2, {x: -1920, y: -60, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
+}
+if (hashTag == "#rationing") {
+
+    TweenLite.to("#wrapper", 2, {x: -480, y: -1150, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
+}
