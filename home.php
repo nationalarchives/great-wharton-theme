@@ -20,6 +20,12 @@ get_header(); ?>
                     <style>
                         .overlay{
                            overflow: scroll;
+
+                        }
+                        @media (min-width: 767px) {
+                        .intro{
+                            margin-top:120px;
+                        }
                         }
 
                     </style>
@@ -48,7 +54,7 @@ get_header(); ?>
                 wp_reset_postdata();
                 ?>
 
-                    <p>To experience this website at its best please enable JavaScript in your browser.</p>
+                    <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> To experience this website at its best please enable JavaScript in your browser.</p>
 
             </noscript>
 
