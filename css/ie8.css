@@ -53,15 +53,15 @@ select::-ms-expand{
     padding:10px;
 
 }
-.marker {
-    width: 70px;
-    height: 90px;
-    background: url("../images/tna-wharton-marker.png");
-    position: absolute;
-    -webkit-animation: pulse 1s linear infinite;
-    -o-animation: pulse 1s linear infinite;
-    -moz-animation: pulse 1s linear infinite;
-    animation: pulse 1s linear infinite;
-    cursor: pointer;
-    display:block;
-}
+/*.marker {*/
+    /*width: 70px;*/
+    /*height: 90px;*/
+    /*background: url("../images/tna-wharton-marker.png");*/
+    /*position: absolute;*/
+    /*-webkit-animation: pulse 1s linear infinite;*/
+    /*-o-animation: pulse 1s linear infinite;*/
+    /*-moz-animation: pulse 1s linear infinite;*/
+    /*animation: pulse 1s linear infinite;*/
+    /*cursor: pointer;*/
+    /*display:block;*/
+/*}*/
