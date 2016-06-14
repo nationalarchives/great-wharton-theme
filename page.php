@@ -32,6 +32,15 @@ get_header(); ?>
 				<div class="col-xs-12 col-sm-12 col-md-12">
 					<div class="info">
 						<div class="inner">
+
+                            <noscript>
+                            <style>
+                            .info-toolbar-right{
+                                display: none;
+                            }
+
+                            </style>
+                                </noscript>
 							<a href="<?php echo make_path_relative( esc_url( home_url( '/', 'http' ) ) );
 							// use category slug for hashtag
 							$category = get_the_category();
