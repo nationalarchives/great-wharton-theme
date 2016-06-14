@@ -1,0 +1,34 @@
+/* Beta banner
+===================================*/
+
+.notification-banner {
+    background-color: #fce45c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+    font-size: 1.6em;
+    height: 36px;
+    overflow: hidden;
+}
+.notification-banner p {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+.notification-banner .notice {
+    margin: 0.3em;
+}
+.notification-banner .notice strong.title {
+    background-color: #fff;
+    text-transform: uppercase;
+    padding: 0 0.4em;
+    margin-right: 1em;
+}
+body {
+    margin-top: 36px !important;
+}
+.about, .tna_brand {
+    top: 51px !important;
+}
