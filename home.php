@@ -48,13 +48,13 @@ get_header(); ?>
                 wp_reset_postdata();
                 ?>
 
+                    <p>To experience this website at its best please enable JavaScript in your browser.</p>
 
             </noscript>
 
 
             </p>
 
-            <p>To experience this website at its best please enable JavaScript in your browser.</p>
 
             <div class="clear-space"></div>
                         <span>
