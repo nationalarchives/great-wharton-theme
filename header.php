@@ -61,8 +61,18 @@ echo(" -");
     ?>
     <body class="f-grid">
     <?php
+    if (function_exists('notification_banner')){
+        notification_banner();
+    }
+    ?>
+    <?php
 
 }else{?>
 
 	<body class="s-grid">
+    <?php
+    if (function_exists('notification_banner')){
+        notification_banner();
+    }
+    ?>
 <?php }?>
