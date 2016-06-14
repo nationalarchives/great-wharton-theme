@@ -75,6 +75,7 @@ function get_top_category_post($cat, $id, $tab){
 
 show_admin_bar(false);
 
+// Theme URL rewrites
 // Edit as required
 function tnatheme_globals() {
     global $pre_path;
@@ -99,7 +100,6 @@ if ( $_SERVER['SERVER_ADDR'] !== $_SERVER['REMOTE_ADDR'] ) {
         'Home front stories' => '/'
     );
 }
-
 // Make styles and scripts paths relative
 add_filter( 'script_loader_src', 'tna_styles_scripts_relative' );
 add_filter( 'style_loader_src', 'tna_styles_scripts_relative' );
