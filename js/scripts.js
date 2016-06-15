@@ -248,7 +248,7 @@ if (hashTag == "#schools" || hashTag == "") {
 
 }
 
-if (hashTag == "#food-shortages") {
+if (hashTag == "#train") {
 
     TweenLite.to("#wrapper", 2, {x: -300, y: -2200, ease: Circ.easeOut, onUpdate:function()
     {
@@ -263,7 +263,7 @@ if (hashTag == "#railway-gates") {
         Draggable.get("#wrapper").applyBounds();
     }});
 }
-if (hashTag == "#zeppelin-raids") {
+if (hashTag == "#bomb-crater") {
 
     TweenLite.to("#wrapper", 2, {x: -2000, y: -900, ease: Circ.easeOut, onUpdate:function()
     {
@@ -314,7 +314,7 @@ if (hashTag == "#hunt") {
         Draggable.get("#wrapper").applyBounds();
     }});
 }
-if (hashTag == "#rationing") {
+if (hashTag == "#postman") {
 
     TweenLite.to("#wrapper", 2, {x: -480, y: -1150, ease: Circ.easeOut, onUpdate:function()
     {
