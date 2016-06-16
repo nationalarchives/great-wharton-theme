@@ -855,6 +855,8 @@ font-family: FontAwesome;
     }
 }
 
+.dashit { display:inline-block; height:3px; position:relative; }
+
 
 @media (min-width: 1281px) {
     .intro {
