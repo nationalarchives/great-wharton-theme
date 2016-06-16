@@ -309,18 +309,28 @@ a.button:hover {
 .about, .tna_brand{
     display: none;
     position: fixed;
-    top: 15px;
-    right: 15px;
     background-color: transparent;
-    color: #fff;
-    text-align: center;
     cursor: pointer;
 }
-
+.about {
+    top: 15px;
+    right: 15px;
+    text-align: right;
+    width: 44%;
+}
 .tna_brand {
     top: 15px;
     left: 15px;
+    text-align: left;
+    width: 44%;
+}
+.tna_brand img {
+    width: 100%;
     max-width: 285px;
+}
+.about img {
+    width: 100%;
+    max-width: 160px;
 }
 .page-branding {
     margin-bottom: 1em;
@@ -461,10 +471,6 @@ a.button:hover {
     max-width: 270px;
 }
 
-.tna_brand img {
-    width: 100%;
-    max-width: 288px;
-}
 .tna_brand a {
     border:0;
 }
@@ -660,7 +666,6 @@ hr, .hr {
     /* Learn more */
 
 .learn_more_wrap {
-    position:fixed;
     bottom:10px;
     right:0;
     text-align:center;
@@ -853,7 +858,7 @@ a.marker::after{
 
 .tna_brand, .about, .learn_more_wrap, .map-zoom {
     z-index: 99999;
-    position: fixed;
+    position: absolute;
 }
 
 .canvas-viewer {
@@ -943,19 +948,10 @@ a.marker::after{
 @media (max-width:450px){
 
 
-    .map-zoom{
+    .map-zoom {
         width:80px;
         padding:2px;
         text-align: center;
-        }
-    .about{
-        top:60px;
-        width:100%;
-        margin:0 auto;
-    }
-    .tna_brand {
-        width:100%;
-        margin:0 auto;
     }
     .tna-brand-page, .about-page {
         width: 100%;
@@ -1010,18 +1006,14 @@ and (max-device-width: 667px)
 and (orientation: portrait)
 and (-webkit-min-device-pixel-ratio: 2)
 {
-    .about, .tna_brand {
-        right:0;
-        text-align: center;
-
+    .about {
+        right: 5px;
+        height: 30px;
     }
     .tna_brand {
-        left:0;
-        margin:0;
+        left: 5px;
+        height: 30px;
     }
-
-
-
 
 }
 

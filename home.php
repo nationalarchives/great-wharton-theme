@@ -120,9 +120,7 @@ get_header(); ?>
         <!-- Main wrapper end here -->
     </main>
 
-    <div class="outer">
-
-
+<!--    <div class="outer">-->
         <?php $key="more_url";
 
         if (get_post_meta($post->ID, $key, true)) {
@@ -152,14 +150,8 @@ get_header(); ?>
                 <img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-logo-white.png" alt="The National Archives logo">
             </a>
         </div>
-
-
-
-
         <!-- Learn more end here-->
-
-
-    </div>
+<!--    </div>-->
 
 <?php endwhile; ?>
 
