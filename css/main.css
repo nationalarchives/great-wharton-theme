@@ -746,7 +746,10 @@ a.marker::after{
 
 }
 .canvas-viewer a:focus{
-    border:2px solid #e67e22 !important;
+    box-sizing: border-box;
+    /*border:2px solid #e67e22 !important;*/
+
+    box-shadow: inset 0 -2px #e67e22;
 }
 
 .marker-secret {
@@ -853,7 +856,7 @@ a.marker::after{
 
 .tna_brand, .about, .learn_more_wrap, .map-zoom {
     z-index: 99999;
-    position: fixed;
+        position: fixed;
 }
 
 .canvas-viewer {
@@ -1033,7 +1036,7 @@ and (-webkit-min-device-pixel-ratio: 2)
 {
 
     .learn_more_wrap {
-        right:12px;
+        right:0px;
     }
 
 
