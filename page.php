@@ -102,7 +102,14 @@ get_header(); ?>
 
 							<div class="content-columns clearfix">
                                 <?php edit_post_link('EDIT', '<p>', '</p>'); ?>
-								<?php the_content(); ?>
+
+
+								<?php
+
+
+                                the_content();
+
+                                ?>
 								<hr>
 							</div>
 

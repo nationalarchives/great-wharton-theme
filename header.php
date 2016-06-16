@@ -37,7 +37,9 @@ echo(" -");
         <![endif]-->
 
         <!-- Main font -->
-        <link href='https://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
+<!--        <link href='https://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>-->
+        <link href="https://fonts.googleapis.com/css?family=Kameron" rel="stylesheet">
+
         <script>
             // If JS is enable add js class to HTML tag
             document.getElementsByTagName('html')[0].className += 'js';

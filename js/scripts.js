@@ -12,6 +12,12 @@
  *  7. ShareThis button
  */
 
+$('.type-fixed p').each(function(){
+    var oldHTML = $(this).html();
+    var newHTML = oldHTML.replace(/—/g, '<span class="dashit">—</span>');
+    $(this).html(newHTML);
+});
+
 
 
     /* ---------------------------------------------------------------
@@ -319,11 +325,5 @@ if (hashTag == "#postman") {
         Draggable.get("#wrapper").applyBounds();
     }});
 }
-
-$('.content-columns').each(function(){
-    var oldHTML = $(this).html();
-    var newHTML = oldHTML.replace(/—/g, '<span class="dashit">—</span>');
-    $(this).html(newHTML);
-});
 
 
