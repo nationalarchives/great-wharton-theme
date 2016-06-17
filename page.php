@@ -58,6 +58,7 @@ get_header(); ?>
 												'post_type'    => 'page',
 												'order'        => 'ASC',
 												'orderby'      => 'menu_order',
+                                                'posts_per_page' => -1,
 												'post__not_in' => array( get_option( 'page_on_front' ) ),
 											);
 											$page_query = new WP_Query( $pageargs );
@@ -104,12 +105,7 @@ get_header(); ?>
                                 <?php edit_post_link('EDIT', '<p>', '</p>'); ?>
 
 
-								<?php
-
-
-                                the_content();
-
-                                ?>
+								<?php the_content(); ?>
 								<hr>
 							</div>
 
@@ -142,6 +138,7 @@ get_header(); ?>
 <script type="text/javascript">var switchTo5x = true;</script>
 <script type="text/javascript" src="http://ws.sharethis.com/button/buttons.js"></script>
 <script src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/js/scripts.js"></script>
+
 <script type="text/javascript">
 	stLight.options({
 		publisher: "e1514b1f-8114-4751-a7dc-7af051944bf6",

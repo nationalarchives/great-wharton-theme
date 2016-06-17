@@ -36,6 +36,7 @@ get_header(); ?>
                     'post_type'    => 'page',
                     'order'        => 'ASC',
                     'orderby'      => 'menu_order',
+                    'posts_per_page' => -1,
                     'post__not_in' => array( get_option( 'page_on_front' ) ),
                 );
                 $page_query = new WP_Query( $pageargs );
@@ -170,6 +171,7 @@ get_header(); ?>
 <script src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/js/tpp.min.js"></script>
 <script src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/js/tiles.js"></script>
 <script src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/js/scripts.js"></script>
+<script src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/js/great-wharton.js"></script>
 
 
 
