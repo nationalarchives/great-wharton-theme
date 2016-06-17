@@ -138,6 +138,7 @@ get_header(); ?>
 <script type="text/javascript">var switchTo5x = true;</script>
 <script type="text/javascript" src="http://ws.sharethis.com/button/buttons.js"></script>
 <script src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/js/scripts.js"></script>
+
 <script type="text/javascript">
 	stLight.options({
 		publisher: "e1514b1f-8114-4751-a7dc-7af051944bf6",
