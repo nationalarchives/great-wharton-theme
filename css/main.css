@@ -432,14 +432,21 @@ blockquote{
     font-size: 1em;
     border-left:5px solid #5a6434;
 }
+.wp-caption{
+    border:1px solid red;
+margin-left: auto;
+    margin-right: auto;
+    padding:0;
+}
 .wp-caption-text {
     position: relative;
     font-size: .8em;
     color: #000;
-    clear: both;
+    /*clear: both;*/
     margin-bottom: .5em;
     text-align: center;
     margin-top: .5em;
+    max-width: 60%;
 }
 
 /* More info box
@@ -539,10 +546,7 @@ hr, .hr {
         -moz-column-width: 98%;
         column-width: 98%;*/
 }
-.content-columns{
-    width:auto;
-    max-width: 100%;
-}
+
 
 /* borders
 ===================================*/

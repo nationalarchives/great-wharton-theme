@@ -36,6 +36,7 @@ get_header(); ?>
                     'post_type'    => 'page',
                     'order'        => 'ASC',
                     'orderby'      => 'menu_order',
+                    'posts_per_page' => -1,
                     'post__not_in' => array( get_option( 'page_on_front' ) ),
                 );
                 $page_query = new WP_Query( $pageargs );

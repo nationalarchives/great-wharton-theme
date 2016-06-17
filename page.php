@@ -58,6 +58,7 @@ get_header(); ?>
 												'post_type'    => 'page',
 												'order'        => 'ASC',
 												'orderby'      => 'menu_order',
+                                                'posts_per_page' => -1,
 												'post__not_in' => array( get_option( 'page_on_front' ) ),
 											);
 											$page_query = new WP_Query( $pageargs );
@@ -104,12 +105,7 @@ get_header(); ?>
                                 <?php edit_post_link('EDIT', '<p>', '</p>'); ?>
 
 
-								<?php
-
-
-                                the_content();
-
-                                ?>
+								<?php the_content(); ?>
 								<hr>
 							</div>
 

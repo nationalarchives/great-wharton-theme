@@ -12,10 +12,11 @@
  *  7. ShareThis button
  */
 
-$('.type-fixed p').each(function(){
-    var oldHTML = $(this).html();
-    var newHTML = oldHTML.replace(/—/g, '<span class="dashit">—</span>');
-    $(this).html(newHTML);
+$(document).ready(function() {
+
+    /*Removing style attribute from caption class*/
+    $("div.wp-caption").removeAttr("style");
+
 });
 
 
@@ -334,5 +335,4 @@ if (hashTag == "#police-station") {
         Draggable.get("#wrapper").applyBounds();
     }});
 }
-
 
