@@ -101,7 +101,15 @@ get_header(); ?>
 							<!-- featured image -->
 
 							<div class="content-columns clearfix">
-								<?php the_content(); ?>
+                                <?php edit_post_link('EDIT', '<p>', '</p>'); ?>
+
+
+								<?php
+
+
+                                the_content();
+
+                                ?>
 								<hr>
 							</div>
 

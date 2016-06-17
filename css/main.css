@@ -34,12 +34,12 @@ article,footer,header,nav {
 
 
 body {
-    font-family: 'Rokkitt', serif, Georgia, Arial, Verdana, sans-serif;
+    font-family: 'Kameron', serif, Georgia, Arial, Verdana, sans-serif;
     color: #000;
     width: 100%;
     height: 100%;
     margin: 0;
-    font-size:1.2em;
+    font-size:1.1em;
     line-height: 2em;
     background-color: #000;
 
@@ -426,7 +426,12 @@ a.button:hover {
     width: 100%;
     max-width: 160px;
 }
-
+blockquote{
+    padding:10px 20px;
+    margin:0 0 20px;
+    font-size: 1em;
+    border-left:5px solid #5a6434;
+}
 /* More info box
 ===================================*/
 .more-info {
@@ -852,6 +857,8 @@ a.marker::after{
         transform: scale(1, 1);
     }
 }
+
+.dashit { display:inline-block; height:3px; position:relative; }
 
 
 .outer {
