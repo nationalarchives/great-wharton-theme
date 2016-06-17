@@ -327,3 +327,12 @@ if (hashTag == "#postman") {
 }
 
 
+if (hashTag == "#police-station") {
+
+    TweenLite.to("#wrapper", 2, {x: -500, y: -1900, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
+}
+
+

@@ -99,15 +99,16 @@ get_header(); ?>
             -->
             <?php get_top_category_post('postman', 'houses', '6');?>
             <?php get_top_category_post('schools', 'children', '7');?>
-            <?php get_top_category_post('train', 'eggtrain', '8');?>
-            <?php get_top_category_post('railway-gates', 'scouts', '9');?>
-            <?php get_top_category_post('grocery-shop', 'shop', '10');?>
-            <?php get_top_category_post('strike', 'industrial-action', '11');?>
-            <?php get_top_category_post('women-drinking', 'munitions-workers', '12');?>
-            <?php get_top_category_post('factory', 'munitions-factory', '13');?>
-            <?php get_top_category_post('bomb-crater', 'enemy-action', '14');?>
-            <?php get_top_category_post('field', 'child-labour', '15');?>
-            <?php get_top_category_post('hunt', 'forest', '16');?>
+            <?php get_top_category_post('police-station', 'police', '8');?>
+            <?php get_top_category_post('train', 'eggtrain', '9');?>
+            <?php get_top_category_post('railway-gates', 'scouts', '10');?>
+            <?php get_top_category_post('grocery-shop', 'shop', '11');?>
+            <?php get_top_category_post('strike', 'industrial-action', '12');?>
+            <?php get_top_category_post('women-drinking', 'munitions-workers', '13');?>
+            <?php get_top_category_post('factory', 'munitions-factory', '14');?>
+            <?php get_top_category_post('bomb-crater', 'enemy-action', '15');?>
+            <?php get_top_category_post('field', 'child-labour', '16');?>
+            <?php get_top_category_post('hunt', 'forest', '17');?>
 
 
 
@@ -129,7 +130,7 @@ get_header(); ?>
             <div class="learn_more_wrap">
                 <div class="learn_more">
                     <?php echo get_post_meta($post->ID, "more_text", true);?>
-                    <a href="<?php   echo get_post_meta($post->ID, $key, true);?>" role="button" class="button" tabindex="20">&middot; <?php echo get_post_meta($post->ID, "more_button", true);?> &middot;</a>
+                    <a href="<?php   echo get_post_meta($post->ID, $key, true);?>" role="button" class="button" tabindex="18">&middot; <?php echo get_post_meta($post->ID, "more_button", true);?> &middot;</a>
                 </div>
                 <div class="learn_more_close">
                     <i class="fa fa-times fa-2x"></i>
