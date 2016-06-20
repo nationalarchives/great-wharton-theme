@@ -228,3 +228,9 @@ function remove_width_attribute( $html ) {
     return $html;
 }
 add_filter( 'the_content', 'remove_width_attribute', 10 );
+
+// Disable srcset
+function disable_srcset( $sources ) {
+    return false;
+}
+add_filter( 'wp_calculate_image_srcset', 'disable_srcset' );
