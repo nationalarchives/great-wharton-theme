@@ -229,8 +229,14 @@ function remove_width_attribute( $html ) {
 }
 add_filter( 'the_content', 'remove_width_attribute', 10 );
 
+// Make content URLs relative
+function make_content_urls_relative( $content ) {
+    return str_replace( site_url(), '', $content );
+}
+add_filter( 'the_content', 'make_content_urls_relative' );
+
 // Disable srcset
 function disable_srcset( $sources ) {
     return false;
 }
-add_filter( 'wp_calculate_image_srcset', 'disable_srcset' );
+// add_filter( 'wp_calculate_image_srcset', 'disable_srcset' );
