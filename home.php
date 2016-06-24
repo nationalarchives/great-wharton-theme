@@ -11,16 +11,48 @@ get_header(); ?>
     <div class="overlay">
         <div class="intro">
             <img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-title.png" alt="Great Wharton title" title="Welcome to Great Wharton" tabindex="1">
-            <div tabindex="2"><?php the_content();?></div>
+            <div class="next-box" tabindex="2">       <div ><?php the_content();?></div>
+
+
+
+    <script>
+        document.write("<p><a href='#' role='button' class='button' id='next-click' tabindex='3'>&middot; Next &middot;</a>");
+    </script>
+</div>
+
+<div class="enter-box" tabindex="4">
+    <div class="row">
+ <div class="float-left">
+            <img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-instructions-navigate.png" title="Navigate"></div>
+            <div class="float-right">Using your finger or mouse drag to explore the town  </div>
+</div>    <div class="clear-both"></div>
+
+    <div class="row">
+    <div class="float-left"><img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-instructions-marker.png" title="Marker"></div>
+    <div class="float-right">To read a particular story click on its marker</div>
+        </div>
+    <div class="clear-both"></div>
+    <div class="row">
+    <div class="float-left"><img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-instructions-zoom.png" title="Zoom"></div>
+    <div class="float-right">Use the zoom button (bottom left) for a wider view</div>
+
+        </div>
+    <div class="clear-both"></div>
 <script>
-            document.write("<p><a href='#' role='button' class='button' id='enter-click' tabindex='3'>&middot; Enter &middot;</a>");
+            document.write("<p><a href='#' role='button' class='button' id='enter-click' tabindex='5'>&middot; Enter &middot;</a></p>");
+
+            document.write("<p><a href='#' id='return-click' tabindex='5'>Back to introduction</a></p>");
 </script>
+    </div>
 
                 <noscript>
                     <style>
                         .overlay{
                            overflow: scroll;
 
+                        }
+                        .enter-box{
+                            display: none;
                         }
                         @media (min-width: 767px) {
                         .intro{
@@ -60,10 +92,9 @@ get_header(); ?>
             </noscript>
 
 
-            </p>
 
 
-            <div class="clear-space"></div>
+
                         <span>
                             <img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-logo.png" alt="The  National Archives logo" title="The National Archives">
                         </span>
@@ -72,9 +103,6 @@ get_header(); ?>
             <p class="small">We use cookies to improve services and ensure they work for you. Read our <a href="http://www.nationalarchives.gov.uk/legal/cookies.htm">cookie policy</a>. </p>
         </div>
     </div>
-
-
-
 
 
     <main role="main">

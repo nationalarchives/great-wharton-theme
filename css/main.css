@@ -246,29 +246,78 @@ a.button:hover {
     left: 50%;
     top: 52%;
     transform: translate(-50%, -50%);
-    width: 55%;
+    width: 65%;
     text-align: center;
     font-size: 1.6em;
     background-color: #faf8d6;
+    margin-top: 30px;
 
 }
+.enter-box, .next-box{
+    z-index: 4000;
+    text-align: center;
+}
+.enter-box ul li{
+    list-style: none;
+    display: inline-block;
+    margin-bottom:5px;
+}
+.enter-box{
+    padding:10px;
+    margin-top: 20px;
 
+}
+.enter-box h2{
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    margin-top:5px;
+}
+.enter-box img{
+    width:auto !important;
+}
+.enter-box .float-right{
+    width:75% !important;
+    text-align: left;
+    padding-left:15px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.enter-box .float-left{
+    width:25% !important;
+    padding:5px;
+    border-right:1px solid #d4d3c0;
+
+}
+.enter-box .clear-both{
+    height:5px;
+}
+.enter-box .row{
+    /*border-bottom: 1px solid #e9e7c8;*/
+    background-color: #e9e7c8;
+    border:1px solid #d4d3c0;
+    padding: 10px;
+margin-bottom:10px;
+    width:70%;
+    margin-right: auto;
+    margin-left: auto;
+    display: table;
+}
 .intro, .info{
 
     background-color: #faf8d6;
 
 }
 .intro img {
-    width: 90%;
+    width: 50%;
     max-width: 100%;
 }
 
 .intro span img{
     width:250px;
-    margin:25px 0 0 0;
+    margin:0px;
 }
 
-.intro p {
+.intro p{
     text-align:center;
     padding:10px;
 }
@@ -987,6 +1036,21 @@ a.marker::after{
 
 @media (max-width:450px){
 
+    .enter-box .row{
+
+        width:100%;
+    }
+
+    .enter-box .float-right{
+        width:60% !important;
+        text-align: left;
+        padding-left:15px;
+    }
+    .enter-box .float-left{
+        width:40% !important;
+        padding:5px;
+
+    }
 
     .map-zoom {
         width:80px;
