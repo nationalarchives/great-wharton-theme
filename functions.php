@@ -206,37 +206,18 @@ function display_banner_panel_fields() {
 }
 add_action('admin_init', 'display_banner_panel_fields');
 
-function add_image_responsive_class($content) {
-
-    global $post;
-
-    $pattern ="/<img(.*?)class=\"(.*?)\"(.*?)>/i";
-
-    $replacement = '<img$1class="$2 img-responsive"$3>';
-
-    $content = preg_replace($pattern, $replacement, $content);
-
-    return $content;
-
-}
-
-add_filter('the_content', 'add_image_responsive_class');
-
-
-function remove_width_attribute( $html ) {
-    $html = preg_replace( '/(width|height)=("|\')\d*(|px)("|\')\s/', "", $html );
-    return $html;
-}
-add_filter( 'the_content', 'remove_width_attribute', 10 );
-
 // Make content URLs relative
 function make_content_urls_relative( $content ) {
     return str_replace( site_url(), '', $content );
 }
 add_filter( 'the_content', 'make_content_urls_relative' );
 
-// Disable srcset
-function disable_srcset( $sources ) {
-    return false;
+function add_image_responsive_class($content) {
+    global $post;
+    $pattern ="/<img(.*?)class=\"(.*?)\"(.*?)>/i";
+    $replacement = '<img$1class="$2 img-responsive"$3>';
+    $content = preg_replace($pattern, $replacement, $content);
+    return $content;
 }
-// add_filter( 'wp_calculate_image_srcset', 'disable_srcset' );
+add_filter('the_content', 'add_image_responsive_class');
+
