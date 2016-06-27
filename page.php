@@ -83,28 +83,29 @@ get_header(); ?>
 								<hr>
 							<?php } ?>
 							<h1><?php the_title(); ?></h1>
+
 							<!-- featured image -->
 							<?php if ( has_post_thumbnail() ) {
 								$image_id      = get_post_thumbnail_id( $page->ID );
-								$image_src     = wp_get_attachment_image_src( $image_id, 'full', false );
+								$image_src     = wp_get_attachment_image_src( $image_id, 'srcset-img-lg', false );
 								$image_src     = fix_internal_url( $image_src[0] );
 								$image_caption = get_post( get_post_thumbnail_id() )->post_excerpt;
 								?>
 								<div class="feature-image">
-									<img src="<?php echo make_path_relative( $image_src ); ?>" width="100%"
-									     alt="Image of <?php echo( $image_caption ); ?>"
-									     title="<?php echo( $image_caption ); ?>">
+									<img src="<?php echo make_path_relative( $image_src ); ?>"
+									     class="img-responsive"
+									     alt="Image of <?php echo( $image_caption ); ?>">
+									<?php if ($image_caption) { ?>
 									<p class="caption text-right"><?php echo( $image_caption ); ?></p>
+									<?php } ?>
 								</div>
 								<?php
-							}
-							?>
+							} ?>
 							<!-- featured image -->
 
 							<div class="content-columns clearfix">
                                 <?php edit_post_link('EDIT', '<p>', '</p>'); ?>
-
-
+								
 								<?php the_content(); ?>
 								<hr>
 							</div>
