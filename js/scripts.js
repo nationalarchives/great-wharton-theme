@@ -3,16 +3,6 @@
  * ---------------------------------------------------------------
  * */
 
-$(document).ready(function() {
-
-    /*Removing style attribute from caption class*/
-    $("div.wp-caption").removeAttr("style");
-
-});
-
-
-
-
 
 /* ---------------------------------------------------------------
  * Share this button
