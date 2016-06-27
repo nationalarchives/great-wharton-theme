@@ -1,7 +1,5 @@
-<?php
+<?php get_header(); ?>
 
-
-get_header(); ?>
 <div class="page-branding">
 	<div class="container">
 		<div class="row">
@@ -32,15 +30,13 @@ get_header(); ?>
 				<div class="col-xs-12 col-sm-12 col-md-12">
 					<div class="info">
 						<div class="inner">
-
                             <noscript>
-                            <style>
-                            .info-toolbar-right{
-                                display: none;
-                            }
-
-                            </style>
-                                </noscript>
+	                            <style>
+	                            .info-toolbar-right{
+	                                display: none;
+	                            }
+	                            </style>
+                            </noscript>
 							<a href="<?php echo make_path_relative( esc_url( home_url( '/', 'http' ) ) );
 							// use category slug for hashtag
 							$category = get_the_category();
@@ -105,7 +101,7 @@ get_header(); ?>
 
 							<div class="content-columns clearfix">
                                 <?php edit_post_link('EDIT', '<p>', '</p>'); ?>
-								
+
 								<?php the_content(); ?>
 								<hr>
 							</div>
