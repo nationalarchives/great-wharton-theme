@@ -212,6 +212,7 @@ function make_content_urls_relative( $content ) {
 }
 add_filter( 'the_content', 'make_content_urls_relative' );
 
+// Adds img-responsive class to images within the_content
 function add_image_responsive_class($content) {
     global $post;
     $pattern ="/<img(.*?)class=\"(.*?)\"(.*?)>/i";
@@ -221,3 +222,26 @@ function add_image_responsive_class($content) {
 }
 add_filter('the_content', 'add_image_responsive_class');
 
+// Amends attr for wp-caption
+// See https://codex.wordpress.org/Plugin_API/Filter_Reference/img_caption_shortcode
+add_filter( 'img_caption_shortcode', 'my_img_caption_shortcode', 10, 3 );
+function my_img_caption_shortcode( $empty, $attr, $content ){
+    $attr = shortcode_atts( array(
+        'id'      => '',
+        'align'   => 'alignnone',
+        'width'   => '',
+        'caption' => ''
+    ), $attr );
+    if ( 1 > (int) $attr['width'] || empty( $attr['caption'] ) ) {
+        return '';
+    }
+    if ( $attr['id'] ) {
+        $attr['id'] = 'id="' . esc_attr( $attr['id'] ) . '" ';
+    }
+    return '<div ' . $attr['id']
+           . 'class="wp-caption ' . esc_attr( $attr['align'] ) . '" '
+           . 'style="max-width: ' . ( (int) $attr['width'] ) . 'px;">'
+           . do_shortcode( $content )
+           . '<p class="wp-caption-text">' . $attr['caption'] . '</p>'
+           . '</div>';
+}
