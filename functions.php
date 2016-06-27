@@ -245,3 +245,22 @@ function my_img_caption_shortcode( $empty, $attr, $content ){
            . '<p class="wp-caption-text">' . $attr['caption'] . '</p>'
            . '</div>';
 }
+
+// Adds image size for srcset
+add_action( 'after_setup_theme', 'tna_theme_setup' );
+function tna_theme_setup() {
+    add_image_size( 'srcset-img-lg', 1076 );
+}
+
+// Optimized srcset sizes attribute
+function content_image_sizes_attr($sizes, $size) {
+    $width = $size[0];
+    if ( is_page() && !is_page_template() ) {
+        if ($width > 1075) {
+            return '(max-width: 375px) 300px, (max-width: 768px) 768px, (max-width: 1200px) 1076px, 1076px';
+        }
+        return '(max-width: ' . $width . 'px) 100vw, ' . $width . 'px';
+    }
+    return '(max-width: ' . $width . 'px) 100vw, ' . $width . 'px';
+}
+add_filter('wp_calculate_image_sizes', 'content_image_sizes_attr', 10 , 2);
