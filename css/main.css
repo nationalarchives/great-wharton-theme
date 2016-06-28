@@ -241,16 +241,16 @@ a.button:hover {
 
 .intro{
     display:block;
-    padding: 50px 50px 30px 50px;
+    padding: 30px 25px 15px 25px;
     position: absolute;
     left: 50%;
     top: 52%;
     transform: translate(-50%, -50%);
-    width: 65%;
+    width: 55%;
     text-align: center;
     font-size: 1.6em;
     background-color: #faf8d6;
-    margin-top: 30px;
+    margin-top: 10px;
 
 }
 .enter-box, .next-box{
@@ -264,7 +264,6 @@ a.button:hover {
 }
 .enter-box{
     padding:10px;
-    margin-top: 20px;
 
 }
 .enter-box h2{
@@ -284,8 +283,10 @@ a.button:hover {
 }
 .enter-box .float-left{
     width:25% !important;
-    padding:5px;
-    border-right:1px solid #d4d3c0;
+    padding:15px 5px 5px 5px;
+    /*border-right:1px solid #d4d3c0;*/
+    background-color: #e9e7c8;
+    border:1px solid #d4d3c0;
 
 }
 .enter-box .clear-both{
@@ -293,14 +294,25 @@ a.button:hover {
 }
 .enter-box .row{
     /*border-bottom: 1px solid #e9e7c8;*/
-    background-color: #e9e7c8;
-    border:1px solid #d4d3c0;
+
     padding: 10px;
 margin-bottom:10px;
-    width:70%;
+    width:80%;
     margin-right: auto;
     margin-left: auto;
     display: table;
+}
+.enter-box .col{
+    width:31%;
+    float:left;
+    margin-left: 8.3px;
+}
+.enter-box .icon{
+    padding:15px 5px 5px 5px;
+    /*border-right:1px solid #d4d3c0;*/
+    background-color: #e9e7c8;
+    border:1px solid #d4d3c0;
+
 }
 .intro, .info{
 
@@ -308,8 +320,9 @@ margin-bottom:10px;
 
 }
 .intro img {
-    width: 50%;
+    width: 60%;
     max-width: 100%;
+    margin-bottom: 10px;
 }
 
 .intro span img{
@@ -1036,6 +1049,11 @@ a.marker::after{
 
 @media (max-width:450px){
 
+    .enter-box .col{
+        width:100%;
+        float:none;
+    }
+
     .enter-box .row{
 
         width:100%;
@@ -1142,7 +1160,7 @@ and (max-device-width : 1024px)  {
 
     .intro{
         display:block;
-        padding: 50px 50px 30px 50px;
+        padding: 20px 25px 15px 25px;
         position: absolute;
         left: 25%;
         top: 10%;

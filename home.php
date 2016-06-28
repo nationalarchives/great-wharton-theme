@@ -10,31 +10,89 @@ get_header(); ?>
 <?php if (have_posts()): while (have_posts()) : the_post();?>
     <div class="overlay">
         <div class="intro">
-            <img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-title.png" alt="Great Wharton title" title="Welcome to Great Wharton" tabindex="1">
-            <div class="next-box" tabindex="2">       <div ><?php the_content();?></div>
+            <div class="next-box" tabindex="2"><img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-title.png" alt="Great Wharton title" title="Welcome to Great Wharton" tabindex="1">
+                <div class="clear-both"></div>
+                <div ><?php the_content();?></div>
 
 
 
     <script>
         document.write("<p><a href='#' role='button' class='button' id='next-click' tabindex='3'>&middot; Next &middot;</a>");
     </script>
+                <noscript>
+                    <style>
+                        .overlay{
+                            overflow: scroll;
+
+                        }
+                        .enter-box{
+                            display: none;
+                        }
+                        @media (min-width: 767px) {
+                            .intro{
+                                margin-top:120px;
+                            }
+                        }
+
+                    </style>
+
+
+                    <?php
+                    $pageargs   = array(
+                        'post_type'    => 'page',
+                        'order'        => 'ASC',
+                        'orderby'      => 'menu_order',
+                        'posts_per_page' => -1,
+                        'post__not_in' => array( get_option( 'page_on_front' ) ),
+                    );
+                    $page_query = new WP_Query( $pageargs );
+                    if ( $page_query->have_posts() ) {
+                        while ( $page_query->have_posts() ) {
+                            $page_query->the_post();
+                            $page_id = $page_query->post->ID;
+                            //show only pages with category i.e. hide all non-story content
+                            if ( has_category() ) {
+                                ?>
+                                <a href="<?php echo make_path_relative( get_permalink() ); ?>"><?php the_title(); ?></a><br>
+                            <?php
+                            }
+                        }
+                    }
+                    wp_reset_postdata();
+                    ?>
+
+                    <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> To experience this website at its best please enable JavaScript in your browser.</p>
+
+                </noscript>
+
+
+
+                <div class="clear-space"></div>
+
+                        <span>
+                            <img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-logo.png" alt="The  National Archives logo" title="The National Archives">
+                        </span>
+                <div class="clear-space"></div>
+
+                <p class="small">We use cookies to improve services and ensure they work for you. Read our <a href="http://www.nationalarchives.gov.uk/legal/cookies.htm">cookie policy</a>. </p>
+
 </div>
 
 <div class="enter-box" tabindex="4">
-    <div class="row">
- <div class="float-left">
-            <img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-instructions-navigate.png" title="Navigate"></div>
-            <div class="float-right">Using your finger or mouse drag to explore the town  </div>
-</div>    <div class="clear-both"></div>
+    <h2>How to find your way around Great Wharton</h2>
+    <div class="col">
 
-    <div class="row">
-    <div class="float-left"><img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-instructions-marker.png" title="Marker"></div>
-    <div class="float-right">To read a particular story click on its marker</div>
+
+          <div class="icon"><img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-instructions-navigate.png" title="Navigate"></div> <p>Using your finger or mouse drag to explore the town  </p>
+</div>
+
+    <div class="col">
+        <div class="icon">
+<img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-instructions-marker.png" title="Marker"></div><p>To read a particular story click on its marker</p>
         </div>
-    <div class="clear-both"></div>
-    <div class="row">
-    <div class="float-left"><img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-instructions-zoom.png" title="Zoom"></div>
-    <div class="float-right">Use the zoom button (bottom left) for a wider view</div>
+
+    <div class="col">
+        <div class="icon"><img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-instructions-zoom.png" title="Zoom"></div><p>Use the zoom button (bottom left) for a wider view</p>
 
         </div>
     <div class="clear-both"></div>
@@ -45,62 +103,7 @@ get_header(); ?>
 </script>
     </div>
 
-                <noscript>
-                    <style>
-                        .overlay{
-                           overflow: scroll;
 
-                        }
-                        .enter-box{
-                            display: none;
-                        }
-                        @media (min-width: 767px) {
-                        .intro{
-                            margin-top:120px;
-                        }
-                        }
-
-                    </style>
-
-
-                <?php
-                $pageargs   = array(
-                    'post_type'    => 'page',
-                    'order'        => 'ASC',
-                    'orderby'      => 'menu_order',
-                    'posts_per_page' => -1,
-                    'post__not_in' => array( get_option( 'page_on_front' ) ),
-                );
-                $page_query = new WP_Query( $pageargs );
-                if ( $page_query->have_posts() ) {
-                    while ( $page_query->have_posts() ) {
-                        $page_query->the_post();
-                        $page_id = $page_query->post->ID;
-                        //show only pages with category i.e. hide all non-story content
-                        if ( has_category() ) {
-                            ?>
-                          <a href="<?php echo make_path_relative( get_permalink() ); ?>"><?php the_title(); ?></a><br>
-                        <?php
-                        }
-                    }
-                }
-                wp_reset_postdata();
-                ?>
-
-                    <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> To experience this website at its best please enable JavaScript in your browser.</p>
-
-            </noscript>
-
-
-
-
-
-                        <span>
-                            <img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-logo.png" alt="The  National Archives logo" title="The National Archives">
-                        </span>
-            <div class="clear-space"></div>
-
-            <p class="small">We use cookies to improve services and ensure they work for you. Read our <a href="http://www.nationalarchives.gov.uk/legal/cookies.htm">cookie policy</a>. </p>
         </div>
     </div>
 
