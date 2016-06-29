@@ -31,6 +31,75 @@ function home_meta_boxes() {
 					'std'  => ''
 				)
 			)
+		),
+		array(
+			'id'       => 'instructions_1',
+			'title'    => 'Instructions 1',
+			'pages'    => 'page',
+			'context'  => 'normal',
+			'priority' => 'high',
+			'fields'   => array(
+				array(
+					'name' => 'Image URL',
+					'desc' => '',
+					'id'   => 'instructions_img_url_1',
+					'type' => 'text',
+					'std'  => ''
+				),
+				array(
+					'name' => 'Instructions text',
+					'desc' => '',
+					'id'   => 'instructions_text_1',
+					'type' => 'text',
+					'std'  => ''
+				)
+			)
+		),
+		array(
+			'id'       => 'instructions_2',
+			'title'    => 'Instructions 2',
+			'pages'    => 'page',
+			'context'  => 'normal',
+			'priority' => 'high',
+			'fields'   => array(
+				array(
+					'name' => 'Image URL',
+					'desc' => '',
+					'id'   => 'instructions_img_url_2',
+					'type' => 'text',
+					'std'  => ''
+				),
+				array(
+					'name' => 'Instructions text',
+					'desc' => '',
+					'id'   => 'instructions_text_2',
+					'type' => 'text',
+					'std'  => ''
+				)
+			)
+		),
+		array(
+			'id'       => 'instructions_3',
+			'title'    => 'Instructions 3',
+			'pages'    => 'page',
+			'context'  => 'normal',
+			'priority' => 'high',
+			'fields'   => array(
+				array(
+					'name' => 'Image URL',
+					'desc' => '',
+					'id'   => 'instructions_img_url_3',
+					'type' => 'text',
+					'std'  => ''
+				),
+				array(
+					'name' => 'Instructions text',
+					'desc' => '',
+					'id'   => 'instructions_text_3',
+					'type' => 'text',
+					'std'  => ''
+				)
+			)
 		)
 	);
 	$post_id       = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'];
