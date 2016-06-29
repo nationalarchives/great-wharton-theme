@@ -1,40 +1,47 @@
 <?php
 
-$meta_boxes = array(
-	array(
-		'id' => 'find_out_more',
-		'title' => 'Find out more',
-		'pages' => 'page',
-		'context' => 'normal',
-		'priority' => 'high',
-		'fields' => array(
-			array(
-				'name' => 'Fine out more button text',
-				'desc' => '',
-				'id' => 'more_button',
-				'type' => 'text',
-				'std' => ''
-			),
-			array(
-				'name' => 'Find out more text',
-				'desc' => '',
-				'id' => 'more_text',
-				'type' => 'text',
-				'std' => ''
-			),
-			array(
-				'name' => 'Find out more URL',
-				'desc' => '',
-				'id' => 'more_url',
-				'type' => 'text',
-				'std' => ''
+function home_meta_boxes() {
+	$meta_boxes    = array(
+		array(
+			'id'       => 'find_out_more',
+			'title'    => 'Find out more',
+			'pages'    => 'page',
+			'context'  => 'normal',
+			'priority' => 'high',
+			'fields'   => array(
+				array(
+					'name' => 'Fine out more button text',
+					'desc' => '',
+					'id'   => 'more_button',
+					'type' => 'text',
+					'std'  => ''
+				),
+				array(
+					'name' => 'Find out more text',
+					'desc' => '',
+					'id'   => 'more_text',
+					'type' => 'text',
+					'std'  => ''
+				),
+				array(
+					'name' => 'Find out more URL',
+					'desc' => '',
+					'id'   => 'more_url',
+					'type' => 'text',
+					'std'  => ''
+				)
 			)
 		)
-	)
-);
-foreach ( $meta_boxes as $meta_box ) {
-	$level_one_box = new create_meta_box( $meta_box );
+	);
+	$post_id       = $_GET['post'] ? $_GET['post'] : $_POST['post_ID'];
+	$template_file = get_post_meta( $post_id, '_wp_page_template', true );
+	if ( $template_file == 'home.php' ) {
+		foreach ( $meta_boxes as $meta_box ) {
+			$home_box = new create_meta_box( $meta_box );
+		}
+	}
 }
+add_action( 'init', 'home_meta_boxes' );
 
 
 // Creates meta boxes from $meta_boxes[] = array()
