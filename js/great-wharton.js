@@ -206,7 +206,7 @@ $(".learn_more_close .fa-times").click(function (e) {
 
 // This is a JS fallback
 $("#enter-click").attr("href", "#");
-
+$("#next-click").attr("href", "#");
 
 /* ---------------------------------------------------------------
  * 1. Show/hide assets
@@ -216,6 +216,7 @@ $("#enter-click").attr("href", "#");
 // Show overlay and intro when page loads for the first time
 $('.overlay').show();
 $('.intro').fadeIn(600);
+$('.enter-box').hide();
 
 // Check if cookie was created
 // Hide and fade-in assets
@@ -228,6 +229,18 @@ if (readCookie('gw-hide-intro')) {
     $('.map-zoom').fadeIn(600);
 
 }
+
+// Next button shows instructions and Enter button, Return takes user back to intro
+
+$("#next-click").click(function () {
+    $('.next-box').hide();
+    $('.enter-box').fadeIn(600);
+});
+
+$("#return-click").click(function () {
+    $('.next-box').fadeIn(600);
+    $('.enter-box').hide();
+});
 
 // If Enter button is clicked then fade-in/fade-out assets
 // Create the cookie gw-hide-intro
@@ -243,16 +256,17 @@ $("#enter-click").click(function () {
 
 // If overlay is clicked then fade-in/fade-out assets
 // Create the cookie gw-hide-intro
-$(".overlay").click(function () {
-    $('.overlay').fadeOut(600);
-    $('.intro').fadeOut(600);
-    $('.about').fadeIn(600);
-    $('.info').fadeOut(600);
-    $('.tna_brand').fadeIn(600);
-    $('.map-zoom').fadeIn(600);
-    $('.learn_more_wrap').fadeIn(600);
-    createCookie('gw-hide-intro', true, 1)
-});
+
+//$(".overlay").click(function () {
+//    $('.overlay').fadeOut(600);
+//    $('.intro').fadeOut(600);
+//    $('.about').fadeIn(600);
+//    $('.info').fadeOut(600);
+//    $('.tna_brand').fadeIn(600);
+//    $('.map-zoom').fadeIn(600);
+//    $('.learn_more_wrap').fadeIn(600);
+//    createCookie('gw-hide-intro', true, 1)
+//});
 
 
 $(".about").click(function () {
