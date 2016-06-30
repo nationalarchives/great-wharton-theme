@@ -78,30 +78,46 @@ get_header(); ?>
 
 </div>
 
+<!-- Instructions -->
 <div class="enter-box" tabindex="4">
+    <?php
+    // Fetch page meta values
+    $intImgUrl1 = get_post_meta( $post->ID, 'instructions_img_url_1', true );
+    $intImgTitle1 = get_post_meta( $post->ID, 'instructions_img_title_1', true );
+    $intText1 = get_post_meta( $post->ID, 'instructions_text_1', true );
+    $intImgUrl2 = get_post_meta( $post->ID, 'instructions_img_url_2', true );
+    $intImgTitle2 = get_post_meta( $post->ID, 'instructions_img_title_2', true );
+    $intText2 = get_post_meta( $post->ID, 'instructions_text_2', true );
+    $intImgUrl3 = get_post_meta( $post->ID, 'instructions_img_url_3', true );
+    $intImgTitle3 = get_post_meta( $post->ID, 'instructions_img_title_3', true );
+    $intText3 = get_post_meta( $post->ID, 'instructions_text_3', true );
+    ?>
     <h2>How to find your way around Great Wharton</h2>
     <div class="col">
-
-
-          <div class="icon"><img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-instructions-navigate.png" title="Navigate"></div> <p>Using your finger or mouse drag to explore the town  </p>
-</div>
-
+          <div class="icon">
+              <img src="<?php echo $intImgUrl1; ?>" title="<?php echo $intImgTitle1; ?>">
+          </div>
+        <p><?php echo $intText1; ?></p>
+    </div>
     <div class="col">
         <div class="icon">
-<img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-instructions-marker.png" title="Marker"></div><p>To read a particular story click on its marker</p>
+            <img src="<?php echo $intImgUrl2; ?>" title="<?php echo $intImgTitle2; ?>">
         </div>
-
-    <div class="col">
-        <div class="icon"><img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-instructions-zoom.png" title="Zoom"></div><p>Use the zoom button (bottom left) for a wider view</p>
-
-        </div>
-    <div class="clear-both"></div>
-<script>
-            document.write("<p><a href='#' role='button' class='button' id='enter-click' tabindex='5'>&middot; Enter &middot;</a></p>");
-
-            document.write("<p><a href='#' id='return-click' tabindex='5'>Back to introduction</a></p>");
-</script>
+        <p><?php echo $intText2; ?></p>
     </div>
+    <div class="col">
+        <div class="icon">
+            <img src="<?php echo $intImgUrl3; ?>" title="<?php echo $intImgTitle3; ?>">
+        </div>
+        <p><?php echo $intText3; ?></p>
+    </div>
+    <div class="clear-both"></div>
+    <script>
+        document.write("<p><a href='#' role='button' class='button' id='enter-click' tabindex='5'>&middot; Enter &middot;</a></p>");
+        document.write("<p><a href='#' id='return-click' tabindex='5'>Back to introduction</a></p>");
+    </script>
+</div>
+<!-- Instructions end -->
 
 
         </div>
