@@ -78,30 +78,33 @@ get_header(); ?>
 
 </div>
 
+<!-- Instructions -->
 <div class="enter-box" tabindex="4">
     <h2>How to find your way around Great Wharton</h2>
     <div class="col">
-
-
-          <div class="icon"><img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-instructions-navigate.png" title="Navigate"></div> <p>Using your finger or mouse drag to explore the town  </p>
-</div>
-
+          <div class="icon">
+              <img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-instructions-navigate.png" title="Navigate">
+          </div>
+        <p>Using your finger or mouse drag to explore the town  </p>
+    </div>
     <div class="col">
         <div class="icon">
-<img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-instructions-marker.png" title="Marker"></div><p>To read a particular story click on its marker</p>
+            <img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-instructions-marker.png" title="Marker">
         </div>
-
-    <div class="col">
-        <div class="icon"><img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-instructions-zoom.png" title="Zoom"></div><p>Use the zoom button (bottom left) for a wider view</p>
-
-        </div>
-    <div class="clear-both"></div>
-<script>
-            document.write("<p><a href='#' role='button' class='button' id='enter-click' tabindex='5'>&middot; Enter &middot;</a></p>");
-
-            document.write("<p><a href='#' id='return-click' tabindex='5'>Back to introduction</a></p>");
-</script>
+        <p>To read a particular story click on its marker</p>
     </div>
+    <div class="col">
+        <div class="icon">
+            <img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-instructions-zoom.png" title="Zoom">
+        </div
+        ><p>Use the zoom button (bottom left) for a wider view</p>
+    </div>
+    <div class="clear-both"></div>
+    <script>
+        document.write("<p><a href='#' role='button' class='button' id='enter-click' tabindex='5'>&middot; Enter &middot;</a></p>");
+        document.write("<p><a href='#' id='return-click' tabindex='5'>Back to introduction</a></p>");
+    </script>
+</div>
 
 
         </div>
