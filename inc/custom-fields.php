@@ -41,7 +41,7 @@ function home_meta_boxes() {
 			'fields'   => array(
 				array(
 					'name' => 'Image URL',
-					'desc' => '',
+					'desc' => 'Make sure image URL path begins with &#39;/wp-content/&#39;.',
 					'id'   => 'instructions_img_url_1',
 					'type' => 'text',
 					'std'  => ''
@@ -71,7 +71,7 @@ function home_meta_boxes() {
 			'fields'   => array(
 				array(
 					'name' => 'Image URL',
-					'desc' => '',
+					'desc' => 'Make sure image URL path begins with &#39;/wp-content/&#39;.',
 					'id'   => 'instructions_img_url_2',
 					'type' => 'text',
 					'std'  => ''
@@ -101,7 +101,7 @@ function home_meta_boxes() {
 			'fields'   => array(
 				array(
 					'name' => 'Image URL',
-					'desc' => '',
+					'desc' => 'Make sure image URL path begins with &#39;/wp-content/&#39;.',
 					'id'   => 'instructions_img_url_3',
 					'type' => 'text',
 					'std'  => ''
