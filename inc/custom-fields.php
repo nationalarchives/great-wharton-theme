@@ -47,6 +47,13 @@ function home_meta_boxes() {
 					'std'  => ''
 				),
 				array(
+					'name' => 'Image title',
+					'desc' => '',
+					'id'   => 'instructions_img_title_1',
+					'type' => 'text',
+					'std'  => ''
+				),
+				array(
 					'name' => 'Instructions text',
 					'desc' => '',
 					'id'   => 'instructions_text_1',
@@ -70,6 +77,13 @@ function home_meta_boxes() {
 					'std'  => ''
 				),
 				array(
+					'name' => 'Image title',
+					'desc' => '',
+					'id'   => 'instructions_img_title_2',
+					'type' => 'text',
+					'std'  => ''
+				),
+				array(
 					'name' => 'Instructions text',
 					'desc' => '',
 					'id'   => 'instructions_text_2',
@@ -89,6 +103,13 @@ function home_meta_boxes() {
 					'name' => 'Image URL',
 					'desc' => '',
 					'id'   => 'instructions_img_url_3',
+					'type' => 'text',
+					'std'  => ''
+				),
+				array(
+					'name' => 'Image title',
+					'desc' => '',
+					'id'   => 'instructions_img_title_3',
 					'type' => 'text',
 					'std'  => ''
 				),
