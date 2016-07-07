@@ -148,7 +148,7 @@ get_header(); ?>
     <?php }?>
 	<!-- Learn more end here -->
 
-	<div class="map-zoom">Zoom <i class="fa fa-plus" aria-hidden="true" title="Zoom in"></i> <i class="fa fa-minus" aria-hidden="true" title="Zoom out"></i></div>
+	<div class="map-zoom">Zoom <i id="zoom_plus" class="fa fa-plus" aria-hidden="true" title="Zoom in"></i> <i id="zoom_minus" class="fa fa-minus" aria-hidden="true" title="Zoom out"></i></div>
 
 	<!-- Branding here -->
     <div class="about">
@@ -176,6 +176,7 @@ get_header(); ?>
 <script src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/js/tiles.js"></script>
 <script src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/js/scripts.js"></script>
 <script src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/js/great-wharton.js"></script>
+<script src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/js/js-cookie.js"></script>
 
 <?php get_footer(); ?>
 

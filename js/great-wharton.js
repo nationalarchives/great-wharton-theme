@@ -5,10 +5,6 @@
 
 // Draggable JS start here
 
-
-//TweenLite.set("#wrapper",{x:-750,y:-750});
-//TweenLite.set("#wrapper", {x:-600, y:-600});
-
 var gridWidth = 100;
 var gridHeight = 100;
 Draggable.create("#wrapper", {
@@ -46,43 +42,6 @@ $('.main_background').tiles({
 
 
 
-/*
-
- Zoom
- */
-
-
-
-
-$(".map-zoom .fa-minus").click(function () {
-    //$("#wrapper").animate({ 'zoom':.5 }, 400);
-    //TweenLite.to("#wrapper", 1, {scale:.5});
-
-    TweenLite.to("#wrapper", 0.5 ,
-        {
-            scale:.5,
-            onUpdate:function()
-            {
-                Draggable.get("#wrapper").applyBounds();
-            }
-        });
-
-
-
-});
-
-$(".map-zoom .fa-plus").click(function() {
-    //$("#wrapper").animate({ 'zoom':1 }, 400);
-    TweenLite.to("#wrapper", 0.5 ,
-        {
-            scale:1,
-            onUpdate:function()
-            {
-                Draggable.get("#wrapper").applyBounds();
-            }
-        });
-
-});
 
 
 
@@ -257,18 +216,6 @@ $("#enter-click").click(function () {
 // If overlay is clicked then fade-in/fade-out assets
 // Create the cookie gw-hide-intro
 
-//$(".overlay").click(function () {
-//    $('.overlay').fadeOut(600);
-//    $('.intro').fadeOut(600);
-//    $('.about').fadeIn(600);
-//    $('.info').fadeOut(600);
-//    $('.tna_brand').fadeIn(600);
-//    $('.map-zoom').fadeIn(600);
-//    $('.learn_more_wrap').fadeIn(600);
-//    createCookie('gw-hide-intro', true, 1)
-//});
-
-
 $(".about").click(function () {
     $('.overlay').fadeIn(600);
     $('.intro').fadeIn(600);
@@ -313,6 +260,74 @@ function eraseCookie(name) {
 // Cookie end here
 
 
+/*
+ * ----------------------------------------------------------------
+ * Add Cookies to Zoom IN and OUT
+ * ----------------------------------------------------------------
+ * */
+
+/*
+ * Store an empty variable for the zoom level
+ * */
+var zoomLev;
+
+/*
+ * Default zoom level
+ * */
+TweenLite.to("#wrapper", 0.5,
+    {
+        scale: (function () {
+            return getCookie('zoomCookie');
+        })(),
+        onUpdate: function () {
+            Draggable.get("#wrapper").applyBounds();
+        }
+    });
+
+/*
+ * Global function to retrieve cookie's value
+ * */
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+/*
+ * If click on +/- the zoom will change
+ * ZoomCookie is created
+ * */
+$(document).ready( function() {
+    $(".map-zoom .fa-minus, .map-zoom .fa-plus").on('click', function () {
+
+        if (this.id == 'zoom_minus') {
+            zoomLev = .5;
+            /*$('a.marker').css({'font-size': '120px'});*/
+        }
+        else if (this.id == 'zoom_plus') {
+            zoomLev = 1;
+        }
+
+        Cookies.set('zoomCookie', zoomLev, {expires: 7});
+
+        TweenLite.to("#wrapper", 0.5,
+            {
+                scale: zoomLev,
+                onUpdate: function () {
+                    Draggable.get("#wrapper").applyBounds();
+                }
+            });
+
+    });
+});
 
 
 
