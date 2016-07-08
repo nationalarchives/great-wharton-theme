@@ -929,7 +929,6 @@ a.marker::after{
 }
 
 .characters {
-
     text-align: center;
 }
 
@@ -943,8 +942,10 @@ a.marker::after{
     font-size:1.5em;
 }
 .font-size button {
-    border-radius: 5px;
+    border-radius: 2px;
     padding:2px 5px;
+    border:0;
+    background-color:#e9e7c8;
 }
 @keyframes pulse {
     0% {
