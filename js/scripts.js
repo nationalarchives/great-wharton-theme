@@ -38,7 +38,7 @@ $(document).ready( function()  {
 
         }
         // If -A is clicked decrease the font size and it's line height
-        else if (this.id == 'font_size_small') {exploreyourarchive
+        else if (this.id == 'font_size_small') {
             pfontSize = pfontSize - 3 + "px";
             lineHeight = lineHeight - 3 + "px";
             hfontSize = hfontSize - 3 + "px";
