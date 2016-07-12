@@ -78,7 +78,7 @@
 								</div>
 								<hr>
 								<div class="font-size">
-									<span>Increase font size: </span>
+									<span>Change text size: </span>
 									<button id="font_size_big">+A</button>
 									<button id="font_size_small">-A</button>
 									<button id="font_size_reset"><i class="fa fa-undo" aria-hidden="true"></i></button>
