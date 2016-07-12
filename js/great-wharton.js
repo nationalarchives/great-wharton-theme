@@ -311,11 +311,11 @@ $(document).ready( function() {
 
         if (this.id == 'zoom_minus') {
             zoomLev = .5;
-            $('a#children.marker').css({'font-size':'35px','padding':'10px 12px'})
+            $('.marker').css({'font-size':'35px','padding':'10px 12px'})
         }
         else if (this.id == 'zoom_plus') {
             zoomLev = 1;
-            $('a#children.marker').css({'font-size':'2em', 'padding':'6px'})
+            $('.marker').css({'font-size':'2em', 'padding':'6px'})
         }
 
         Cookies.set('zoomCookie', zoomLev, {expires: 7});
@@ -332,7 +332,7 @@ $(document).ready( function() {
 
     // Resize the font size on marker when zoom out
     if (getCookie('zoomCookie') == .5){
-        $('a#children.marker').css({'font-size':'35px','padding':'10px 12px'})
+        $('.marker').css({'font-size':'35px','padding':'10px 12px'})
     }
 });
 
