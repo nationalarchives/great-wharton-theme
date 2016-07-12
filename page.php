@@ -77,6 +77,12 @@
 									</div>
 								</div>
 								<hr>
+								<div class="font-size">
+									<span>Change text size: </span>
+									<button id="font_size_big">+A</button>
+									<button id="font_size_small">-A</button>
+									<button id="font_size_reset"><i class="fa fa-undo" aria-hidden="true"></i></button>
+								</div>
 							<?php } ?>
 							<h1><?php the_title(); ?></h1>
 
@@ -131,10 +137,17 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<script src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/js/js-cookie.js"></script>
+<script src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/js/scripts.js"></script>
 
 <script type="text/javascript">var switchTo5x = true;</script>
 <script type="text/javascript" src="http://ws.sharethis.com/button/buttons.js"></script>
-<script src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/js/scripts.js"></script>
+
+<script>
+
+</script>
+
+
 
 <script type="text/javascript">
 	stLight.options({
@@ -145,9 +158,6 @@
 		onhover: false
 	});
 
-</script>
-<script>
-	$(".st_sharethis_large").show("slow");
 </script>
 
 <?php get_footer(); ?>
