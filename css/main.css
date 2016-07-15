@@ -946,8 +946,12 @@ a.marker::after{
 
 .font-size {
     font-size:1.5em;
-    float:none;
+    float:right;
     text-align:right;
+    width:auto;
+    margin-left: 0;
+    margin-right: 0;
+    width:100%;
 }
 
 .font-size button {
@@ -955,6 +959,13 @@ a.marker::after{
     padding:10px;
     border:0;
     background-color:#e9e7c8;
+    -webkit-transition: background-color 300ms ease-out 100ms;
+    -moz-transition: background-color 300ms ease-out 100ms;
+    -o-transition: background-color 300ms ease-out 100ms;
+    transition: background-color 300ms ease-out 100ms;
+}
+.font-size button:hover{
+    background-color: rgba(199,196,155,1);
 }
 @keyframes pulse {
     0% {
