@@ -77,13 +77,17 @@
 									</div>
 								</div>
 								<hr>
-								<div class="font-size">
-									<span>Change text size: </span>
-									<button id="font_size_big">+A</button>
-									<button id="font_size_small">-A</button>
-									<button id="font_size_reset"><i class="fa fa-undo" aria-hidden="true"></i></button>
-								</div>
+
 							<?php } ?>
+
+                            <div class="font-size">
+                                <span>Change text size: </span>
+                                <button id="font_size_big">+A</button>
+                                <button id="font_size_small">-A</button>
+                                <button id="font_size_reset"><i class="fa fa-undo" aria-hidden="true"></i></button>
+                            </div>
+                   <div class="clear-both"></div>
+
 							<h1><?php the_title(); ?></h1>
 
 							<!-- featured image -->

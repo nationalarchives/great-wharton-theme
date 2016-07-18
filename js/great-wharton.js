@@ -94,7 +94,7 @@ if (hashTag == "#grocery-shop") {
 }
 if (hashTag == "#strike") {
 
-    TweenLite.to("#wrapper", 2, {x: -1800, y: -1660, ease: Circ.easeOut, onUpdate:function()
+    TweenLite.to("#wrapper", 2, {x: -1500, y: -1600, ease: Circ.easeOut, onUpdate:function()
     {
         Draggable.get("#wrapper").applyBounds();
     }});
