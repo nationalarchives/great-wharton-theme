@@ -285,3 +285,7 @@ if ( ! function_exists( 'redirect_if_404' ) ) :
 	}
 endif;
 add_filter( 'template_redirect', 'redirect_if_404' );
+
+// Includes
+include 'inc/custom-fields.php';
+

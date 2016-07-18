@@ -81,6 +81,12 @@ img {
     background-size: cover;
 }
 
+.s-grid h1 {
+    width: 100%;
+    clear:both;
+    display:block;
+}
+
 html {
     width: 100%;
     height: 100%;
@@ -241,7 +247,7 @@ a.button:hover {
 
 .intro{
     display:block;
-    padding: 50px 50px 30px 50px;
+    padding: 30px 25px 15px 25px;
     position: absolute;
     left: 50%;
     top: 52%;
@@ -250,25 +256,87 @@ a.button:hover {
     text-align: center;
     font-size: 1.6em;
     background-color: #faf8d6;
+    margin-top: 10px;
 
 }
+.enter-box, .next-box{
+    z-index: 4000;
+    text-align: center;
+}
+.enter-box ul li{
+    list-style: none;
+    display: inline-block;
+    margin-bottom:5px;
+}
+.enter-box{
+    padding:10px;
 
+}
+.enter-box h2{
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    margin-top:5px;
+}
+.enter-box img{
+    width:auto !important;
+}
+.enter-box .float-right{
+    width:75% !important;
+    text-align: left;
+    padding-left:15px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.enter-box .float-left{
+    width:25% !important;
+    padding:15px 5px 5px 5px;
+    /*border-right:1px solid #d4d3c0;*/
+    background-color: #e9e7c8;
+    border:1px solid #d4d3c0;
+
+}
+.enter-box .clear-both{
+    height:5px;
+}
+.enter-box .row{
+    /*border-bottom: 1px solid #e9e7c8;*/
+
+    padding: 10px;
+margin-bottom:10px;
+    width:80%;
+    margin-right: auto;
+    margin-left: auto;
+    display: table;
+}
+.enter-box .col{
+    width:31%;
+    float:left;
+    margin-left: 8.3px;
+}
+.enter-box .icon{
+    padding:15px 5px 5px 5px;
+    /*border-right:1px solid #d4d3c0;*/
+    background-color: #e9e7c8;
+    border:1px solid #d4d3c0;
+
+}
 .intro, .info{
 
     background-color: #faf8d6;
 
 }
 .intro img {
-    width: 90%;
+    width: 60%;
     max-width: 100%;
+    margin-bottom: 10px;
 }
 
 .intro span img{
     width:250px;
-    margin:25px 0 0 0;
+    margin:0px;
 }
 
-.intro p {
+.intro p{
     text-align:center;
     padding:10px;
 }
@@ -806,7 +874,8 @@ a.marker::after{
 
 #child-labour {
     top:28.5%;
-    right: 40.2%;
+    right: 38.2%;
+
 }
 
 #forest {
@@ -818,8 +887,8 @@ a.marker::after{
     right: 42%;
 }
 #munitions-workers {
-    top: 52.6%;
-    right: 40%;
+    top: 52.7%;
+    right: 40.3%;
 }
 
 
@@ -834,14 +903,14 @@ a.marker::after{
 }
 
 #shop {
-    top: 51.6%;
-    left: 42.3%;
+    top: 52.2%;
+    left: 40.3%;
 }
 
 
 #houses {
     top: 46.6%;
-    left: 21.7%;
+    left: 22.2%;
 }
 
 
@@ -867,7 +936,6 @@ a.marker::after{
 }
 
 .characters {
-
     text-align: center;
 }
 
@@ -876,6 +944,29 @@ a.marker::after{
     max-width: 390px;
 }
 
+.font-size {
+    font-size:1.5em;
+    float:right;
+    text-align:right;
+    width:auto;
+    margin-left: 0;
+    margin-right: 0;
+    width:100%;
+}
+
+.font-size button {
+    border-radius: 2px;
+    padding:10px;
+    border:0;
+    background-color:#e9e7c8;
+    -webkit-transition: background-color 300ms ease-out 100ms;
+    -moz-transition: background-color 300ms ease-out 100ms;
+    -o-transition: background-color 300ms ease-out 100ms;
+    transition: background-color 300ms ease-out 100ms;
+}
+.font-size button:hover{
+    background-color: rgba(199,196,155,1);
+}
 @keyframes pulse {
     0% {
         transform: scale(1, 1);
@@ -987,6 +1078,26 @@ a.marker::after{
 
 @media (max-width:450px){
 
+    .enter-box .col{
+        width:100%;
+        float:none;
+    }
+
+    .enter-box .row{
+
+        width:100%;
+    }
+
+    .enter-box .float-right{
+        width:60% !important;
+        text-align: left;
+        padding-left:15px;
+    }
+    .enter-box .float-left{
+        width:40% !important;
+        padding:5px;
+
+    }
 
     .map-zoom {
         width:80px;
@@ -1078,11 +1189,11 @@ and (max-device-width : 1024px)  {
 
     .intro{
         display:block;
-        padding: 50px 50px 30px 50px;
+        padding: 20px 25px 15px 25px;
         position: absolute;
         left: 25%;
         top: 10%;
-        width: 55%;
+        width: 60%;
         text-align: center;
         font-size: 1.6em;
         background-color: #faf8d6;
