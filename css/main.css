@@ -598,7 +598,8 @@ hr, .hr {
     height: 2px;
     border: 0px;
     margin-bottom: 5px;
-    margin-top:0;
+    margin-top:5px;
+    clear: both;
 }
 
 .info hr {
@@ -874,7 +875,7 @@ a.marker::after{
 
 #child-labour {
     top:28.5%;
-    right: 38.2%;
+    right: 36%;
 
 }
 
@@ -899,12 +900,12 @@ a.marker::after{
 
 #land {
     top: 27%;
-    right: 71%;
+    right: 70%;
 }
 
 #shop {
-    top: 52.2%;
-    left: 40.3%;
+    top: 53.2%;
+    left: 38.3%;
 }
 
 
@@ -915,8 +916,8 @@ a.marker::after{
 
 
 #eggtrain {
-    top: 80%;
-    left: 15%;
+    top: 79%;
+    left: 14.5%;
 }
 
 #propaganda {
