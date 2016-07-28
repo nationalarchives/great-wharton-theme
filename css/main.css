@@ -1120,6 +1120,9 @@ a.marker::after{
         width: 100%;
         text-align: center;
     }
+    .intro{
+        overflow-y: scroll;
+    }
 }
 /* CSS print*/
 @media print {

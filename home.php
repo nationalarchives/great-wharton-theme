@@ -96,7 +96,7 @@ get_header(); ?>
                 <div class="clear-both"></div>
                 <script>
                     document.write("<p><a href='#' role='button' class='button' id='enter-click' tabindex='5'>&middot; Enter &middot;</a></p>");
-                    document.write("<p><a href='#' id='return-click' tabindex='5'>Back to introduction</a></p>");
+                    document.write("<p><a href='#' id='return-click' tabindex='5'>Back to introduction</a></p><p></p>");
                 </script>
             </div>
             <!-- Instructions end -->
