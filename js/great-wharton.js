@@ -306,16 +306,22 @@ function getCookie(cname) {
  * ZoomCookie is created
  * */
 $(document).ready( function() {
+    $('#zoom_minus').css({'opacity':'1'});
+    $('#zoom_plus').css({'opacity':'.3'});
 
     $(".map-zoom .fa-minus, .map-zoom .fa-plus").on('click', function () {
 
         if (this.id == 'zoom_minus') {
             zoomLev = .5;
-            $('.marker').css({'font-size':'35px','padding':'10px 12px'})
+            $('.marker').css({'font-size':'35px','padding':'10px 12px'});
+            $('#zoom_minus').css({'opacity':'.3'});
+            $('#zoom_plus').css({'opacity':'1'})
         }
         else if (this.id == 'zoom_plus') {
             zoomLev = 1;
-            $('.marker').css({'font-size':'2em', 'padding':'6px'})
+            $('.marker').css({'font-size':'2em', 'padding':'6px'});
+            $('#zoom_minus').css({'opacity':'1'});
+            $('#zoom_plus').css({'opacity':'.3'})
         }
 
         Cookies.set('zoomCookie', zoomLev, {expires: 7});
@@ -332,6 +338,8 @@ $(document).ready( function() {
 
     // Resize the font size on marker when zoom out
     if (getCookie('zoomCookie') == .5){
+        $('#zoom_minus').css({'opacity':'.3'});
+        $('#zoom_plus').css({'opacity':'1'});
         $('.marker').css({'font-size':'35px','padding':'10px 12px'})
     }
 });
