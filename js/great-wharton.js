@@ -309,7 +309,7 @@ $(document).ready( function() {
     $('#zoom_minus').css({'opacity':'1'});
     $('#zoom_plus').css({'opacity':'.3'});
 
-    $(".map-zoom .fa-minus, .map-zoom .fa-plus").on('click', function () {
+    $(".map-zoom .fa-search-minus, .map-zoom .fa-search-plus").on('click', function () {
 
         if (this.id == 'zoom_minus') {
             zoomLev = .5;
