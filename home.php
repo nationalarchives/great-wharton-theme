@@ -148,7 +148,7 @@ get_header(); ?>
     <?php }?>
 	<!-- Learn more end here -->
 
-	<div class="map-zoom">Zoom <i id="zoom_plus" class="fa fa-plus" aria-hidden="true" title="Zoom in"></i> <i id="zoom_minus" class="fa fa-minus" aria-hidden="true" title="Zoom out"></i></div>
+	<div class="map-zoom">Zoom <i id="zoom_plus" class="fa fa-search-plus" aria-hidden="true" title="Zoom in"></i> <i id="zoom_minus" class="fa fa-search-minus" aria-hidden="true" title="Zoom out"></i></div>
 
 	<!-- Branding here -->
     <div class="about">
