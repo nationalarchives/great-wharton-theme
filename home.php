@@ -113,18 +113,28 @@ get_header(); ?>
             Pass Category, CSS ID and Tab
             CSS ID must NOT be same as hashtag, otherwise it will interfere with the repositioning.
             -->
-            <?php get_top_category_post('postman', 'houses', '6');?>
-            <?php get_top_category_post('schools', 'children', '7');?>
-            <?php get_top_category_post('police-station', 'police', '8');?>
-            <?php get_top_category_post('train', 'eggtrain', '9');?>
-            <?php get_top_category_post('railway-gates', 'scouts', '10');?>
-            <?php get_top_category_post('grocery-shop', 'shop', '11');?>
-            <?php get_top_category_post('strike', 'industrial-action', '12');?>
-            <?php get_top_category_post('women-drinking', 'munitions-workers', '13');?>
-            <?php get_top_category_post('factory', 'munitions-factory', '14');?>
-            <?php get_top_category_post('bomb-crater', 'enemy-action', '15');?>
-            <?php get_top_category_post('field', 'child-labour', '16');?>
-            <?php get_top_category_post('hunt', 'forest', '17');?>
+            <?php get_top_category_post('colonial-workers', 'repatriation', '6');?>
+            <?php get_top_category_post('port', 'port-sign', '7');?>
+            <?php get_top_category_post('postman', 'houses', '8');?>
+            <?php get_top_category_post('schools', 'children', '9');?>
+            <?php get_top_category_post('small-holdings', 'allotment', '10');?>
+            <?php get_top_category_post('police-station', 'police', '11');?>
+            <?php get_top_category_post('train', 'eggtrain', '12');?>
+            <?php get_top_category_post('railway-gates', 'scouts', '13');?>
+            <?php get_top_category_post('grocery-shop', 'shop', '14');?>
+            <?php get_top_category_post('domestic-life', 'cottage', '15');?>
+            <?php get_top_category_post('injured-soldiers', 'injured', '16');?>
+            <?php get_top_category_post('hospital', 'redcross', '17');?>
+            <?php get_top_category_post('strike', 'industrial-action', '18');?>
+            <?php get_top_category_post('women-drinking', 'munitions-workers', '19');?>
+            <?php get_top_category_post('factory', 'munitions-factory', '20');?>
+            <?php get_top_category_post('church', 'churchyard', '21');?>
+            <?php get_top_category_post('airfield', 'hangars', '22');?>
+            <?php get_top_category_post('bomb-crater', 'enemy-action', '23');?>
+            <?php get_top_category_post('field', 'child-labour', '24');?>
+            <?php get_top_category_post('hunt', 'forest', '25');?>
+
+
 
             <div class="main_background"></div>
         </div>
