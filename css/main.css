@@ -860,7 +860,41 @@ a.marker::after{
 
     background-image: none !important;
 }
+#churchyard {
+    top: 43%;
+    right: 18.1%;
+}
 
+#cottage {
+    top: 34%;
+    left: 35%;
+}
+#redcross {
+    top: 39%;
+    left: 46%;
+}
+#injured {
+    top: 43.5%;
+    left: 44%;
+}
+#port-sign {
+    top: 31%;
+    left: 10%;
+}
+#repatriation {
+    top: 36%;
+    left: 7.3%;
+}
+
+#allotment {
+    top: 70%;
+    left: 11%;
+}
+
+#hangars {
+    top: 73%;
+    right: 18%;
+}
 
 #children {
     top:62%;

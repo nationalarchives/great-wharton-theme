@@ -145,6 +145,65 @@ if (hashTag == "#police-station") {
     }});
 }
 
+if (hashTag == "#airfield") {
+
+    TweenLite.to("#wrapper", 2, {x: -1900, y: -1500, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
+}
+if (hashTag == "#small-holdings") {
+
+    TweenLite.to("#wrapper", 2, {x: -200, y: -1700, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
+}
+
+if (hashTag == "#port") {
+
+    TweenLite.to("#wrapper", 2, {x: -320, y: -1130, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
+}
+if (hashTag == "#domestic-life") {
+
+    TweenLite.to("#wrapper", 2, {x: -680, y: -1150, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
+}
+if (hashTag == "#hospital") {
+
+    TweenLite.to("#wrapper", 2, {x: -1400, y: -1100, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
+}
+if (hashTag == "#injured-soldiers") {
+
+    TweenLite.to("#wrapper", 2, {x: -1600, y: -1100, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
+}
+
+if (hashTag == "#church") {
+
+    TweenLite.to("#wrapper", 2, {x: -2000, y: -1200, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
+}
+if (hashTag == "#colonial-workers") {
+
+    TweenLite.to("#wrapper", 2, {x: -220, y: -1130, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
+}
+
 /* ---------------------------------------------------------------
  * Display learn more
  * ---------------------------------------------------------------
