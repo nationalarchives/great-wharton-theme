@@ -116,23 +116,24 @@ get_header(); ?>
             <?php get_top_category_post('colonial-workers', 'repatriation', '6');?>
             <?php get_top_category_post('port', 'port-sign', '7');?>
             <?php get_top_category_post('postman', 'houses', '8');?>
-            <?php get_top_category_post('schools', 'children', '9');?>
-            <?php get_top_category_post('small-holdings', 'allotment', '10');?>
-            <?php get_top_category_post('police-station', 'police', '11');?>
-            <?php get_top_category_post('train', 'eggtrain', '12');?>
-            <?php get_top_category_post('railway-gates', 'scouts', '13');?>
-            <?php get_top_category_post('grocery-shop', 'shop', '14');?>
-            <?php get_top_category_post('domestic-life', 'cottage', '15');?>
-            <?php get_top_category_post('injured-soldiers', 'injured', '16');?>
-            <?php get_top_category_post('hospital', 'redcross', '17');?>
-            <?php get_top_category_post('strike', 'industrial-action', '18');?>
-            <?php get_top_category_post('women-drinking', 'munitions-workers', '19');?>
-            <?php get_top_category_post('factory', 'munitions-factory', '20');?>
-            <?php get_top_category_post('church', 'churchyard', '21');?>
-            <?php get_top_category_post('airfield', 'hangars', '22');?>
-            <?php get_top_category_post('bomb-crater', 'enemy-action', '23');?>
-            <?php get_top_category_post('field', 'child-labour', '24');?>
-            <?php get_top_category_post('hunt', 'forest', '25');?>
+            <?php get_top_category_post('field', 'child-labour', '9');?>
+            <?php get_top_category_post('hunt', 'forest', '10');?>
+            <?php get_top_category_post('schools', 'children', '11');?>
+            <?php get_top_category_post('small-holdings', 'allotment', '12');?>
+            <?php get_top_category_post('police-station', 'police', '13');?>
+            <?php get_top_category_post('train', 'eggtrain', '14');?>
+            <?php get_top_category_post('railway-gates', 'scouts', '15');?>
+            <?php get_top_category_post('grocery-shop', 'shop', '16');?>
+            <?php get_top_category_post('domestic-life', 'cottage', '17');?>
+            <?php get_top_category_post('injured-soldiers', 'injured', '18');?>
+            <?php get_top_category_post('hospital', 'redcross', '19');?>
+            <?php get_top_category_post('strike', 'industrial-action', '20');?>
+            <?php get_top_category_post('women-drinking', 'munitions-workers', '21');?>
+            <?php get_top_category_post('factory', 'munitions-factory', '22');?>
+            <?php get_top_category_post('church', 'churchyard', '23');?>
+            <?php get_top_category_post('airfield', 'hangars', '24');?>
+            <?php get_top_category_post('bomb-crater', 'enemy-action', '25');?>
+
 
 
 
