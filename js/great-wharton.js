@@ -162,7 +162,7 @@ if (hashTag == "#small-holdings") {
 
 if (hashTag == "#port") {
 
-    TweenLite.to("#wrapper", 2, {x: -320, y: -1130, ease: Circ.easeOut, onUpdate:function()
+    TweenLite.to("#wrapper", 2, {x: -320, y: -930, ease: Circ.easeOut, onUpdate:function()
     {
         Draggable.get("#wrapper").applyBounds();
     }});

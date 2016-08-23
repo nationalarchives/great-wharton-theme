@@ -115,25 +115,25 @@ get_header(); ?>
             -->
             <?php get_top_category_post('colonial-workers', 'repatriation', '6');?>
             <?php get_top_category_post('port', 'port-sign', '7');?>
-            <?php get_top_category_post('propaganda', 'port-posters', '7');?>
-            <?php get_top_category_post('postman', 'houses', '8');?>
-            <?php get_top_category_post('field', 'child-labour', '9');?>
-            <?php get_top_category_post('hunt', 'forest', '10');?>
-            <?php get_top_category_post('schools', 'children', '11');?>
-            <?php get_top_category_post('small-holdings', 'allotment', '12');?>
-            <?php get_top_category_post('police-station', 'police', '13');?>
-            <?php get_top_category_post('train', 'eggtrain', '14');?>
-            <?php get_top_category_post('railway-gates', 'scouts', '15');?>
-            <?php get_top_category_post('grocery-shop', 'shop', '16');?>
-            <?php get_top_category_post('domestic-life', 'cottage', '17');?>
-            <?php get_top_category_post('injured-soldiers', 'injured', '18');?>
-            <?php get_top_category_post('hospital', 'redcross', '19');?>
-            <?php get_top_category_post('strike', 'industrial-action', '20');?>
-            <?php get_top_category_post('women-drinking', 'munitions-workers', '21');?>
-            <?php get_top_category_post('factory', 'munitions-factory', '22');?>
-            <?php get_top_category_post('church', 'churchyard', '23');?>
-            <?php get_top_category_post('airfield', 'hangars', '24');?>
-            <?php get_top_category_post('bomb-crater', 'enemy-action', '25');?>
+            <?php get_top_category_post('propaganda', 'port-posters', '8');?>
+            <?php get_top_category_post('postman', 'houses', '9');?>
+            <?php get_top_category_post('field', 'child-labour', '10');?>
+            <?php get_top_category_post('hunt', 'forest', '11');?>
+            <?php get_top_category_post('schools', 'children', '12');?>
+            <?php get_top_category_post('small-holdings', 'allotment', '13');?>
+            <?php get_top_category_post('police-station', 'police', '14');?>
+            <?php get_top_category_post('train', 'eggtrain', '15');?>
+            <?php get_top_category_post('railway-gates', 'scouts', '16');?>
+            <?php get_top_category_post('grocery-shop', 'shop', '17');?>
+            <?php get_top_category_post('domestic-life', 'cottage', '18');?>
+            <?php get_top_category_post('injured-soldiers', 'injured', '19');?>
+            <?php get_top_category_post('hospital', 'redcross', '20');?>
+            <?php get_top_category_post('strike', 'industrial-action', '21');?>
+            <?php get_top_category_post('women-drinking', 'munitions-workers', '22');?>
+            <?php get_top_category_post('factory', 'munitions-factory', '23');?>
+            <?php get_top_category_post('church', 'churchyard', '24');?>
+            <?php get_top_category_post('airfield', 'hangars', '25');?>
+            <?php get_top_category_post('bomb-crater', 'enemy-action', '26');?>
 
 
 
@@ -164,7 +164,7 @@ get_header(); ?>
 
 	<!-- Branding here -->
     <div class="about">
-        <img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-title-colour.png" alt=" Great Wharton title" title="View the introduction to Great Wharton" tabindex="5">
+        <img src="<?php echo make_path_relative( get_template_directory_uri() ); ?>/images/tna-wharton-title-colour.png" alt=" Great Wharton title" title="View the introduction to Great Wharton" tabindex="27">
     </div>
     <div class="tna_brand">
         <a href="http://nationalarchives.gov.uk" title="Visit The National Archives website" tabindex="4">
