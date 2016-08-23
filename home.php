@@ -115,6 +115,7 @@ get_header(); ?>
             -->
             <?php get_top_category_post('colonial-workers', 'repatriation', '6');?>
             <?php get_top_category_post('port', 'port-sign', '7');?>
+            <?php get_top_category_post('propaganda', 'port-posters', '7');?>
             <?php get_top_category_post('postman', 'houses', '8');?>
             <?php get_top_category_post('field', 'child-labour', '9');?>
             <?php get_top_category_post('hunt', 'forest', '10');?>

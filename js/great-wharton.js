@@ -203,6 +203,13 @@ if (hashTag == "#colonial-workers") {
         Draggable.get("#wrapper").applyBounds();
     }});
 }
+if (hashTag == "#propaganda") {
+
+    TweenLite.to("#wrapper", 2, {x: -230, y: -1000, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
+}
 
 /* ---------------------------------------------------------------
  * Display learn more
