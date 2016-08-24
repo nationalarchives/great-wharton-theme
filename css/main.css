@@ -878,12 +878,12 @@ a.marker::after{
     left: 44%;
 }
 #port-sign {
-    top: 31%;
+    top: 30%;
     left: 10%;
 }
 #repatriation {
-    top: 36%;
-    left: 7.3%;
+    top: 37%;
+    left: 7.1%;
 }
 
 #allotment {
@@ -954,11 +954,10 @@ a.marker::after{
     left: 14.5%;
 }
 
-#propaganda {
-    top: 40%;
-    left: 46.2%;
-    width: 120px;
-    height: 70px;
+#port-posters {
+    top: 34.6%;
+    left: 16%;
+
 }
 
 #scouts{

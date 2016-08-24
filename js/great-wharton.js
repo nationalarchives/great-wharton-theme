@@ -162,7 +162,7 @@ if (hashTag == "#small-holdings") {
 
 if (hashTag == "#port") {
 
-    TweenLite.to("#wrapper", 2, {x: -320, y: -1130, ease: Circ.easeOut, onUpdate:function()
+    TweenLite.to("#wrapper", 2, {x: -320, y: -930, ease: Circ.easeOut, onUpdate:function()
     {
         Draggable.get("#wrapper").applyBounds();
     }});
@@ -199,6 +199,13 @@ if (hashTag == "#church") {
 if (hashTag == "#colonial-workers") {
 
     TweenLite.to("#wrapper", 2, {x: -220, y: -1130, ease: Circ.easeOut, onUpdate:function()
+    {
+        Draggable.get("#wrapper").applyBounds();
+    }});
+}
+if (hashTag == "#propaganda") {
+
+    TweenLite.to("#wrapper", 2, {x: -230, y: -1000, ease: Circ.easeOut, onUpdate:function()
     {
         Draggable.get("#wrapper").applyBounds();
     }});
