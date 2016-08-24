@@ -1029,7 +1029,9 @@ a.marker::after{
 .canvas-viewer {
     z-index: auto;
 }
-
+.gallery-caption{
+    width:100%;
+}
 
 @media (min-width: 1281px) {
     .intro {
