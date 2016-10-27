@@ -286,6 +286,38 @@ if ( ! function_exists( 'redirect_if_404' ) ) :
 endif;
 add_filter( 'template_redirect', 'redirect_if_404' );
 
+// Remove the emoji from the head section
+
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+
+remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
+remove_action( 'admin_print_styles', 'print_emoji_styles' );
+
+// Remove Wordpress generator meta from head
+
+remove_action( 'wp_head', 'wp_generator' );
+
+remove_action( 'wp_head', 'wp_shortlink_wp_head', 10 );
+
+remove_action( 'template_redirect', 'wp_shortlink_header', 11 );
+
+remove_action( 'wp_head', 'feed_links', 2 );
+
+remove_action( 'wp_head', 'feed_links_extra', 3 );
+
+remove_action( 'wp_head', 'rsd_link' );
+
+remove_action( 'wp_head', 'wlwmanifest_link' );
+
+// Remove REST API
+
+remove_action( 'wp_head', 'rest_output_link_wp_head', 10 );
+
+remove_action( 'template_redirect', 'rest_output_link_header', 11 );
+
 // Includes
 include 'inc/custom-fields.php';
 
