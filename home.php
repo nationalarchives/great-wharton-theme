@@ -146,6 +146,13 @@ get_header(); ?>
     </main>
 
 	<!-- Learn more here -->
+
+    <?php
+    //if on local network hide these bits
+    if ($_SERVER['REMOTE_ADDR'] !== '10.120.70.133') {
+
+        ?>
+
     <?php $key="more_url";
     if (get_post_meta($post->ID, $key, true)) { ?>
         <div class="learn_more_wrap">
@@ -158,6 +165,8 @@ get_header(); ?>
             </div>
         </div>
     <?php }?>
+    <?php }?>
+
 	<!-- Learn more end here -->
 
 	<div class="map-zoom">Zoom <i id="zoom_plus" class="fa fa-search-plus" aria-hidden="true" title="Zoom in"></i> <i id="zoom_minus" class="fa fa-search-minus" aria-hidden="true" title="Zoom out"></i></div>

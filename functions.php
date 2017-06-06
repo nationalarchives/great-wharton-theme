@@ -13,6 +13,9 @@ remove_action( 'wp_print_styles', 'print_emoji_styles' );
 remove_action( 'admin_print_styles', 'print_emoji_styles' );
 
 
+
+
+
 // fixes relative urls
 
 function fix_internal_url($url) {

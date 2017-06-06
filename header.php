@@ -59,6 +59,8 @@ echo(" -");
 
 </head>
 
+
+
     <?php if (is_home() || is_front_page()){
     ?>
     <body class="f-grid">
