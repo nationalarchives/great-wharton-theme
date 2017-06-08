@@ -149,7 +149,7 @@ get_header(); ?>
 
     <?php
     //if on local network hide these bits
-    if ($_SERVER['REMOTE_ADDR'] !== '10.120.70.133') {
+    if ($_SERVER['REMOTE_ADDR'] != '10.120.140.133') {
 
         ?>
 
