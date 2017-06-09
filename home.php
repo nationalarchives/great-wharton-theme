@@ -148,9 +148,10 @@ get_header(); ?>
 	<!-- Learn more here -->
 
     <?php
-    //if on local network hide these bits
-    if ($_SERVER['REMOTE_ADDR'] != '10.120.140.133') {
-
+    echo "IP - ".($_SERVER['REMOTE_ADDR']);
+    //if on local IP hide this
+    if ($_SERVER['REMOTE_ADDR'] == '10.120.140.133') {
+    }else{
         ?>
 
     <?php $key="more_url";
