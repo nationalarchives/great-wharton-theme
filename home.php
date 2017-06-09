@@ -148,9 +148,9 @@ get_header(); ?>
 	<!-- Learn more here -->
 
     <?php
-    echo "IP - ".($_SERVER['SERVER_ADDR']);
+    echo "IP - ".$_SERVER['REMOTE_ADDR'];
     //if on local IP hide this
-    if ($_SERVER['SERVER_ADDR'] == '10.120.140.133') {
+    if ($_SERVER['REMOTE_ADDR'] == '10.120.140.133') {
     }else{
         ?>
 
