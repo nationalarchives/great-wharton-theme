@@ -146,13 +146,7 @@ get_header(); ?>
     </main>
 
 	<!-- Learn more here -->
-
-    <?php
-    echo "IP - ".$_SERVER['REMOTE_ADDR'];
-    //if on local IP hide this
-    if ($_SERVER['REMOTE_ADDR'] == '10.120.140.133') {
-    }else{
-        ?>
+    
 
     <?php $key="more_url";
     if (get_post_meta($post->ID, $key, true)) { ?>
@@ -166,7 +160,7 @@ get_header(); ?>
             </div>
         </div>
     <?php }?>
-    <?php }?>
+
 
 	<!-- Learn more end here -->
 
