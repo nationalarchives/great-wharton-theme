@@ -1240,4 +1240,14 @@ and (max-device-width : 1024px)  {
     }
 
 }
+.kiosk_enable .intro .small {
+    display:none;
+}
 
+.kiosk_enable .learn_more_wrap {
+    display:none !important;
+}
+
+.kiosk_enable .st_sharethis_large {
+    display:none !important;
+}
