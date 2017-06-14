@@ -146,6 +146,8 @@ get_header(); ?>
     </main>
 
 	<!-- Learn more here -->
+    
+
     <?php $key="more_url";
     if (get_post_meta($post->ID, $key, true)) { ?>
         <div class="learn_more_wrap">
@@ -158,6 +160,8 @@ get_header(); ?>
             </div>
         </div>
     <?php }?>
+
+
 	<!-- Learn more end here -->
 
 	<div class="map-zoom">Zoom <i id="zoom_plus" class="fa fa-search-plus" aria-hidden="true" title="Zoom in"></i> <i id="zoom_minus" class="fa fa-search-minus" aria-hidden="true" title="Zoom out"></i></div>
