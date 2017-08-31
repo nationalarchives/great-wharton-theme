@@ -82,6 +82,5 @@ $(document).ready( function()  {
         $('.s-grid .inner p').css({'font-size': pfontSizeCookie, 'line-height': fontLineHeightCookie});
         $('.s-grid .inner h1').css({'font-size': hfontSizeCookie, 'line-height': fontLineHeightCookie});
     }
-
 });
 
