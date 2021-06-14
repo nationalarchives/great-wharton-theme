@@ -82,7 +82,14 @@ function tnatheme_globals()
 {
     global $pre_path;
     global $pre_crumbs;
-    if (substr($_SERVER['REMOTE_ADDR'], 0, 3) === '10.') {
+    $headers = apache_request_headers();
+    if ( isset($_SERVER['HTTP_X_NGINX_PROXY']) && isset($headers['X_HOST_TYPE']) && $headers['X_HOST_TYPE'] == 'public' ) {
+        $pre_crumbs = array(
+            'First World War' => '/first-world-war/',
+            'Home front stories' => '/home-front-stories/',
+        );
+        $pre_path = '/first-world-war/home-front-stories';
+    } elseif (substr($_SERVER['REMOTE_ADDR'], 0, 3) === '10.') {
         $pre_path = '';
         $pre_crumbs = array(
             'Home front stories' => '/'
@@ -141,7 +148,9 @@ if (!function_exists('notification_banner')) :
         if ($enable) {
             wp_register_style('banner-styles', get_template_directory_uri() . '/css/banner.css', array(), '0.1',
                 'all');
-            /*wp_enqueue_style('banner-styles');*/
+
+            /* wp_enqueue_style('banner-styles'); */
+
         }
     }
 
